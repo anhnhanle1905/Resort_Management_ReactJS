@@ -1,0 +1,152 @@
+
+.Footer-component{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1188px;
+}
+.Footer-banner-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.Footer-banner-main{
+    border: 1px solid #EDF2F7;
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0px 8px 8px rgb(0 0 0 / 3%);
+    border-radius: 16px;
+    justify-content: space-between;
+}
+.Footer-banner-left{
+    display: flex;
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+}
+
+.Footer-banner-main-form{
+    margin: 31px 31px 31px 58px;
+    display: flex;
+    align-items: center;
+}
+.Footer-form{
+    color: #1a202c;
+    width: 350px;
+    height: 44px;
+    z-index: 2;
+    font-size: 16px;
+    background: #EDF2F7;
+    font-weight: 600;
+    line-height: 19px;
+    padding-left: 12px;
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    position: relative;
+    cursor: text;
+    display: inline-flex;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: -apple-system,BlinkMacSystemFont,sans-serif;
+}
+
+.MuiInputBase-input{
+    font: inherit;
+    color: currentColor;
+    width: 100%;
+    border: 0;
+    height: 1.1876em;
+    margin: 0;
+    display: block;
+    padding: 6px 0 7px;
+    min-width: 0;
+    background: none;
+    box-sizing: content-box;
+    animation-name: mui-auto-fill-cancel;
+    letter-spacing: inherit;
+    animation-duration: 10ms;
+    -webkit-tap-highlight-color: transparent;
+}
+.jss345 {
+    color: rgb(253, 253, 253);
+    width: 101px;
+    border: none;
+    height: 44px;
+    margin: 0px;
+    padding: 6px 8px;
+    font-size: 16px;
+    min-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-transform: none;
+    background-color: rgb(255, 51, 102);
+}
+.jss336 {
+    margin-left: -5px;
+    white-space: nowrap;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.Footer-banner-left-content h6{
+    font-size: 16px;
+    font-family: -apple-system,BlinkMacSystemFont,sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+
+}
+.Footer-banner-left-content p{
+    font-size: 14px;
+    margin-top: 6px;
+    font-weight: 400;
+    line-height: 22px;
+    padding-bottom: 18px;
+    font-family: -apple-system,BlinkMacSystemFont,sans-serif;
+    margin: 0;
+}
+.Footer-banner-left-content{
+    margin: 19px 0 0 29px;
+}
+.Footer-infor{
+    margin-top: 24px;
+    width: calc(100% + 24px);
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.jss316 {
+    width: 100%;
+    background: #F7FAFC;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.jss317 {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1188px;
+}
+.jss319 {
+    text-align: center;
+}
+.jss318 {
+    color: #4A5568;
+    font-size: 12px;
+    line-height: 24px;
+}
+.MuiTypography-body2 {
+    font-size: 12px;
+    font-family: -apple-system,BlinkMacSystemFont,sans-serif;
+    font-weight: normal;
+    line-height: 14px;
+    margin: 0;
+}
+.Footer-final{
+    margin-top: 40px;
+}
