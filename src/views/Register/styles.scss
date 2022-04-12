@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow&family=Sacramento&display=swap');
-
+@import "../../variable.css";
 
 .Register {
     display: flex;
@@ -139,7 +139,7 @@
                         font-family: 'Pragati Narrow', sans-serif;
                         margin-top: 10px;
                         color: #fff;
-                        background-color: rgb(222, 120, 86);
+                        background-color: #82ccdd;
                         outline: none;
                         border: none;
                         border-radius: 30px;
