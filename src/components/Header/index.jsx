@@ -16,18 +16,18 @@ const Header = () => {
             <div className="home-main home-navbar-inside">
               <div className="home-main home-navbar-left">
                 <a
-                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover active MuiTypography-colorPrimary"
+                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover active MuiTypography-colorPrimary"
                   style={{ cursor: "pointer" }}
                 >
                   <img
                     src="https://storage.googleapis.com/tripi-assets/mytour/icons/icon_logo_mytour_white.svg "
-                    class="jss1181"
+                    className="jss1181"
                     alt="logo_mytour"
                     style={{ marginRight: "56px" }}
                   />
                 </a>
                 <a
-                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover single-navbar MuiTypography-colorPrimary"
+                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover single-navbar MuiTypography-colorPrimary"
                   target="_blank"
                   style={{
                     marginRight: "24px",
@@ -38,7 +38,7 @@ const Header = () => {
                   Khách sạn
                 </a>
                 <a
-                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover single-navbar MuiTypography-colorPrimary"
+                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover single-navbar MuiTypography-colorPrimary"
                   target="_blank"
                   style={{
                     marginRight: "24px",
@@ -49,7 +49,7 @@ const Header = () => {
                   Chuyến bay
                 </a>
                 <a
-                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover single-navbar MuiTypography-colorPrimary"
+                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover single-navbar MuiTypography-colorPrimary"
                   target="_blank"
                   style={{
                     marginRight: "24px",
@@ -60,7 +60,7 @@ const Header = () => {
                   Nhà hàng
                 </a>
                 <a
-                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover single-navbar MuiTypography-colorPrimary"
+                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover single-navbar MuiTypography-colorPrimary"
                   target="_blank"
                   style={{
                     marginRight: "24px",
@@ -69,7 +69,7 @@ const Header = () => {
                   }}
                 >
                   <div
-                    class="free-ship-header"
+                    className="free-ship-header"
                     style={{ color: "color: rgb(255, 255, 255)" }}
                   >
                     Free ship
@@ -77,7 +77,7 @@ const Header = () => {
                   Đặc sản - Myfresh
                 </a>
                 <a
-                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover single-navbar MuiTypography-colorPrimary"
+                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover single-navbar MuiTypography-colorPrimary"
                   target="_blank"
                   style={{
                     marginRight: "24px",
@@ -90,7 +90,7 @@ const Header = () => {
               </div>
               <div className="home main home-navbar-right">
                 <a
-                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover home-header-gift  MuiTypography-colorPrimary"
+                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover home-header-gift  MuiTypography-colorPrimary"
                   target="_blank"
                   style={{ textDecoration: "none" }}
                 >
@@ -98,7 +98,7 @@ const Header = () => {
                     width="16"
                     height="16"
                     fill="none"
-                    class="svgFillAll"
+                    className="svgFillAll"
                     style={{ stroke: "rgb(26, 32, 44)", marginRight: "8px" }}
                   >
                     <g clipPath="url(#icon_gif_box_svg__clip0)" fill="#fff">
@@ -114,14 +114,14 @@ const Header = () => {
                   Giới thiệu nhận quà
                 </a>
                 <a
-                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover home-header-gift MuiTypography-colorPrimary"
+                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover home-header-gift MuiTypography-colorPrimary"
                   style={{ textDecoration: "none" }}
                 >
                   <svg
                     width="20"
                     height="20"
                     fill="none"
-                    class="svgFillAll"
+                    className="svgFillAll"
                     style={{ stroke: "rgb(26, 32, 44)", marginRight: "8px" }}
                   >
                     <path
@@ -144,14 +144,14 @@ const Header = () => {
                   Hợp tác với chúng tôi
                 </a>
                 <span
-                  class="MuiBox-root jss1754 home-header-gift"
+                  className="MuiBox-root jss1754 home-header-gift"
                   // style={{color:'rgb(255, 255, 255)'}}
                 >
                   <svg
                     width="17"
                     height="17"
                     fill="none"
-                    class="svgFillAll"
+                    className="svgFillAll"
                     style={{ stroke: "rgb(26, 32, 44)", marginRight: "8px" }}
                   >
                     <path
@@ -164,14 +164,14 @@ const Header = () => {
                   </svg>
                   1900 2083
                 </span>
-                <div class="MuiBox-root jss1755">
-                  <div class="MuiBox-root jss1756 jss1195">
-                    <div class="MuiBox-root jss1757 jss1200">
+                <div className="MuiBox-root jss1755">
+                  <div className="MuiBox-root jss1756 jss1195">
+                    <div className="MuiBox-root jss1757 jss1200">
                       <svg
                         width="20"
                         height="20"
                         fill="none"
-                        class="svgFillAll"
+                        className="svgFillAll"
                         style={{ stroke: "rgb(26, 32, 44)" }}
                       >
                         <path
@@ -192,17 +192,17 @@ const Header = () => {
                     </div>
                   </div>
                 </div>
-                <div class="MuiBox-root jss1758">
+                <div className="MuiBox-root jss1758">
                   <div
-                    class="MuiBox-root jss1759 home-header-ring"
+                    className="MuiBox-root jss1759 home-header-ring"
                     style={{ color: "black" }}
                   >
-                    <div class="MuiBox-root home-header-ring-content">
+                    <div className="MuiBox-root home-header-ring-content">
                       <svg
                         width="20"
                         height="20"
                         fill="none"
-                        class="svgFillAll"
+                        className="svgFillAll"
                         style={{ stroke: "rgb(26, 32, 44)" }}
                       >
                         <path
@@ -217,7 +217,7 @@ const Header = () => {
                         width="10"
                         height="6"
                         fill="none"
-                        class="svgFillAll"
+                        className="svgFillAll"
                         style={{ stroke: "rgb(26, 32, 44)", marginLeft: "6px" }}
                       >
                         <path
@@ -235,7 +235,7 @@ const Header = () => {
                   width="24"
                   height="24"
                   fill="none"
-                  class="svgFillAll"
+                  className="svgFillAll"
                   style={{
                     stroke: "rgb(26, 32, 44)",
                     cursor: "pointer",
@@ -262,7 +262,7 @@ const Header = () => {
                     className="home-main home-header-ks-content"
                     style={{ marginRight: "8px" }}
                   >
-                    <svg width="20" height="20" fill="none" class="svgFillAll">
+                    <svg width="20" height="20" fill="none" className="svgFillAll">
                       <path
                         d="M2.5 4.75h11.25a.375.375 0 00.351-.507l-.943-2.513A1.131 1.131 0 0012.105 1h-7.96a1.131 1.131 0 00-1.05.73l-.946 2.513a.375.375 0 00.351.507zM18.25 17.5h-1.125a.188.188 0 01-.188-.188v-.357a.184.184 0 01.114-.167 1.681 1.681 0 001.012-1.538 50.433 50.433 0 00-1.328-5.355.391.391 0 00-.72 0 50.433 50.433 0 00-1.328 5.355 1.682 1.682 0 001.013 1.538.185.185 0 01.113.168v.357a.187.187 0 01-.187.187h-2.438a.188.188 0 01-.188-.188V5.688a.188.188 0 00-.188-.187H3.438a.187.187 0 00-.188.188v11.625a.188.188 0 01-.188.187H1.75a.75.75 0 100 1.5h16.5a.75.75 0 100-1.5zM5.125 7.562H7a.563.563 0 110 1.125H5.125a.563.563 0 110-1.124zM4.562 11.5a.562.562 0 01.563-.563H7a.563.563 0 010 1.126H5.125a.563.563 0 01-.563-.563zm4.688 5.813a.188.188 0 01-.188.187H7.188A.188.188 0 017 17.312v-1.687a1.125 1.125 0 012.25 0v1.688zm1.875-5.25H9.25a.562.562 0 010-1.126h1.875a.562.562 0 110 1.126zm0-3.376H9.25a.562.562 0 110-1.124h1.875a.562.562 0 110 1.125z"
                         fill="#F36"
@@ -277,7 +277,7 @@ const Header = () => {
                     className="home-main home-header-cb-content"
                     style={{ marginRight: "8px" }}
                   >
-                    <svg width="20" height="20" fill="none" class="svgFillAll">
+                    <svg width="20" height="20" fill="none" className="svgFillAll">
                       <path
                         d="M5.073 5.269l3.25 1.345a.417.417 0 00.326 0l3.46-1.506a.209.209 0 000-.383L7.703 2.904a.838.838 0 00-.639 0l-1.99.826a.833.833 0 000 1.539z"
                         fill="#1A202C"
@@ -293,7 +293,7 @@ const Header = () => {
                 </div>
                 <div className="home-main home-header-nh">
                   <span className="home-main" style={{ marginRight: "8px" }}>
-                    <svg width="20" height="20" fill="none" class="svgFillAll">
+                    <svg width="20" height="20" fill="none" className="svgFillAll">
                       <path
                         d="M17.466 16.316l-5.794-5.225 1.381-1.521c.375-.416.951-.56 1.492-.416a3.372 3.372 0 003.261-.872c1.32-1.32 3.005-4.403 1.314-6.094-1.69-1.69-4.773-.005-6.093 1.315a3.372 3.372 0 00-.872 3.26c.144.541 0 1.118-.416 1.493l-1.6 1.452-1.142-1.03a1.079 1.079 0 01-.317-1.136 3.379 3.379 0 00-.812-3.473l-.33-.334-2.433-2.433a.527.527 0 00-.782.04c-.174.213-.137.531.058.726L6.793 4.48l-.598.598-.003.003L3.78 2.669c-.195-.195-.512-.232-.726-.058a.527.527 0 00-.04.782l2.433 2.433-.6.6-2.413-2.411c-.194-.195-.512-.233-.726-.058a.527.527 0 00-.04.782l2.433 2.433-.6.6L1.089 5.36c-.195-.194-.513-.232-.726-.057a.527.527 0 00-.04.781l2.433 2.434.261.258c.948.945 2.33 1.263 3.531.878.414-.133.869.01 1.16.334l7.67 8.505a1.511 1.511 0 002.276-.035c.536-.63.427-1.588-.188-2.142z"
                         fill="#1A202C"
@@ -335,7 +335,7 @@ const Header = () => {
                               id="input-search-hotel"
                               placeholder="Thành phố, khách sạn, điểm đến"
                               type="text"
-                              class="MuiInputBase-input MuiInput-input home-header-ip"
+                              className="MuiInputBase-input MuiInput-input home-header-ip"
                               value=""
                             />
                           </div>
@@ -401,7 +401,7 @@ const Header = () => {
                           width="23"
                           height="24"
                           fill="none"
-                          class="svgFillAll"
+                          className="svgFillAll"
                           style={{stroke: 'white'}}
                         >
                           <path
