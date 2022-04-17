@@ -29,25 +29,25 @@ export default function Footer() {
                       <input
                         placeholder="Nhập số điện thoại"
                         type="text"
-                        class="MuiInputBase-input MuiInput-input"
+                        className="MuiInputBase-input MuiInput-input"
                         value=""
                       />
                     </div>
-                    <div class="MuiBox-root jss343">
+                    <div className="MuiBox-root jss343">
                       <button
-                        class="MuiButtonBase-root MuiButton-root MuiButton-text jss344 jss345 jss336"
+                        className="MuiButtonBase-root MuiButton-root MuiButton-text jss344 jss345 jss336"
                         tabindex="0"
                         type="button"
                         margin="-10"
                       >
-                        <span class="MuiButton-label">
-                          <div class="MuiBox-root jss346">
-                            <div class="MuiBox-root jss347" opacity="1">
+                        <span className="MuiButton-label">
+                          <div className="MuiBox-root jss346">
+                            <div className="MuiBox-root jss347" opacity="1">
                               Đăng ký
                             </div>
                           </div>
                         </span>
-                        <span class="MuiTouchRipple-root"></span>
+                        <span className="MuiTouchRipple-root"></span>
                       </button>
                     </div>
                   </form>
@@ -60,21 +60,21 @@ export default function Footer() {
           <div className="footer-infor-left">
             <p>Công ty cổ phần du lịch Việt Nam VNTravel</p>
             <p>Tổng đài chăm sóc: 1900 2083</p>
-            <p class="MuiTypography-root jss296 MuiTypography-body2">
+            <p className="MuiTypography-root jss296 MuiTypography-body2">
               Email: hotro@mytour.vn
             </p>
           </div>
           <div className="footer-infor-main">
             <p>Công ty cổ phần du lịch Việt Nam VNTravel</p>
             <p>Tổng đài chăm sóc: 1900 2083</p>
-            <p class="MuiTypography-root jss296 MuiTypography-body2">
+            <p className="MuiTypography-root jss296 MuiTypography-body2">
               Email: hotro@mytour.vn
             </p>
           </div>
           <div className="footer-infor-right">
             <p>Công ty cổ phần du lịch Việt Nam VNTravel</p>
             <p>Tổng đài chăm sóc: 1900 2083</p>
-            <p class="MuiTypography-root jss296 MuiTypography-body2">
+            <p className="MuiTypography-root jss296 MuiTypography-body2">
               Email: hotro@mytour.vn
             </p>
           </div>
@@ -94,7 +94,7 @@ export default function Footer() {
                     <div className="lazyload-wrapper">
                       <img
                         src="https://storage.googleapis.com/tripi-assets/mytour/icons/icon_company_group.svg"
-                        class="jss203 jss322"
+                        className="jss203 jss322"
                         alt=""
                       />
                     </div>
