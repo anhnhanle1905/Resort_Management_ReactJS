@@ -10,7 +10,7 @@ export default function Flash_sale() {
               <img
                 src="https://storage.googleapis.com/tripi-assets/mytour/icons/icon_flashSale_home_white_new.png"
                 alt="icon flash"
-                class="flash_ing"
+                className="flash_ing"
               />
               <div className="home-main flash-sale-left-content">
                 <span style={{ marginRight: "8px" }}>
@@ -29,9 +29,9 @@ export default function Flash_sale() {
                 </div>
               </div>
             </div>
-            <div class="home-main flash_sale-right">
+            <div className="home-main flash_sale-right">
               <div
-                class="home-main jss776 flash_sale-view"
+                className="home-main jss776 flash_sale-view"
                 style={{
                   background: "rgb(255, 255, 255)",
                   color: "rgb(160, 174, 192)",
@@ -40,11 +40,11 @@ export default function Flash_sale() {
                   textTransform: "inherit",
                 }}
               >
-                <span class="home-main jss777">12:00-13:00</span>
-                <span class="home-main jss778 flash_sale-end">Đã kết thúc</span>
+                <span className="home-main jss777">12:00-13:00</span>
+                <span className="home-main jss778 flash_sale-end">Đã kết thúc</span>
               </div>
               <div
-                class="home-main jss779 flash_sale-view"
+                className="home-main jss779 flash_sale-view"
                 style={{
                   background: "rgb(255, 255, 255)",
                   color: "rgb(160, 174, 192)",
@@ -53,11 +53,11 @@ export default function Flash_sale() {
                   textTransform: "inherit",
                 }}
               >
-                <span class="home-main flash_sale-time">15:00-16:00</span>
-                <span class="home-main jss781 flash_sale-end">Đã kết thúc</span>
+                <span className="home-main flash_sale-time">15:00-16:00</span>
+                <span className="home-main jss781 flash_sale-end">Đã kết thúc</span>
               </div>
               <div
-                class="home-main jss782 flash_sale-view"
+                className="home-main jss782 flash_sale-view"
                 style={{
                   background: "rgb(255, 255, 255)",
                   color: "rgb(160, 174, 192)",
@@ -66,11 +66,11 @@ export default function Flash_sale() {
                   textTransform: "inherit",
                 }}
               >
-                <span class="home-main jss783">21:00-22:00</span>
-                <span class="home-main jss784 flash_sale-end">Sắp diễn ra</span>
+                <span className="home-main jss783">21:00-22:00</span>
+                <span className="home-main jss784 flash_sale-end">Sắp diễn ra</span>
               </div>
               <div
-                class="home-main jss785 flash_sale-view"
+                className="home-main jss785 flash_sale-view"
                 style={{
                   background: "rgb(255, 255, 255)",
                   color: "rgb(160, 174, 192)",
@@ -79,21 +79,8 @@ export default function Flash_sale() {
                   textTransform: "inherit",
                 }}
               >
-                <span class="home-main jss786">09:00-10:00</span>
-                <span class="home-main jss787 flash_sale-end">16/4</span>
-              </div>
-              <div
-                style={{
-                  background: "rgb(255, 255, 255)",
-                  color: "rgb(160, 174, 192)",
-                  cursor: "default",
-                  pointerEvents: "none",
-                  textTransform: "inherit",
-                }}
-                class="home-main jss788 flash_sale-view"
-              >
-                <span class="home-main jss789">12:00-13:00</span>
-                <span class="home-main jss790 flash_sale-end">16/4</span>
+                <span className="home-main jss786">09:00-10:00</span>
+                <span className="home-main jss787 flash_sale-end">16/4</span>
               </div>
               <div
                 style={{
@@ -103,33 +90,46 @@ export default function Flash_sale() {
                   pointerEvents: "none",
                   textTransform: "inherit",
                 }}
-                class="home-main jss791 flash_sale-view"
+                className="home-main jss788 flash_sale-view"
               >
-                <span class="home-main jss792">15:00-16:00</span>
-                <span class="home-main jss793 flash_sale-end">16/4</span>
+                <span className="home-main jss789">12:00-13:00</span>
+                <span className="home-main jss790 flash_sale-end">16/4</span>
+              </div>
+              <div
+                style={{
+                  background: "rgb(255, 255, 255)",
+                  color: "rgb(160, 174, 192)",
+                  cursor: "default",
+                  pointerEvents: "none",
+                  textTransform: "inherit",
+                }}
+                className="home-main jss791 flash_sale-view"
+              >
+                <span className="home-main jss792">15:00-16:00</span>
+                <span className="home-main jss793 flash_sale-end">16/4</span>
               </div>
             </div>
           </div>
           <div className="home-main flash_sale-main"></div>
           <div className="home-main flash_sale-more">
             <a
-              class="flash_sale-more-a"
+              className="flash_sale-more-a"
               target="_blank"
               href="/uu-dai/khach-san-88"
             >
               <button
-                class="home-main flash_sale-more-btn"
+                className="home-main flash_sale-more-btn"
                 tabindex="0"
                 type="button"
               >
-                <span class="MuiButton-label">
-                  <div class="MuiBox-root jss1716">
-                    <div class="MuiBox-root jss1717" opacity="1">
+                <span className="MuiButton-label">
+                  <div className="MuiBox-root jss1716">
+                    <div className="MuiBox-root jss1717" opacity="1">
                       Xem thêm
                     </div>
                   </div>
                 </span>
-                <span class="MuiTouchRipple-root"></span>
+                <span className="MuiTouchRipple-root"></span>
               </button>
             </a>
           </div>
