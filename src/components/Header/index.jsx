@@ -1,11 +1,15 @@
 import React from "react";
 import "./styles.css";
-
+import { slide as Menu } from 'react-burger-menu'
 const Header = () => {
   return (
+    <>
+     {/* <Menu>
+        còn bị lỗi chưa chỉnh được
+      </Menu> */}
     <div className="home-main header-component">
       <div className="home-main home-component-up">
-        <video width="100%" height="488px" type="video/mp4" loop="">
+        <video width="100%" height="488px" type="video/mp4" loop muted controls autoplay>
           <source src="https://storage.googleapis.com/tripi-assets/mytour/videos/video_bg_mytour.mov" />
           Your browser does not support the video tag.
         </video>
@@ -146,6 +150,7 @@ const Header = () => {
                 <span
                   class="MuiBox-root jss1754 home-header-gift"
                   // style={{color:'rgb(255, 255, 255)'}}
+                  style={{ marginLeft: '100px'}}
                 >
                   <svg
                     width="17"
@@ -334,9 +339,7 @@ const Header = () => {
                               autocomplete="off"
                               id="input-search-hotel"
                               placeholder="Thành phố, khách sạn, điểm đến"
-                              type="text"
                               class="MuiInputBase-input MuiInput-input home-header-ip"
-                              value=""
                             />
                           </div>
                           <div
@@ -344,6 +347,7 @@ const Header = () => {
                             style={{ background: "transparent" }}
                           ></div>
                         </div>
+                        
                       </div>
                     </div>
                     <div
@@ -422,9 +426,9 @@ const Header = () => {
           </div>
         </div>
         </div>
-        
       </div>
     </div>
+    </>
   );
 };
 export default Header;
