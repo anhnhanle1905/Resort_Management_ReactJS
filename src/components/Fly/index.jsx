@@ -62,7 +62,7 @@ export default function Fly() {
                     width="10"
                     height="6"
                     fill="none"
-                    class="svgFillAll"
+                    className="svgFillAll"
                     style={{
                       marginTop: "12px",
                       stroke: "rgb(255, 51, 102)",
@@ -149,7 +149,7 @@ export default function Fly() {
                               width="20"
                               height="20"
                               fill="none"
-                              class="svgFillAll"
+                              className="svgFillAll"
                               style={{ marginRight: '4px', fill: 'rgb(74, 85, 104)'}}
                             >
                               <path

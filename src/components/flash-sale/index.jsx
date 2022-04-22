@@ -192,7 +192,7 @@ export default function Flash_sale() {
                                 width="28"
                                 height="28"
                                 fill="none"
-                                class="svgFillAll jss603"
+                                className="svgFillAll jss603"
                               >
                                 <g filter="url(#icon_heart_svg__filter0_d)">
                                   <path
@@ -248,12 +248,12 @@ export default function Flash_sale() {
                             </h6>
                             <div className="home-main flase_sale-raise">
                               <div className="home-main falsh_sale-raise-star">
-                                <div class="home-main flash_sale-raise-content">
+                                <div className="home-main flash_sale-raise-content">
                                   <svg
                                     width="14"
                                     height="14"
                                     fill="none"
-                                    class="svgFillAll jss658"
+                                    className="svgFillAll jss658"
                                     style={{
                                       stroke: "rgb(255, 188, 57)",
                                       fill: "rgb(255, 188, 57)",
@@ -268,7 +268,7 @@ export default function Flash_sale() {
                                     width="14"
                                     height="14"
                                     fill="none"
-                                    class="svgFillAll jss658"
+                                    className="svgFillAll jss658"
                                     style={{
                                       stroke: "rgb(255, 188, 57)",
                                       fill: "rgb(255, 188, 57)",
@@ -283,7 +283,7 @@ export default function Flash_sale() {
                                     width="14"
                                     height="14"
                                     fill="none"
-                                    class="svgFillAll jss658"
+                                    className="svgFillAll jss658"
                                     style={{
                                       stroke: "rgb(255, 188, 57)",
                                       fill: "rgb(255, 188, 57)",
@@ -298,7 +298,7 @@ export default function Flash_sale() {
                                     width="14"
                                     height="14"
                                     fill="none"
-                                    class="svgFillAll jss658"
+                                    className="svgFillAll jss658"
                                     style={{
                                       stroke: "rgb(255, 188, 57)",
                                       fill: "rgb(255, 188, 57)",
@@ -317,7 +317,7 @@ export default function Flash_sale() {
                                       stroke: "rgb(255, 188, 57)",
                                       fill: "rgb(255, 188, 57)",
                                     }}
-                                    class="svgFillAll jss658"
+                                    className="svgFillAll jss658"
                                   >
                                     <path
                                       d="M12.464 5.684a1.055 1.055 0 00-.849-.719L9.078 4.6 7.94 2.31a1.05 1.05 0 00-1.88 0L4.925 4.598l-2.536.367a1.057 1.057 0 00-.87 1.292c.047.191.148.365.29.502L3.64 8.534l-.433 2.51a1.05 1.05 0 001.521 1.107l2.272-1.188 2.273 1.19a1.05 1.05 0 001.522-1.108l-.435-2.51 1.832-1.776a1.05 1.05 0 00.271-1.075z"
@@ -347,7 +347,7 @@ export default function Flash_sale() {
                                   ></path>
                                 </svg>
                               </span>
-                              <span class="home-main flase_sale-dd-name">
+                              <span className="home-main flase_sale-dd-name">
                                 Phú Quốc
                               </span>
                             </div>

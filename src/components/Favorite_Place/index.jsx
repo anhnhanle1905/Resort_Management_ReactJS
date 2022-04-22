@@ -31,7 +31,7 @@ export default function Favorite_Place() {
                 <div className="home-main favorite-content-center-img">
                   <img
                     src="https://tripi.vn/cdn-cgi/image/width=640,height=640/https://storage.googleapis.com/tripi-assets/mytour/images/locations/nha-trang.png"
-                    class="center-img-2"
+                    className="center-img-2"
                     alt=""
                   />
                 </div>
@@ -51,7 +51,7 @@ export default function Favorite_Place() {
                 >
                   <img
                     src="https://tripi.vn/cdn-cgi/image/width=640,height=640/https://storage.googleapis.com/tripi-assets/mytour/images/locations/danang.png"
-                    class="load-img-3"
+                    className="load-img-3"
                     alt=""
                   />
                 </div>
@@ -71,7 +71,7 @@ export default function Favorite_Place() {
                 >
                   <img
                     src="https://tripi.vn/cdn-cgi/image/width=640,height=640/https://storage.googleapis.com/tripi-assets/mytour/images/locations/hochiminh.png"
-                    class="load-img-4"
+                    className="load-img-4"
                     alt=""
                   />
                 </div>
@@ -91,7 +91,7 @@ export default function Favorite_Place() {
                 >
                   <img
                   src="https://tripi.vn/cdn-cgi/image/width=640,height=640/https://storage.googleapis.com/tripi-assets/mytour/images/locations/vung-tau.png"
-                    class="load-img-5"
+                    className="load-img-5"
                     alt=""
                   />
                 </div>
@@ -111,7 +111,7 @@ export default function Favorite_Place() {
                 >
                   <img
                   src="https://tripi.vn/cdn-cgi/image/width=640,height=640/https://storage.googleapis.com/tripi-assets/mytour/images/locations/da-lat.png"
-                    class="load-img-6"
+                    className="load-img-6"
                     alt=""
                   />
                 </div>
@@ -131,7 +131,7 @@ export default function Favorite_Place() {
                 >
                   <img
                   src="https://tripi.vn/cdn-cgi/image/width=640,height=640/https://storage.googleapis.com/tripi-assets/mytour/images/locations/hanoi.png"
-                    class="load-img-7"
+                    className="load-img-7"
                     alt=""
                   />
                 </div>
@@ -151,7 +151,7 @@ export default function Favorite_Place() {
                 >
                   <img
                   src="https://tripi.vn/cdn-cgi/image/width=640,height=640/https://storage.googleapis.com/tripi-assets/mytour/images/locations/sa-pa.png"
-                    class="load-img-8"
+                    className="load-img-8"
                     alt=""
                   />
                 </div>
@@ -171,7 +171,7 @@ export default function Favorite_Place() {
                 >
                   <img
                     src="https://tripi.vn/cdn-cgi/image/width=640,height=640/https://storage.googleapis.com/tripi-assets/mytour/images/locations/phan-thiet.png"
-                    class="load-img-9"
+                    className="load-img-9"
                     alt=""
                   />
                 </div>
@@ -191,7 +191,7 @@ export default function Favorite_Place() {
                 >
                   <img
                     src="https://tripi.vn/cdn-cgi/image/width=640,height=640/https://storage.googleapis.com/tripi-assets/mytour/images/locations/ha-long.png"
-                    class="load-img-10"
+                    className="load-img-10"
                     alt=""
                   />
                 </div>
@@ -211,7 +211,7 @@ export default function Favorite_Place() {
                 >
                   <img
                     src="https://tripi.vn/cdn-cgi/image/width=640,height=640/https://storage.googleapis.com/tripi-assets/mytour/images/locations/can-tho.png"
-                    class="load-img-11"
+                    className="load-img-11"
                     alt=""
                   />
                 </div>
@@ -231,7 +231,7 @@ export default function Favorite_Place() {
                 >
                   <img
                     src="https://tripi.vn/cdn-cgi/image/width=640,height=640/https://storage.googleapis.com/tripi-assets/mytour/images/locations/hoi-an.png"
-                    class="load-img-12"
+                    className="load-img-12"
                     alt=""
                   />
                 </div>

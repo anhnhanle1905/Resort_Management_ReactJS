@@ -29,7 +29,7 @@ export default function Footer() {
                       <input
                         placeholder="Nhập số điện thoại"
                         type="text"
-                        class="MuiInputBase-input MuiInput-input"
+                        className="MuiInputBase-input MuiInput-input"
                       />
                     </div>
                     <div className="MuiBox-root jss343">
