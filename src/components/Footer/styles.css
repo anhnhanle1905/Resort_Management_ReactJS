@@ -3,6 +3,7 @@
     width: 100%;
     margin: 0 auto;
     max-width: 1188px;
+    padding-top: 20px;
 }
 .Footer-banner-container{
     width: 100%;
@@ -52,7 +53,9 @@
 }
 
 .MuiInputBase-input{
+    outline: none;
     font: inherit;
+    outline: none;
     color: currentColor;
     width: 100%;
     border: 0;
@@ -141,7 +144,6 @@
     line-height: 24px;
 }
 .MuiTypography-body2 {
-    font-size: 12px;
     font-family: -apple-system,BlinkMacSystemFont,sans-serif;
     font-weight: normal;
     line-height: 14px;
@@ -149,4 +151,10 @@
 }
 .Footer-final{
     margin-top: 40px;
+}
+.footer-infor-left p:hover,
+.footer-infor-main p:hover,
+.footer-infor-right p:hover{
+  color: #00b6f3;
+
 }

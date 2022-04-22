@@ -2,7 +2,7 @@ import React from 'react'
 import "./styles.css";
 export default function Footer() {
   return (
-    <>
+    <div style={{ background: 'antiquewhite'}}>
       <div className="Footer-component">
         <div className="Footer-banner">
           <div className="Footer-banner-container">
@@ -29,8 +29,7 @@ export default function Footer() {
                       <input
                         placeholder="Nhập số điện thoại"
                         type="text"
-                        className="MuiInputBase-input MuiInput-input"
-                        value=""
+                        class="MuiInputBase-input MuiInput-input"
                       />
                     </div>
                     <div className="MuiBox-root jss343">
@@ -110,6 +109,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
