@@ -29,24 +29,24 @@ export default function Footer() {
                       <input
                         placeholder="Nhập số điện thoại"
                         type="text"
-                        className="MuiInputBase-input MuiInput-input"
+                        className="input-main input-main-container"
                       />
                     </div>
-                    <div className="MuiBox-root jss343">
+                    <div className="home-main jss343">
                       <button
-                        className="MuiButtonBase-root MuiButton-root MuiButton-text jss344 jss345 jss336"
-                        tabindex="0"
+                        className="btn-main btn-container btn-container-input jss344 jss345 jss336"
+                        tabIndex="0"
                         type="button"
                         margin="-10"
                       >
-                        <span className="MuiButton-label">
-                          <div className="MuiBox-root jss346">
-                            <div className="MuiBox-root jss347" opacity="1">
+                        <span className="btn-label">
+                          <div className="home-main jss346">
+                            <div className="home-main jss347" opacity="1">
                               Đăng ký
                             </div>
                           </div>
                         </span>
-                        <span className="MuiTouchRipple-root"></span>
+                        <span className="btn-container-input-ele"></span>
                       </button>
                     </div>
                   </form>
@@ -59,35 +59,35 @@ export default function Footer() {
           <div className="footer-infor-left">
             <p>Công ty cổ phần du lịch Việt Nam VNTravel</p>
             <p>Tổng đài chăm sóc: 1900 2083</p>
-            <p className="MuiTypography-root jss296 MuiTypography-body2">
+            <p className="main-element jss296 main-element-event">
               Email: hotro@mytour.vn
             </p>
           </div>
           <div className="footer-infor-main">
             <p>Công ty cổ phần du lịch Việt Nam VNTravel</p>
             <p>Tổng đài chăm sóc: 1900 2083</p>
-            <p className="MuiTypography-root jss296 MuiTypography-body2">
+            <p className="main-element jss296 main-element-event">
               Email: hotro@mytour.vn
             </p>
           </div>
           <div className="footer-infor-right">
             <p>Công ty cổ phần du lịch Việt Nam VNTravel</p>
             <p>Tổng đài chăm sóc: 1900 2083</p>
-            <p className="MuiTypography-root jss296 MuiTypography-body2">
+            <p className="main-element jss296 main-element-event">
               Email: hotro@mytour.vn
             </p>
           </div>
         </div>
         <div className="Footer-final">
-          <div className="MuiBox-root jss323 jss316">
-            <div className="MuiBox-root jss324 jss317">
-              <div className="MuiBox-root jss325 jss319">
-                <p className="MuiTypography-root jss318 MuiTypography-body2">
+          <div className="home-main jss323 jss316">
+            <div className="home-main jss324 jss317">
+              <div className="home-main jss325 jss319">
+                <p className="main-element jss318 main-element-event">
                   Mytour là thành viên của VNTravel Group - Một trong những tập
                   đoàn đứng đầu Đông Nam Á về du lịch trực tuyến và các dịch vụ
                   liên quan.
                 </p>
-                <div className="MuiBox-root jss326 jss320">
+                <div className="home-main jss326 jss320">
                   <div className="jss200 jss322">
                     <div className="jss201 jss204" ></div>
                     <div className="lazyload-wrapper">
@@ -99,7 +99,7 @@ export default function Footer() {
                     </div>
                   </div>
                 </div>
-                <p className="MuiTypography-root jss318 MuiTypography-body2">
+                <p className="main-element jss318 main-element-event">
                   Copyright © 2020 - CÔNG TY CỔ PHẦN DU LỊCH VIỆT NAM VNTRAVEL -
                   Đăng ký kinh doanh số 0108886908 - do Sở Kế hoạch và Đầu tư
                   thành phố Hà Nội cấp lần đầu ngày 04 tháng 09 năm 2019
