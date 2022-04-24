@@ -199,9 +199,9 @@ export default function Flash_sale() {
                                     d="M9.318 3c-1.479 0-2.897.661-3.895 1.811C4.259 6.16 3.786 8.054 4.09 10.15c.683 4.708 5.546 8.674 9.911 10.468 4.363-1.794 9.223-5.76 9.91-10.468.303-2.096-.17-3.991-1.334-5.339C21.581 3.661 20.161 3 18.684 3c-1.49 0-2.885.68-3.929 1.915l-.75.89-.752-.89C12.204 3.681 10.81 3 9.318 3z"
                                     fill="#000"
                                     stroke="#fff"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                    strokeWidth="1.5"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
                                   ></path>
                                 </g>
                                 <defs>
@@ -212,10 +212,10 @@ export default function Flash_sale() {
                                     width="30"
                                     height="30"
                                     filterUnits="userSpaceOnUse"
-                                    color-interpolation-filters="sRGB"
+                                    colorInterpolationFilters="sRGB"
                                   >
                                     <feFlood
-                                      flood-opacity="0"
+                                      floodOpacity="0"
                                       result="BackgroundImageFix"
                                     ></feFlood>
                                     <feColorMatrix
@@ -336,14 +336,14 @@ export default function Flash_sale() {
                                   <path
                                     d="M8.467 3.8V2a1 1 0 00-1-1h-.8a1 1 0 00-1 1v1.8"
                                     stroke="#1A202C"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
                                   ></path>
                                   <path
                                     d="M1 7.467a1 1 0 001 1h9.838a1 1 0 00.64-.232l1.6-1.333a1 1 0 000-1.537l-1.6-1.333a1 1 0 00-.64-.232H2a1 1 0 00-1 1v2.667zM5.667 10.333V14a1 1 0 001 1h.8a1 1 0 001-1v-3.667"
                                     stroke="#1A202C"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
                                   ></path>
                                 </svg>
                               </span>
@@ -360,20 +360,20 @@ export default function Flash_sale() {
                                   style={{marginRight: '3px'}}
                                 >
                                   <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
+                                    fillRule="evenodd"
+                                    clipRule="evenodd"
                                     d="M5.825 8.157c.044-.13.084-.264.136-.394.31-.783.666-1.548 1.118-2.264.3-.475.606-.95.949-1.398.474-.616 1.005-1.19 1.635-1.665.27-.202.55-.393.827-.59.019-.015.034-.033.038-.08-.036.015-.078.025-.111.045-.506.349-1.024.68-1.51 1.052A15.241 15.241 0 006.627 4.98c-.408.47-.78.97-1.144 1.474-.182.249-.31.534-.474.818-1.096-1.015-2.385-1.199-3.844-.77.853-2.19 2.291-3.862 4.356-5.011 3.317-1.843 7.495-1.754 10.764.544 2.904 2.041 4.31 5.497 4.026 8.465-1.162-.748-2.38-.902-3.68-.314.05-.92-.099-1.798-.3-2.67a14.842 14.842 0 00-.834-2.567 16.416 16.416 0 00-1.225-2.345l-.054.028c.103.193.21.383.309.58.402.81.642 1.67.8 2.553.152.86.25 1.724.287 2.595.027.648.003 1.294-.094 1.936-.01.066-.018.133-.027.219-1.223-1.305-2.68-2.203-4.446-2.617a9.031 9.031 0 00-5.19.29l-.033-.03z"
                                     fill="#F36"
                                   ></path>
                                   <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
+                                    fillRule="evenodd"
+                                    clipRule="evenodd"
                                     d="M10 12.92h-.003c.31-1.315.623-2.627.93-3.943.011-.052-.015-.145-.052-.176a1.039 1.039 0 00-.815-.247c-.082.01-.124.046-.142.135-.044.216-.088.433-.138.646-.285 1.207-.57 2.413-.859 3.62l.006.001c-.31 1.314-.623 2.626-.93 3.942-.011.052.016.145.052.177.238.196.51.285.815.247.082-.01.125-.047.142-.134.044-.215.088-.433.138-.648.282-1.208.567-2.414.857-3.62z"
                                     fill="#F36"
                                   ></path>
                                   <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
+                                    fillRule="evenodd"
+                                    clipRule="evenodd"
                                     d="M15.983 19.203s-8.091-6.063-17.978-.467c0 0-.273.228.122.241 0 0 8.429-4.107 17.739.458-.002 0 .282.034.117-.232z"
                                     fill="#F36"
                                   ></path>
@@ -430,17 +430,17 @@ export default function Flash_sale() {
             >
               <button
                 className="home-main flash_sale-more-btn"
-                tabindex="0"
+                tabIndex="0"
                 type="button"
               >
-                <span className="MuiButton-label">
-                  <div className="MuiBox-root jss1716">
-                    <div className="MuiBox-root jss1717" opacity="1">
+                <span className="btn-label">
+                  <div className="home-main jss1716">
+                    <div className="home-main jss1717" opacity="1">
                       Xem thêm
                     </div>
                   </div>
                 </span>
-                <span className="MuiTouchRipple-root"></span>
+                <span className="btn-container-input-ele"></span>
               </button>
             </a>
           </div>

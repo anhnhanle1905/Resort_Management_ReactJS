@@ -73,9 +73,9 @@ export default function Fly() {
                     <path
                       d="M1 5l4-4 4 4"
                       stroke="#00B6F3"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></path>
                   </svg>
                 </div>
@@ -110,7 +110,7 @@ export default function Fly() {
             >
               {arr_Fly.map((e, index) => {
                 return (
-                  <SwiperSlide>
+                  <SwiperSlide key={index}>
                     <div className="">
                       <div className="home-main fly-slider">
                         <div className="home-main fly-slider-main">
@@ -136,9 +136,9 @@ export default function Fly() {
                                 <path
                                   d="M17.5 10.5L20 13M4 13h16"
                                   stroke="#1A202C"
-                                  stroke-width="1.5"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
+                                  strokeWidth="1.5"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
                                 ></path>
                               </svg>
                             </h6>
