@@ -443,9 +443,10 @@
   border-radius: 8px;
 }
 .btn-dangnhap-lable{
+  text-decoration: none;
   color: #1A202C;
-    font-size: 14px;
-    line-height: 17px;
+  font-size: 14px;
+  line-height: 17px;
 }
 .btn-dangki{
   display: flex;
@@ -453,8 +454,10 @@
   align-items: center;
   padding-left: 8px;
   border-radius: 8px;
+  outline: none;
 }
 .btn-dangki-label{
+  text-decoration: none;
   color: #1A202C;
   font-size: 14px;
   line-height: 17px;
