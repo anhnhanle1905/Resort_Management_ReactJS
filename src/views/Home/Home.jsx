@@ -6,6 +6,7 @@ import Flash_sale from "../../components/flash-sale";
 import Slider from "../../components/slider";
 import Fly from "../../components/Fly";
 import Favorite_Place from "../../components/Favorite_Place";
+import Banner from "../../components/Banner";
 export default function Home() {
   const settings = {
     dots: true,
@@ -18,6 +19,7 @@ export default function Home() {
     <div className="w-screen overflow-hidden relative home-component home-main">
     <Header />
     <main>
+      <Banner />
       <Slider />
       <Hero />
       <Flash_sale />

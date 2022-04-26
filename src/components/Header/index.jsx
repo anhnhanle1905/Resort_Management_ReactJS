@@ -41,7 +41,7 @@ const Header = () => {
     <>
       <Left_Menu display={data} changeSidebar={changeSidebar} />
       <div className="home-main header-component">
-        <div className="home-main home-component-up">
+        {/* <div className="home-main home-component-up">
           <video
             width="100%"
             height="488px"
@@ -53,7 +53,10 @@ const Header = () => {
             <source src="https://storage.googleapis.com/tripi-assets/mytour/videos/video_bg_mytour.mov" />
             Your browser does not support the video tag.
           </video>
-        </div>
+        </div> */}
+
+
+        
         <div className="home-main home-component-down">
           <div className="">
             <div
@@ -299,7 +302,6 @@ const Header = () => {
                           <div className="home-main header-btn"></div>
                           <div className="home-main btn-dangnhap">
                             <div className="home-main btn-dangnhap-lable">
-                            Đăng nhập
                               <NavLink className="btn-dangnhap-lable" to="/login" exact="true">
                               Đăng nhập
                               </NavLink>
@@ -308,7 +310,7 @@ const Header = () => {
                           </div>
                           <div className="home-main btn-dangki">
                             <div className="home-main btn-dangki-label">
-                            Đăng ký
+
                               <NavLink className="btn-dangki-label" to="/register" exact="true">
                                 Đăng ký
                               </NavLink></div>
@@ -341,7 +343,9 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <div className="home-main home-header-center">
+
+            {/* ========= search ============= */}
+            {/* <div className="home-main home-header-center">
               <div className="home-main home-headr-center-main">
                 <div className="home-main home-header-center-main-up">
                   <div className="home-main home-header-center-main-up-content">
@@ -530,7 +534,7 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
