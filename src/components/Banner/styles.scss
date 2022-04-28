@@ -14,10 +14,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
+    p {
+      transform: rotate(270deg);
+      font-size: 10.5px;
+      margin-right: -25px;
+      font-weight: 700;
+    }
     h2 {
       font-size: 100px;
-      color: #fff;
+      
       font-family: 'Lato', sans-serif;
+    }
+  }
+  .btn-book-now {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 30%;
+    
+    a {
+      &:hover {
+        background-color: rgb(197, 157, 79);
+        transition: 0.3s all;
+      }
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 20px;
+      background-color: #deb666;
+      .fa-calendar-days {
+        margin-right: 10px;
+        font-size: 14px;
+      }
     }
   }
 }
