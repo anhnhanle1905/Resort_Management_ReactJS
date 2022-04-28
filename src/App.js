@@ -3,6 +3,7 @@ import Login from "./views/Login/index";
 import Register from "./views/Register/index";
 //import Layout from './components/Layout/Layout';
 import Home from "./views/Home/Home";
+import "../src/fontawasome.js";
 
 function App() {
   return (

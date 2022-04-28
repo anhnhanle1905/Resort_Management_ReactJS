@@ -1,5 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
 import "./styles.scss";
 
 Banner.propTypes = {
@@ -20,11 +23,19 @@ function Banner(props) {
             <source src="https://preview.eagle-themes.com/html/zante/videos/hero_video.mp4" />
             Your browser does not support the video tag.
         </video>
-
+        
         <div className="content">
+          <p>WELCOME TO</p>
           <h2>
-            KANT RESORT
+            ZENT RESORT
           </h2>
+        </div>
+        <div className="btn-book-now">
+          
+          <a href="">
+            <FontAwesomeIcon icon="fa-solid fa-calendar-days" />
+            BOOK A ROOM NOW
+          </a>
         </div>
       </div>
     </div>
