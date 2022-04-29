@@ -7,6 +7,7 @@ import Slider from "../../components/slider";
 import Fly from "../../components/Fly";
 import Favorite_Place from "../../components/Favorite_Place";
 import Banner from "../../components/Banner";
+import ButtonCard from "../../components/ButtonCard";
 export default function Home() {
   const settings = {
     dots: true,
@@ -25,6 +26,7 @@ export default function Home() {
       <Flash_sale />
       <Fly />
       <Favorite_Place />
+      <ButtonCard />
     </main>
     <Footer />
   </div>
