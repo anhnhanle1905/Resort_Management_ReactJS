@@ -10,48 +10,48 @@ export default function Flash_sale() {
   const flase_sale = [
     {
       id: 1,
-      img: "https://tripi.vn/cdn-cgi/image/width=548,height=310/https://storage.googleapis.com/hms_prod/photo/thumb/1620630624124yQ/mt-phuquoc-134-of-135.jpg",
-      title: "Khách Sạn Mường Thanh Luxury Phú Quốc",
+      img:"https://tripi.vn/cdn-cgi/image/width=548,height=310/https://preview.eagle-themes.com/html/zante/images/rooms/single-room.jpg",
+      title: "Single Room",
       diadiem: "Phú Quốc",
       emotion: "Tuyệt vời",
       sll: "(295)",
-      money: "1.449.466đ",
+      money: "1.000.000đ",
     },
     {
       id: 2,
-      img: "https://tripi.vn/cdn-cgi/image/width=548,height=310/https://storage.googleapis.com/hms_prod/photo/thumb/1620630624124yQ/mt-phuquoc-134-of-135.jpg",
-      title: "Khách Sạn Mường Thanh Luxury Phú Quốc",
+      img: "https://tripi.vn/cdn-cgi/image/width=548,height=310/https://preview.eagle-themes.com/html/zante/images/rooms/delux.jpg",
+      title: "Double Room",
       diadiem: "Phú Quốc",
       emotion: "Tuyệt vời",
       sll: "(295)",
-      money: "1.449.466đ",
+      money: "1.200.000đ",
     },
     {
       id: 3,
-      img: "https://tripi.vn/cdn-cgi/image/width=548,height=310/https://storage.googleapis.com/hms_prod/photo/thumb/1620630624124yQ/mt-phuquoc-134-of-135.jpg",
-      title: "Khách Sạn Mường Thanh Luxury Phú Quốc",
+      img: "https://tripi.vn/cdn-cgi/image/width=548,height=310/https://preview.eagle-themes.com/html/zante/images/rooms/family.jpg",
+      title: "Family Room",
       diadiem: "Phú Quốc",
       emotion: "Tuyệt vời",
       sll: "(295)",
-      money: "1.449.466đ",
+      money: "1.400.000đ",
     },
     {
       id: 4,
-      img: "https://tripi.vn/cdn-cgi/image/width=548,height=310/https://storage.googleapis.com/hms_prod/photo/thumb/1620630624124yQ/mt-phuquoc-134-of-135.jpg",
-      title: "Khách Sạn Mường Thanh Luxury Phú Quốc",
+      img: "https://tripi.vn/cdn-cgi/image/width=548,height=310/https://preview.eagle-themes.com/html/zante/images/rooms/honeymoon.jpg",
+      title: "Honey Room",
       diadiem: "Phú Quốc",
       emotion: "Tuyệt vời",
       sll: "(295)",
-      money: "1.449.466đ",
+      money: "1.100.000đ",
     },
     {
       id: 5,
-      img: "https://tripi.vn/cdn-cgi/image/width=548,height=310/https://storage.googleapis.com/hms_prod/photo/thumb/1620630624124yQ/mt-phuquoc-134-of-135.jpg",
-      title: "Khách Sạn Mường Thanh Luxury Phú Quốc",
+      img: "https://tripi.vn/cdn-cgi/image/width=548,height=310/https://preview.eagle-themes.com/html/zante/images/rooms/king.jpg",
+      title: "King Room",
       diadiem: "Phú Quốc",
       emotion: "Tuyệt vời",
       sll: "(295)",
-      money: "1.449.466đ",
+      money: "1.500.000đ",
     },
   ];
   return (
@@ -244,7 +244,7 @@ export default function Flash_sale() {
                         <div className="home-main flash_sale-donw">
                           <div className="home-main flash_sale-down-content">
                             <h6 className="home-main flash_sale-title">
-                              Khách Sạn Mường Thanh
+                              Single Room
                             </h6>
                             <div className="home-main flase_sale-raise">
                               <div className="home-main falsh_sale-raise-star">

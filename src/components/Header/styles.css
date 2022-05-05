@@ -30,7 +30,7 @@
   position: fixed;
   width: 100%;
   height: 56px;
-  padding: 12px 60px 0;
+  padding: 12px;
   font-size: 14px;
   transition: all 0.3s;
   line-height: 17px;
@@ -39,7 +39,10 @@
 .home-navbar-inside {
   display: flex;
   align-items: center;
-  justify-content: stretch;
+  justify-content: center;
+  width: 100%;
+  max-width: 1411px;
+  margin: 0 auto;
 }
 .home-navbar-left {
   display: flex;
@@ -77,9 +80,17 @@
 .home-header-gift {
   display: flex;
   align-items: center;
-  font-weight: normal;
+  font-weight: 600;
   margin-right: 24px;
   margin-left: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.scroll-down.home-header-gift:hover{
+  color: #00b6f3 !important ;
+}
+.scroll-down .home-header-gift{
+  color: black;
 }
 .home-header-ring {
   cursor: pointer;
@@ -409,6 +420,12 @@
 .scroll-down .home-navbar-inside .home-navbar-right a{
   color: black !important;
 }
+.scroll-down .home-navbar-inside .home-navbar-left a:hover{
+  color: #00b6f3 !important;
+}
+.scroll-down .home-navbar-inside .home-navbar-right a:hover{
+  color: #00b6f3 !important;
+}
 
 .btn-dn-dk{
   top: 32px;
@@ -422,7 +439,24 @@
     box-sizing: border-box;
     border-radius: 8px;
 }
+.ks-drop-down{
+  top: 32px;
+    width: 220px;
+    border: 1px solid #EDF2F7;
+    padding: 10px 8px;
+    z-index: 1;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 8px 8px rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
 .btn-dn-dk-main{
+  width: 100%;
+  position: relative;
+}
+.ks-drop-down-main{
   width: 100%;
   position: relative;
 }
@@ -442,7 +476,26 @@
   padding-left: 8px;
   border-radius: 8px;
 }
+.btn-ks{
+  display: flex;
+  padding: 14px 0;
+  align-items: center;
+  padding-left: 8px;
+  border-radius: 8px;
+}
 .btn-dangnhap-lable{
+  text-decoration: none;
+  color: #1A202C;
+  font-size: 14px;
+  line-height: 17px;
+}
+.btn-ks-lable{
+  text-decoration: none;
+  color: #1A202C;
+  font-size: 14px;
+  line-height: 17px;
+}
+.btn-ks-lable{
   text-decoration: none;
   color: #1A202C;
   font-size: 14px;
@@ -464,4 +517,27 @@
 }
 .isdisplay{
   display: none;
+}
+.log-btn{
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.ks-position{
+  display: block;
+  position: absolute;
+  top: 28px;
+  right: 3px;
+}
+.ks-position .ks-drop-down{
+  position: initial;
+}
+.isShowKS{
+  display: none;
+}
+.home-main .main-element:hover{
+  color: black !important;
+}
+.scroll-down .number-contact:hover{
+  color: #00b6f3 !important;
 }
