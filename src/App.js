@@ -6,6 +6,7 @@ import Home from "./views/Home/Home";
 import Restaurant from "./views/Restaurant";
 import Contact from "./views/Contact";
 import Hotel from "./views/Hotel";
+import "../src/fontawasome.js";
 
 function App() {
   return (
