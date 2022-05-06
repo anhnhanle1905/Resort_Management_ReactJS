@@ -30,7 +30,7 @@
   position: fixed;
   width: 100%;
   height: 56px;
-  padding: 12px;
+  padding: 50px 12px 12px 12px;
   font-size: 14px;
   transition: all 0.3s;
   line-height: 17px;
@@ -50,16 +50,15 @@
 }
 .link-event-delay {
   text-decoration: none;
+  font-size: 0.95rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  gap: 0px 4px;
 }
-.color-main {
-  color: white !important;
-}
+
 .main-element {
   margin: 0;
-}
-.single-navbar {
-  position: relative;
-  font-weight: 600;
 }
 .free-ship-header {
   top: -15px;
@@ -86,10 +85,10 @@
   color: #ffffff;
   cursor: pointer;
 }
-.scroll-down.home-header-gift:hover{
+.scroll-down.home-header-gift:hover {
   color: #00b6f3 !important ;
 }
-.scroll-down .home-header-gift{
+.scroll-down .home-header-gift {
   color: black;
 }
 .home-header-ring {
@@ -221,7 +220,7 @@
   box-shadow: rgb(0 0 0 / 20%) 0px 15px 15px;
   width: 100%;
   display: flex;
-  padding:8px 0;
+  padding: 8px 0;
   background: white;
   align-items: center;
   border-radius: 8px;
@@ -351,116 +350,119 @@
   font-weight: 400;
   line-height: 14px;
 }
-.home-header-pk-phong{
-    color: #1A202C;
-    font-size: 16px;
-    min-width: 120px;
-    font-weight: 600;
-    line-height: 19px;
-    padding-top: 6px;
+.home-header-pk-phong {
+  color: #1a202c;
+  font-size: 16px;
+  min-width: 120px;
+  font-weight: 600;
+  line-height: 19px;
+  padding-top: 6px;
 }
-.home-header-pk-phong-line{
-    width: 100%;
-    height: 3px;
-    margin: auto;
-    margin-top: 12px;
-    margin-bottom: -17px;
-    background: transparent;
+.home-header-pk-phong-line {
+  width: 100%;
+  height: 3px;
+  margin: auto;
+  margin-top: 12px;
+  margin-bottom: -17px;
+  background: transparent;
 }
-.btn-header{
-    border: none;
-    margin-right: 20px;
-    width: 100px;
-    height: 56px;
-    box-shadow: none;
-    border-radius: 8px;
-    background-color: #FF3366;
-    color: #fff;
-    min-width: unset;
-    box-sizing: border-box;
-    min-height: 40px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    font-family: -apple-system,BlinkMacSystemFont,sans-serif;
-    font-weight: 500;
-    padding: 0 8px;
-    font-size: 14px;
-    text-transform: none;
-    position: relative;
-    align-items: center;
-    user-select: none;
-    vertical-align: middle;
-    justify-content: center;
-    text-decoration: none;
-    -webkit-appearance: none;
-    -webkit-tap-highlight-color: transparent;
-    display: inline-flex;
+.btn-header {
+  border: none;
+  margin-right: 20px;
+  width: 100px;
+  height: 56px;
+  box-shadow: none;
+  border-radius: 8px;
+  background-color: #ff3366;
+  color: #fff;
+  min-width: unset;
+  box-sizing: border-box;
+  min-height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 500;
+  padding: 0 8px;
+  font-size: 14px;
+  text-transform: none;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  vertical-align: middle;
+  justify-content: center;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-flex;
 }
-.home-header-span{
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-    overflow: hidden;
-    position: absolute;
-    border-radius: inherit;
-    pointer-events: none;
+.home-header-span {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
 }
-.color-main:hover{
+.color-main:hover {
   color: #00b6f3;
   cursor: pointer;
 }
-.scroll-down{
-  color: black;
+.scroll-down {
+  color: #606060;
   background-color: blanchedalmond;
+  padding: 12px;
 }
-.scroll-down .home-navbar-inside .home-navbar-left a{
-  color: black !important;
+.scroll-down .home-navbar-inside .home-navbar-left a {
+color: #606060 !important;
 }
-.scroll-down .home-navbar-inside .home-navbar-right a{
-  color: black !important;
+.scroll-down .home-navbar-inside .home-navbar-right a {
+  color: #606060 !important;
 }
-.scroll-down .home-navbar-inside .home-navbar-left a:hover{
+.scroll-down .home-navbar-inside .home-navbar-left a:hover {
   color: #00b6f3 !important;
 }
-.scroll-down .home-navbar-inside .home-navbar-right a:hover{
+.scroll-down .home-navbar-inside .home-navbar-right a:hover {
   color: #00b6f3 !important;
 }
 
-.btn-dn-dk{
+.btn-dn-dk {
   top: 32px;
-    width: 220px;
-    border: 1px solid #EDF2F7;
-    padding: 10px 8px;
-    z-index: 1;
-    position: absolute;
-    background: white;
-    box-shadow: 0px 8px 8px rgb(0 0 0 / 10%);
-    box-sizing: border-box;
-    border-radius: 8px;
+  width: 220px;
+  border: 1px solid #edf2f7;
+  padding: 10px 8px;
+  z-index: 1;
+  position: absolute;
+  background: white;
+  box-shadow: 0px 8px 8px rgb(0 0 0 / 10%);
+  box-sizing: border-box;
+  border-radius: 8px;
 }
-.ks-drop-down{
+.ks-drop-down {
   top: 32px;
-    width: 220px;
-    border: 1px solid #EDF2F7;
-    padding: 10px 8px;
-    z-index: 1;
-    position: absolute;
-    background: white;
-    box-shadow: 0px 8px 8px rgb(0 0 0 / 10%);
-    box-sizing: border-box;
-    border-radius: 8px;
+  width: 220px;
+  border: 1px solid #edf2f7;
+  padding: 10px 8px;
+  z-index: 1;
+  position: absolute;
+  background: white;
+  box-shadow: 0px 8px 8px rgb(0 0 0 / 10%);
+  box-sizing: border-box;
+  border-radius: 8px;
 }
 
-.btn-dn-dk-main{
+.btn-dn-dk-main {
   width: 100%;
   position: relative;
 }
-.ks-drop-down-main{
+.ks-drop-down-main {
   width: 100%;
   position: relative;
 }
-.header-btn{
+.header-btn {
   top: -15px;
   right: 15px;
   width: 13px;
@@ -469,39 +471,34 @@
   transform: rotate(45deg);
   background: white;
 }
-.btn-dangnhap{
+.btn-dangnhap {
   display: flex;
   padding: 14px 0;
   align-items: center;
   padding-left: 8px;
   border-radius: 8px;
 }
-.btn-ks{
+.btn-ks {
   display: flex;
   padding: 14px 0;
   align-items: center;
   padding-left: 8px;
   border-radius: 8px;
 }
-.btn-dangnhap-lable{
+.btn-dangnhap-lable {
   text-decoration: none;
-  color: #1A202C;
+  color: #1a202c;
   font-size: 14px;
   line-height: 17px;
 }
-.btn-ks-lable{
+
+.btn-ks-lable {
   text-decoration: none;
-  color: #1A202C;
+  color: #1a202c;
   font-size: 14px;
   line-height: 17px;
 }
-.btn-ks-lable{
-  text-decoration: none;
-  color: #1A202C;
-  font-size: 14px;
-  line-height: 17px;
-}
-.btn-dangki{
+.btn-dangki {
   display: flex;
   padding: 14px 0;
   align-items: center;
@@ -509,35 +506,68 @@
   border-radius: 8px;
   outline: none;
 }
-.btn-dangki-label{
+.btn-dangki-label {
   text-decoration: none;
-  color: #1A202C;
+  color: #1a202c;
   font-size: 14px;
   line-height: 17px;
 }
-.isdisplay{
+.isdisplay {
   display: none;
 }
-.log-btn{
+.log-btn {
   display: flex;
   align-items: center;
   gap: 0 10px;
 }
-.ks-position{
+.ks-position {
   display: block;
   position: absolute;
   top: 28px;
   right: 3px;
 }
-.ks-position .ks-drop-down{
+.ks-position .ks-drop-down {
   position: initial;
 }
-.isShowKS{
+.isShowKS {
   display: none;
 }
-.home-main .main-element:hover{
-  color: black !important;
+.home-main .main-element:hover {
+  color: #deb666 !important;
 }
-.scroll-down .number-contact:hover{
+.scroll-down .number-contact:hover {
   color: #00b6f3 !important;
+}
+
+.btn-book-now {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 30%;
+}
+.btn-book-now a:hover {
+  background-color: rgb(197, 157, 79);
+  transition: 0.3s all;
+}
+.btn-book-now a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: #deb666;
+}
+a .fa-calendar-days {
+  margin-right: 10px;
+  font-size: 14px;
+}
+.btn-type{
+  padding: 0px 20px !important;
+  color: #858a99 !important;
+  font-size: 0.9rem !important;
+  font-weight: 400 !important;
+  text-transform: none !important;
+}
+
+.hover-btn-dangnhap:hover{
+  background-color: #deb666;
+  color: #ffffff;
 }

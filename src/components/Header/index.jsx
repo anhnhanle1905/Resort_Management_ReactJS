@@ -6,6 +6,8 @@ import Left_Menu from "../LeftMenu";
 import { AiOutlineLogin } from "react-icons/ai";
 import { AiOutlineLogout } from "react-icons/ai";
 import { AiFillDownSquare } from "react-icons/ai";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const Header = () => {
   const [show, setShow] = React.useState(false);
@@ -26,9 +28,7 @@ const Header = () => {
     }
   };
   const onHangleState = (setParam) => {
-    setTimeout(() => {
-      return setParam(true);
-    }, 2000);
+    return setParam(true);
   };
 
   const [data, setData] = useState(true);
@@ -66,7 +66,7 @@ const Header = () => {
                   <a
                     href="/"
                     className="main-element link-event link-event-delay active color-main"
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer", marginRight: "200px" }}
                   >
                     <img
                       src="https://storage.googleapis.com/tripi-assets/mytour/icons/icon_logo_mytour_white.svg "
@@ -74,6 +74,23 @@ const Header = () => {
                       alt="logo_mytour"
                       style={{ marginRight: "56px" }}
                     />
+                  </a>
+                  <a
+                    className="main-element link-event link-event-delay single-navbar color-main"
+                    style={{
+                      marginRight: "24px",
+                      textDecoration: "none",
+                      position: "relative",
+                      position: "relative",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "0 4px",
+                      color: '#ffffff'
+
+                    }}
+                    href="/"
+                  >
+                    Home
                   </a>
                   <a
                     className="main-element link-event link-event-delay single-navbar color-main"
@@ -86,12 +103,14 @@ const Header = () => {
                       display: "flex",
                       alignItems: "center",
                       gap: "0 4px",
+                      color: '#ffffff'
+
                     }}
                     href="/hotel"
                     onMouseEnter={() => setShowKs(false)}
                     onMouseLeave={() => onHangleState(setShowKs)}
                   >
-                    Khách sạn <i class="fa-solid fa-angle-down"></i>
+                    Room <i class="fa-solid fa-angle-down"></i>
                     <div
                       className={
                         showKs ? "ks-position isShowKS" : "ks-position "
@@ -104,8 +123,9 @@ const Header = () => {
                             <div class="home-main btn-ks-lable">
                               <a
                                 exact="true"
-                                class="btn-ks-lable log-btn"
+                                class="btn-ks-lable log-btn btn-type"
                                 href="/hotel"
+                                style={{ fontSize: '0.9rem' }}
                               >
                                 khách sạn 1
                               </a>
@@ -115,7 +135,7 @@ const Header = () => {
                             <div class="home-main btn-ks-label">
                               <a
                                 exact="true"
-                                class="btn-ks-label log-btn"
+                                class="btn-ks-label log-btn btn-type"
                                 href="/hotel"
                                 style={{
                                   textDecoration: "none",
@@ -130,7 +150,7 @@ const Header = () => {
                             <div class="home-main btn-ks-label">
                               <a
                                 exact="true"
-                                class="btn-ks-label log-btn"
+                                class="btn-ks-label log-btn btn-type"
                                 href="/hotel"
                                 style={{
                                   textDecoration: "none",
@@ -145,7 +165,7 @@ const Header = () => {
                       </div>
                     </div>
                   </a>
-                  <a
+                  {/* <a
                     className="main-element link-event link-event-delay single-navbar color-main"
                     target="_blank"
                     style={{
@@ -155,7 +175,7 @@ const Header = () => {
                     }}
                   >
                     Chuyến bay
-                  </a>
+                  </a> */}
                   <a
                     className="main-element link-event link-event-delay single-navbar color-main"
                     target="_blank"
@@ -167,12 +187,13 @@ const Header = () => {
                       display: "flex",
                       alignItems: "center",
                       gap: "0 4px",
+                      color: '#ffffff'
                     }}
                     onMouseLeave={() => onHangleState(setShowNg)}
                     onMouseEnter={() => setShowNg(false)}
                     href="/restaurant"
                   >
-                    Nhà hàng <i class="fa-solid fa-angle-down"></i>
+                    Restaurant <i class="fa-solid fa-angle-down"></i>
                     <div
                       className={
                         showNh ? "ks-position isShowKS" : "ks-position "
@@ -185,8 +206,9 @@ const Header = () => {
                             <div class="home-main btn-ks-lable">
                               <a
                                 exact="true"
-                                class="btn-ks-lable log-btn"
+                                class="btn-ks-lable log-btn btn-type"
                                 href="/restaurant"
+
                               >
                                 Nhà hàng 1
                               </a>
@@ -196,7 +218,7 @@ const Header = () => {
                             <div class="home-main btn-ks-label">
                               <a
                                 exact="true"
-                                class="btn-ks-label log-btn"
+                                class="btn-ks-label log-btn btn-type"
                                 href="/restaurant"
                                 style={{
                                   textDecoration: "none",
@@ -211,7 +233,7 @@ const Header = () => {
                             <div class="home-main btn-ks-label">
                               <a
                                 exact="true"
-                                class="btn-ks-label log-btn"
+                                class="btn-ks-label log-btn btn-type"
                                 href="/restaurant"
                                 style={{
                                   textDecoration: "none",
@@ -226,7 +248,7 @@ const Header = () => {
                       </div>
                     </div>
                   </a>
-                  <a
+                  {/* <a
                     className="main-element link-event link-event-delay single-navbar color-main"
                     target="_blank"
                     style={{
@@ -242,8 +264,8 @@ const Header = () => {
                       Free ship
                     </div>
                     Đặc sản - Myfresh
-                  </a>
-                  <a
+                  </a> */}
+                  {/* <a
                     className="main-element link-event link-event-delay single-navbar color-main"
                     target="_blank"
                     style={{
@@ -253,10 +275,10 @@ const Header = () => {
                     }}
                   >
                     Tour &amp; Sự kiện
-                  </a>
+                  </a> */}
                 </div>
                 <div className="home main home-navbar-right">
-                  <a
+                  {/* <a
                     className="main-element link-event link-event-delay home-header-gift  color-main"
                     target="_blank"
                     style={{ textDecoration: "none", display: "none" }}
@@ -282,13 +304,13 @@ const Header = () => {
                       </defs>
                     </svg>
                     Giới thiệu nhận quà
-                  </a>
+                  </a> */}
                   <a
                     className="main-element link-event link-event-delay home-header-gift color-main"
                     style={{ textDecoration: "none" }}
                     href="/contact"
                   >
-                    <svg
+                    {/* <svg
                       width="20"
                       height="20"
                       fill="none"
@@ -314,10 +336,31 @@ const Header = () => {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                       ></path>
+                    </svg> */}
+                    <svg
+                      width="17"
+                      height="17"
+                      fill="none"
+                      className="svgFillAll"
+                      style={{ stroke: "rgb(26, 32, 44)", marginRight: "8px" }}
+                    >
+                      <path
+                        d="M3.167 1.333H6.5L8.167 5.5 6.083 6.75a9.167 9.167 0 004.167 4.167l1.25-2.084 4.167 1.667v3.333A1.666 1.666 0 0114 15.5 13.333 13.333 0 011.5 3a1.667 1.667 0 011.667-1.667"
+                        stroke="rgb(255, 255, 255)"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></path>
                     </svg>
-                    Liên Hệ 
+                    Contact us
                   </a>
-                  <span
+                  <div className="btn-book-now">
+                    <a href="">
+                      <FontAwesomeIcon icon="fa-solid fa-calendar-days" />
+                      BOOK ONLINE
+                    </a>
+                  </div>
+                  {/* <span
                     className="home-main main-element home-header-gift
                     number-contact"
                   >
@@ -337,8 +380,8 @@ const Header = () => {
                       ></path>
                     </svg>
                     1900 2083
-                  </span>
-                  <div className="home-main main-element">
+                  </span> */}
+                  {/* <div className="home-main main-element">
                     <div className="home-main jss1756 jss1195">
                       <div className="home-main jss1757 jss1200">
                         <svg
@@ -365,7 +408,7 @@ const Header = () => {
                         </svg>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="home-main main-element">
                     <div
                       className="home-main jss1759 home-header-ring"
@@ -419,7 +462,7 @@ const Header = () => {
                       >
                         <div className="home-main btn-dn-dk-main">
                           <div className="home-main header-btn"></div>
-                          <div className="home-main btn-dangnhap">
+                          <div className="home-main btn-dangnhap hover-btn-dangnhap">
                             <div className="home-main btn-dangnhap-lable">
                               <NavLink
                                 className="btn-dangnhap-lable log-btn"
@@ -430,8 +473,8 @@ const Header = () => {
                               </NavLink>
                             </div>
                           </div>
-                          <div className="home-main btn-dangki">
-                            <div className="home-main btn-dangki-label">
+                          <div className="home-main btn-dangki hover-btn-dangnhap">
+                            <div className="home-main btn-dangki-label ">
                               <NavLink
                                 className="btn-dangki-label log-btn"
                                 to="/register"
@@ -446,7 +489,7 @@ const Header = () => {
                     </div>
                   </div>
                   <div onClick={() => onChangeSidebar()}>
-                    <svg
+                    {/* <svg
                       width="24"
                       height="24"
                       fill="none"
@@ -464,7 +507,7 @@ const Header = () => {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                       ></path>
-                    </svg>
+                    </svg> */}
                   </div>
                 </div>
               </div>
