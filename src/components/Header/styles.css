@@ -29,7 +29,6 @@
   z-index: 1001;
   position: fixed;
   width: 100%;
-  height: 56px;
   padding: 50px 12px 12px 12px;
   font-size: 14px;
   transition: all 0.3s;
@@ -43,6 +42,7 @@
   width: 100%;
   max-width: 1411px;
   margin: 0 auto;
+  
 }
 .home-navbar-left {
   display: flex;
@@ -51,7 +51,7 @@
 .link-event-delay {
   text-decoration: none;
   font-size: 0.95rem !important;
-  font-weight: 900 !important;
+  font-weight: 800 !important;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   gap: 0px 4px;
@@ -80,8 +80,7 @@
   display: flex;
   align-items: center;
   font-weight: 600;
-  margin-right: 24px;
-  margin-left: 24px;
+  margin: 0 24px 0 0;
   color: #ffffff;
   cursor: pointer;
 }
@@ -413,7 +412,7 @@
 }
 .scroll-down {
   color: #606060;
-  background-color: blanchedalmond;
+  background-color: #ffffff;
   padding: 12px;
 }
 .scroll-down .home-navbar-inside .home-navbar-left a {
@@ -423,10 +422,10 @@ color: #606060 !important;
   color: #606060 !important;
 }
 .scroll-down .home-navbar-inside .home-navbar-left a:hover {
-  color: #00b6f3 !important;
+  color: #deb666 !important;
 }
 .scroll-down .home-navbar-inside .home-navbar-right a:hover {
-  color: #00b6f3 !important;
+  color: #deb666 !important;
 }
 
 .btn-dn-dk {
@@ -520,12 +519,27 @@ color: #606060 !important;
   align-items: center;
   gap: 0 10px;
 }
-.ks-position {
-  display: block;
+
+.dropdown-container {
   position: absolute;
-  top: 28px;
+  right: 0;
+  top: 100%;
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+.ks-position {
+  display: none;
+  position: absolute;
+  top: 100%;
   right: 3px;
 }
+
+  .single-navbar:hover .ks-position {
+    display: block;
+  }
+
 .ks-position .ks-drop-down {
   position: initial;
 }
@@ -554,6 +568,9 @@ color: #606060 !important;
   color: #fff;
   padding: 10px 20px;
   background-color: #deb666;
+  font-size: 0.95em;
+  font-weight: 800;
+  letter-spacing: 0.05em;
 }
 a .fa-calendar-days {
   margin-right: 10px;
@@ -570,4 +587,13 @@ a .fa-calendar-days {
 .hover-btn-dangnhap:hover{
   background-color: #deb666;
   color: #ffffff;
+}
+.scroll-down .icon-main svg{
+  fill: #606060;
+}
+.icon-main svg:hover{
+  fill: #deb666;
+}
+.scroll-down .icon-main svg:hover{
+  fill: #deb666;
 }
