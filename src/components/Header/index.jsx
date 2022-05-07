@@ -85,7 +85,8 @@ const Header = () => {
                       display: "flex",
                       alignItems: "center",
                       gap: "0 4px",
-                      color: '#ffffff'
+                      color: '#ffffff',
+                      padding: "10px 0"
 
                     }}
                     href="/"
@@ -103,18 +104,14 @@ const Header = () => {
                       display: "flex",
                       alignItems: "center",
                       gap: "0 4px",
-                      color: '#ffffff'
-
+                      color: '#ffffff',
+                      padding: "10px 0"
                     }}
                     href="/hotel"
-                    onMouseEnter={() => setShowKs(false)}
-                    onMouseLeave={() => onHangleState(setShowKs)}
                   >
                     Room <i class="fa-solid fa-angle-down"></i>
                     <div
-                      className={
-                        showKs ? "ks-position isShowKS" : "ks-position "
-                      }
+                      className="ks-position"
                     >
                       <div class="home-main ks-drop-down">
                         <div class="home-main  ks-drop-down-main">
@@ -165,29 +162,19 @@ const Header = () => {
                       </div>
                     </div>
                   </a>
-                  {/* <a
-                    className="main-element link-event link-event-delay single-navbar color-main"
-                    target="_blank"
-                    style={{
-                      marginRight: "24px",
-                      textDecoration: "none",
-                      // color: "rgb(255, 255, 255)",
-                    }}
-                  >
-                    Chuyến bay
-                  </a> */}
+                 
                   <a
                     className="main-element link-event link-event-delay single-navbar color-main"
                     target="_blank"
                     style={{
                       marginRight: "24px",
                       textDecoration: "none",
-                      // color: "rgb(255, 255, 255)",
                       position: "relative",
                       display: "flex",
                       alignItems: "center",
                       gap: "0 4px",
-                      color: '#ffffff'
+                      color: '#ffffff',
+                      padding: "10px 0"
                     }}
                     onMouseLeave={() => onHangleState(setShowNg)}
                     onMouseEnter={() => setShowNg(false)}
@@ -195,10 +182,7 @@ const Header = () => {
                   >
                     Restaurant <i class="fa-solid fa-angle-down"></i>
                     <div
-                      className={
-                        showNh ? "ks-position isShowKS" : "ks-position "
-                      }
-                    >
+                      className="ks-position">
                       <div class="home-main ks-drop-down">
                         <div class="home-main ks-drop-down-main">
                           <div class="home-main header-btn"></div>
@@ -208,7 +192,6 @@ const Header = () => {
                                 exact="true"
                                 class="btn-ks-lable log-btn btn-type"
                                 href="/restaurant"
-
                               >
                                 Nhà hàng 1
                               </a>
@@ -248,95 +231,14 @@ const Header = () => {
                       </div>
                     </div>
                   </a>
-                  {/* <a
-                    className="main-element link-event link-event-delay single-navbar color-main"
-                    target="_blank"
-                    style={{
-                      marginRight: "24px",
-                      textDecoration: "none",
-                      // color: "rgb(255, 255, 255)",
-                    }}
-                  >
-                    <div
-                      className="free-ship-header"
-                      style={{ color: "color: rgb(255, 255, 255)" }}
-                    >
-                      Free ship
-                    </div>
-                    Đặc sản - Myfresh
-                  </a> */}
-                  {/* <a
-                    className="main-element link-event link-event-delay single-navbar color-main"
-                    target="_blank"
-                    style={{
-                      marginRight: "24px",
-                      textDecoration: "none",
-                      // color: "rgb(255, 255, 255)",
-                    }}
-                  >
-                    Tour &amp; Sự kiện
-                  </a> */}
                 </div>
                 <div className="home main home-navbar-right">
-                  {/* <a
-                    className="main-element link-event link-event-delay home-header-gift  color-main"
-                    target="_blank"
-                    style={{ textDecoration: "none", display: "none" }}
-                  >
-                    <svg
-                      width="16"
-                      height="16"
-                      fill="none"
-                      className="svgFillAll"
-                      style={{
-                        stroke: "rgb(255, 255, 255)",
-                        marginRight: "8px",
-                      }}
-                    >
-                      <g clipPath="url(#icon_gif_box_svg__clip0)" fill="#fff">
-                        <path d="M8.666 8A.333.333 0 009 8.333h5.666a1.169 1.169 0 001.167-1.166V5.833a1.168 1.168 0 00-1.167-1.166H9A.333.333 0 008.666 5v3zM2.5 8.333h4.833A.333.333 0 007.666 8V5a.333.333 0 00-.333-.333h-6A1.168 1.168 0 00.167 5.833v1.334a1.169 1.169 0 001.166 1.166H2.5zM7.667 9.667a.333.333 0 00-.334-.334h-5.5a.333.333 0 00-.333.334v5.166A1.169 1.169 0 002.667 16h4.666a.333.333 0 00.334-.333v-6zM9 9.333a.333.333 0 00-.334.334v6A.333.333 0 009 16h4.333a1.168 1.168 0 001.167-1.167V9.667a.333.333 0 00-.334-.334H9z"></path>
-                        <path d="M8.695 4.471a.667.667 0 00.63.176c.788-.193 2.686-.703 3.266-1.283A1.972 1.972 0 109.8.577c-.505.504-.986 2.051-1.283 3.266a.694.694 0 00.178.628zm2.05-2.952a.638.638 0 11.902.902 5.99 5.99 0 01-1.523.622 5.948 5.948 0 01.62-1.524zM7.814 3.84c-.296-1.21-.777-2.758-1.28-3.263a1.972 1.972 0 10-2.79 2.787c.578.58 2.476 1.09 3.266 1.283a.667.667 0 00.63-.176.694.694 0 00.174-.63zM4.687 2.422a.638.638 0 01.901-.902c.277.477.486.99.62 1.524a5.93 5.93 0 01-1.521-.622z"></path>
-                      </g>
-                      <defs>
-                        <clipPath id="icon_gif_box_svg__clip0">
-                          <path fill="#fff" d="M0 0h16v16H0z"></path>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    Giới thiệu nhận quà
-                  </a> */}
+                  
                   <a
-                    className="main-element link-event link-event-delay home-header-gift color-main"
+                    className="main-element link-event link-event-delay home-header-gift color-main icon-main"
                     style={{ textDecoration: "none" }}
                     href="/contact"
-                  >
-                    {/* <svg
-                      width="20"
-                      height="20"
-                      fill="none"
-                      className="svgFillAll"
-                      style={{
-                        stroke: "rgb(255, 255, 255)",
-                        marginRight: "8px",
-                      }}
-                    >
-                      <path
-                        d="M11.545 6.364L9.867 8.042a3.09 3.09 0 01-4.37 0l-.133-.133L9.172 4.1a5.465 5.465 0 017.727 0v0a5.467 5.467 0 01.828 6.668"
-                        stroke="#fff"
-                        strokeWidth="1.5"
-                        strokeMiterlimit="10"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      ></path>
-                      <path
-                        d="M12.523 8.887l2.792 2.792a2.318 2.318 0 010 3.278l-1.264 1.264a4.635 4.635 0 01-6.557 0L3.1 11.827a5.464 5.464 0 010-7.727v0a5.446 5.446 0 013.809-1.6M14.938 15.334l-3.007-3.006M12.714 17.154L9.91 14.35"
-                        stroke="#fff"
-                        strokeWidth="1.5"
-                        strokeMiterlimit="10"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      ></path>
-                    </svg> */}
+                  >       
                     <svg
                       width="17"
                       height="17"
@@ -360,62 +262,14 @@ const Header = () => {
                       BOOK ONLINE
                     </a>
                   </div>
-                  {/* <span
-                    className="home-main main-element home-header-gift
-                    number-contact"
-                  >
-                    <svg
-                      width="17"
-                      height="17"
-                      fill="none"
-                      className="svgFillAll"
-                      style={{ stroke: "rgb(26, 32, 44)", marginRight: "8px" }}
-                    >
-                      <path
-                        d="M3.167 1.333H6.5L8.167 5.5 6.083 6.75a9.167 9.167 0 004.167 4.167l1.25-2.084 4.167 1.667v3.333A1.666 1.666 0 0114 15.5 13.333 13.333 0 011.5 3a1.667 1.667 0 011.667-1.667"
-                        stroke="rgb(255, 255, 255)"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      ></path>
-                    </svg>
-                    1900 2083
-                  </span> */}
-                  {/* <div className="home-main main-element">
-                    <div className="home-main jss1756 jss1195">
-                      <div className="home-main jss1757 jss1200">
-                        <svg
-                          width="20"
-                          height="20"
-                          fill="none"
-                          className="svgFillAll"
-                          style={{ stroke: "rgb(255, 255, 255)" }}
-                        >
-                          <path
-                            d="M8.333 4.167a1.667 1.667 0 013.334 0 5.833 5.833 0 013.333 5v2.5a3.333 3.333 0 001.667 2.5H3.333A3.334 3.334 0 005 11.667v-2.5a5.833 5.833 0 013.333-5"
-                            stroke="#fff"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                          <path
-                            d="M7.5 14.166V15a2.5 2.5 0 105 0v-.834"
-                            stroke="#fff"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div> */}
+                  
                   <div className="home-main main-element">
                     <div
                       className="home-main jss1759 home-header-ring"
                       style={{ color: "black" }}
                     >
                       <div
-                        className="home-main home-header-ring-content"
+                        className="home-main home-header-ring-content icon-main"
                         onClick={() => setIsSignUp(!isSignUp)}
                       >
                         <svg
@@ -489,31 +343,10 @@ const Header = () => {
                     </div>
                   </div>
                   <div onClick={() => onChangeSidebar()}>
-                    {/* <svg
-                      width="24"
-                      height="24"
-                      fill="none"
-                      className="svgFillAll"
-                      style={{
-                        stroke: "rgb(255, 255, 255)",
-                        cursor: "pointer",
-                        marginLeft: "24px",
-                      }}
-                    >
-                      <path
-                        d="M4 6h16M4 12h16M4 18h16"
-                        stroke="#1A202C"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      ></path>
-                    </svg> */}
                   </div>
                 </div>
               </div>
             </div>
-
-            {/* ========= search ============= */}
           </div>
         </div>
       </div>
