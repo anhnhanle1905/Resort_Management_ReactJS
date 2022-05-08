@@ -6,8 +6,7 @@ import Left_Menu from "../LeftMenu";
 import { AiOutlineLogin } from "react-icons/ai";
 import { AiOutlineLogout } from "react-icons/ai";
 import { AiFillDownSquare } from "react-icons/ai";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
   const [show, setShow] = React.useState(false);
@@ -85,9 +84,8 @@ const Header = () => {
                       display: "flex",
                       alignItems: "center",
                       gap: "0 4px",
-                      color: '#ffffff',
-                      padding: "10px 0"
-
+                      color: "#ffffff",
+                      padding: "10px 0",
                     }}
                     href="/"
                   >
@@ -104,15 +102,13 @@ const Header = () => {
                       display: "flex",
                       alignItems: "center",
                       gap: "0 4px",
-                      color: '#ffffff',
-                      padding: "10px 0"
+                      color: "#ffffff",
+                      padding: "10px 0",
                     }}
                     href="/hotel"
                   >
                     Room <i class="fa-solid fa-angle-down"></i>
-                    <div
-                      className="ks-position"
-                    >
+                    <div className="ks-position">
                       <div class="home-main ks-drop-down">
                         <div class="home-main  ks-drop-down-main">
                           <div class="home-main header-btn"></div>
@@ -122,7 +118,7 @@ const Header = () => {
                                 exact="true"
                                 class="btn-ks-lable log-btn btn-type"
                                 href="/hotel"
-                                style={{ fontSize: '0.9rem' }}
+                                style={{ fontSize: "0.9rem" }}
                               >
                                 khách sạn 1
                               </a>
@@ -162,7 +158,7 @@ const Header = () => {
                       </div>
                     </div>
                   </a>
-                 
+
                   <a
                     className="main-element link-event link-event-delay single-navbar color-main"
                     target="_blank"
@@ -173,16 +169,15 @@ const Header = () => {
                       display: "flex",
                       alignItems: "center",
                       gap: "0 4px",
-                      color: '#ffffff',
-                      padding: "10px 0"
+                      color: "#ffffff",
+                      padding: "10px 0",
                     }}
                     onMouseLeave={() => onHangleState(setShowNg)}
                     onMouseEnter={() => setShowNg(false)}
                     href="/restaurant"
                   >
                     Restaurant <i class="fa-solid fa-angle-down"></i>
-                    <div
-                      className="ks-position">
+                    <div className="ks-position">
                       <div class="home-main ks-drop-down">
                         <div class="home-main ks-drop-down-main">
                           <div class="home-main header-btn"></div>
@@ -233,12 +228,11 @@ const Header = () => {
                   </a>
                 </div>
                 <div className="home main home-navbar-right">
-                  
                   <a
                     className="main-element link-event link-event-delay home-header-gift color-main icon-main"
                     style={{ textDecoration: "none" }}
                     href="/contact"
-                  >       
+                  >
                     <svg
                       width="17"
                       height="17"
@@ -257,12 +251,12 @@ const Header = () => {
                     Contact us
                   </a>
                   <div className="btn-book-now">
-                    <a href="">
+                    <a href="/booking">
                       <FontAwesomeIcon icon="fa-solid fa-calendar-days" />
                       BOOK ONLINE
                     </a>
                   </div>
-                  
+
                   <div className="home-main main-element">
                     <div
                       className="home-main jss1759 home-header-ring"
@@ -342,8 +336,7 @@ const Header = () => {
                       </div>
                     </div>
                   </div>
-                  <div onClick={() => onChangeSidebar()}>
-                  </div>
+                  <div onClick={() => onChangeSidebar()}></div>
                 </div>
               </div>
             </div>
