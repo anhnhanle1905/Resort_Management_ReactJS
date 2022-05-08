@@ -5,7 +5,9 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faCalendarDays,
   faCartShopping,
+  faCircleChevronDown,
+  faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
 
 //Add các icon đã được import vào trong thư viện
-library.add(faCalendarDays, faCartShopping);
+library.add(faCalendarDays, faCartShopping, faCircleChevronDown, faAngleDown);
