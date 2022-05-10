@@ -182,7 +182,8 @@ const Header = () => {
                   >
                     Restaurant <i class="fa-solid fa-angle-down"></i>
                     <div
-                      className="ks-position">
+                      className="ks-position"
+                    >
                       <div class="home-main ks-drop-down">
                         <div class="home-main ks-drop-down-main">
                           <div class="home-main header-btn"></div>
@@ -192,6 +193,7 @@ const Header = () => {
                                 exact="true"
                                 class="btn-ks-lable log-btn btn-type"
                                 href="/restaurant"
+
                               >
                                 Nhà hàng 1
                               </a>
@@ -231,6 +233,7 @@ const Header = () => {
                       </div>
                     </div>
                   </a>
+                 
                 </div>
                 <div className="home main home-navbar-right">
                   
@@ -238,7 +241,8 @@ const Header = () => {
                     className="main-element link-event link-event-delay home-header-gift color-main icon-main"
                     style={{ textDecoration: "none" }}
                     href="/contact"
-                  >       
+                  >
+                    
                     <svg
                       width="17"
                       height="17"
@@ -343,10 +347,12 @@ const Header = () => {
                     </div>
                   </div>
                   <div onClick={() => onChangeSidebar()}>
+                    
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>

@@ -6,6 +6,7 @@ import Home from "./views/Home/Home";
 import Restaurant from "./views/Restaurant";
 import Contact from "./views/Contact";
 import Hotel from "./views/Hotel";
+import Booking from "./views/Booking";
 import "../src/fontawasome.js";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/hotel" element={<Hotel />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/booking" element={<Booking />} />
       </Routes>
     </Router>
   );
