@@ -3,11 +3,13 @@ import Header from "../../components/Header/index";
 import Footer from "../../components/Footer/index";
 import Hero from "../../components/Hero";
 import Flash_sale from "../../components/flash-sale";
-import Slider from "../../components/Slider";
+// import Slider from "../../components/Slider";
 import Fly from "../../components/Fly";
 import Favorite_Place from "../../components/Favorite_Place";
 import Banner from "../../components/Banner";
 import ButtonCard from "../../components/ButtonCard";
+import Favorite_Room from "../../components/Favorite_Room";
+import ImageGallery from "../../components/ImageGallery";
 export default function Home() {
   // const settings = {
   //   dots: true,
@@ -21,11 +23,13 @@ export default function Home() {
       <Header />
       <main>
         <Banner />
-        <Slider />
+        {/* <Slider /> */}
         <Hero />
         <Flash_sale />
         <Fly />
         <Favorite_Place />
+        <Favorite_Room />
+        <ImageGallery />
         <ButtonCard />
       </main>
       <Footer />

@@ -42,7 +42,6 @@
   width: 100%;
   max-width: 1411px;
   margin: 0 auto;
-  
 }
 .home-navbar-left {
   display: flex;
@@ -51,7 +50,7 @@
 .link-event-delay {
   text-decoration: none;
   font-size: 0.95rem !important;
-  font-weight: 800 !important;
+  font-weight: 900 !important;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   gap: 0px 4px;
@@ -569,7 +568,7 @@ color: #606060 !important;
   padding: 10px 20px;
   background-color: #deb666;
   font-size: 0.95em;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: 0.05em;
 }
 a .fa-calendar-days {
@@ -596,4 +595,9 @@ a .fa-calendar-days {
 }
 .scroll-down .icon-main svg:hover{
   fill: #deb666;
+}
+.btn-ks:hover{
+  background-color: #fbfbfb;
+  color: #79868f;
+
 }
