@@ -26,13 +26,14 @@ export default function Home() {
       <main>
         <Banner />
         {/* <Slider /> */}
-        <Hero />
-        <AwesomeServices />
-        <Flash_sale />
-        <Fly />
-        <Favorite_Place />
         <Favorite_Room />
+        {/* <Hero /> */}
+        <AwesomeServices />
         <ImageGallery />
+        <Flash_sale />
+        <Favorite_Place />
+        <Fly />
+
         <ButtonCard />
       </main>
       <Footer />
