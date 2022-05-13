@@ -10,6 +10,8 @@ import Banner from "../../components/Banner";
 import ButtonCard from "../../components/ButtonCard";
 import Favorite_Room from "../../components/Favorite_Room";
 import ImageGallery from "../../components/ImageGallery";
+import AwesomeServices from "../../components/AwesomeServices";
+
 export default function Home() {
   // const settings = {
   //   dots: true,
@@ -25,6 +27,7 @@ export default function Home() {
         <Banner />
         {/* <Slider /> */}
         <Hero />
+        <AwesomeServices />
         <Flash_sale />
         <Fly />
         <Favorite_Place />

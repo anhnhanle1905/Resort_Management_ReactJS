@@ -7,7 +7,6 @@
 .booking-page {
   width: 100%;
   .header-booking-form {
-  
     // width: 100%;
     position: relative;
     img {
@@ -36,12 +35,11 @@
         color: #deb666;
       }
     }
-    
   }
 
   h1.title {
     font-size: 2.2em;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     display: inline-block;
     color: #606060;
     font-weight: 700;
@@ -53,25 +51,23 @@
   .body-booking-page {
     width: 100%;
     margin-top: 30px;
-    
+
     // display: flex;
     // justify-content: end;
     .left-page {
-      
       width: 65%;
       .booking-form {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        
-        
+
         .form-group {
           width: 47.5%;
           margin-bottom: 30px;
           position: relative;
           label {
             display: block;
-            font-size: .9em;
+            font-size: 0.9em;
             color: #606060;
             letter-spacing: 1px;
             font-weight: 400;
@@ -97,8 +93,7 @@
             //   margin-left: 10px;
             // }
           }
-          
-          
+
           select {
             width: 100%;
             -webkit-appearance: none;
@@ -109,7 +104,6 @@
             color: #606060;
             cursor: pointer;
             padding-left: 10px;
-          
           }
         }
         .comment {
@@ -129,10 +123,8 @@
         }
 
         .date {
-          
           input {
             cursor: pointer;
-            
           }
         }
       }
@@ -141,14 +133,11 @@
       width: 35%;
       margin-left: 5%;
       // .special-offer {
-        
+
       // }
     }
-    
   }
-  
 }
-
 
 // Start | for demo
 
@@ -166,13 +155,12 @@
 //     background: linear-gradient(135deg, rgba(247, 202, 201, 1) 0%, rgba(146, 168, 209, 1) 100%);
 //     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 //     /* IE6-9 fallback on horizontal gradient */
-    
+
 //     font-family: 'Roboto Mono';
 //     letter-spacing: 1px;
 // }
 
-
-// 
+//
 // Pure css Select
 // .select {
 //     position: relative;
@@ -185,7 +173,7 @@
 //     border-radius: 3px;
 //     font-size: 12px;
 //     box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, .5);
-    
+
 //     .title,
 //     .placeholder {
 //         position: relative;

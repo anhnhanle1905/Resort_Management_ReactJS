@@ -7,7 +7,20 @@ import {
   faCartShopping,
   faCircleChevronDown,
   faAngleDown,
+  faBowlRice,
+  faChildReaching,
+  faUsersViewfinder,
+  faPersonSwimming,
 } from "@fortawesome/free-solid-svg-icons";
 
 //Add các icon đã được import vào trong thư viện
-library.add(faCalendarDays, faCartShopping, faCircleChevronDown, faAngleDown);
+library.add(
+  faCalendarDays,
+  faCartShopping,
+  faCircleChevronDown,
+  faAngleDown,
+  faBowlRice,
+  faChildReaching,
+  faUsersViewfinder,
+  faPersonSwimming
+);
