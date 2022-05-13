@@ -24,10 +24,10 @@ function Favorite_Room() {
               </a>
               <figcaption className="favorite-figcaption">
                 <h4 className="favorite-figcaption-h4">
-                  <a href="room.html">Single Room</a>
+                  <a href="/ListRoom">Single Room</a>
                 </h4>
                 <span class="f_right">
-                  <a href="rooms-list.html" class="button btn_sm btn_blue">
+                  <a href="/ListRoom" class="button btn_sm btn_blue">
                     VIEW DETAILS
                   </a>
                 </span>
@@ -50,10 +50,10 @@ function Favorite_Room() {
               </a>
               <figcaption className="favorite-figcaption">
                 <h4 className="favorite-figcaption-h4">
-                  <a href="room.html">Double Room</a>
+                  <a href="/ListRoom">Double Room</a>
                 </h4>
                 <span class="f_right">
-                  <a href="rooms-list.html" class="button btn_sm btn_blue">
+                  <a href="/ListRoom" class="button btn_sm btn_blue">
                     VIEW DETAILS
                   </a>
                 </span>
@@ -76,10 +76,10 @@ function Favorite_Room() {
               </a>
               <figcaption className="favorite-figcaption">
                 <h4 className="favorite-figcaption-h4">
-                  <a href="room.html">Deluxe Room</a>
+                  <a href="/ListRoom">Deluxe Room</a>
                 </h4>
                 <span class="f_right">
-                  <a href="rooms-list.html" class="button btn_sm btn_blue">
+                  <a href="/ListRoom" class="button btn_sm btn_blue">
                     VIEW DETAILS
                   </a>
                 </span>
@@ -89,7 +89,7 @@ function Favorite_Room() {
         </div>
       </div>
       <div class="mt40 a_center">
-<a class="button btn_sm btn_yellow" href="rooms-list.html">VIEW ROOMS LIST</a>
+<a class="button btn_sm btn_yellow" href="/ListRoom">VIEW ROOMS LIST</a>
 </div>
     </div>
   );
