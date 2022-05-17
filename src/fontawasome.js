@@ -11,6 +11,7 @@ import {
   faChildReaching,
   faUsersViewfinder,
   faPersonSwimming,
+  faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
 
 //Add các icon đã được import vào trong thư viện
@@ -22,5 +23,6 @@ library.add(
   faBowlRice,
   faChildReaching,
   faUsersViewfinder,
-  faPersonSwimming
+  faPersonSwimming,
+  faChevronUp
 );
