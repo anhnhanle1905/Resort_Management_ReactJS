@@ -11,6 +11,7 @@ import ButtonCard from "../../components/ButtonCard";
 import Favorite_Room from "../../components/Favorite_Room";
 import ImageGallery from "../../components/ImageGallery";
 import AwesomeServices from "../../components/AwesomeServices";
+import ButtonScrollTop from "../../components/ButtonScrollTop";
 
 export default function Home() {
   // const settings = {
@@ -30,6 +31,7 @@ export default function Home() {
         {/* <Hero /> */}
         <AwesomeServices />
         <ImageGallery />
+        <ButtonScrollTop />
         <Flash_sale />
         <Favorite_Place />
         <Fly />
