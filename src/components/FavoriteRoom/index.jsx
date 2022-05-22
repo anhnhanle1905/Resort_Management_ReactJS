@@ -1,10 +1,10 @@
 import React from "react";
 import "./styles.css";
-function Favorite_Room() {
+function FavoriteRoom() {
 
   
   return (
-    <div className="favorite_room-container">
+    <div className="favorite_room-container body-container">
       <div className="favorite_room_header">
         <h2 className="favorite_room_header-title">OUR FAVORITE ROOMS</h2>
       </div>
@@ -18,7 +18,7 @@ function Favorite_Room() {
               <a className="hover-effect">
                 <img
                   src="https://preview.eagle-themes.com/html/zante/images/rooms/single-room.jpg"
-                  class="img-responsive"
+                  className="img-responsive"
                   alt="Image"
                 />
               </a>
@@ -26,8 +26,8 @@ function Favorite_Room() {
                 <h4 className="favorite-figcaption-h4">
                   <a href="/ListRoom">Single Room</a>
                 </h4>
-                <span class="f_right">
-                  <a href="/ListRoom" class="button btn_sm btn_blue">
+                <span className="f_right">
+                  <a href="/ListRoom" className="button btn_sm btn_blue">
                     VIEW DETAILS
                   </a>
                 </span>
@@ -44,7 +44,7 @@ function Favorite_Room() {
               <a className="hover-effect">
                 <img
                   src="https://preview.eagle-themes.com/html/zante/images/rooms/double-room.jpg"
-                  class="img-responsive"
+                  className="img-responsive"
                   alt="Image"
                 />
               </a>
@@ -52,8 +52,8 @@ function Favorite_Room() {
                 <h4 className="favorite-figcaption-h4">
                   <a href="/ListRoom">Double Room</a>
                 </h4>
-                <span class="f_right">
-                  <a href="/ListRoom" class="button btn_sm btn_blue">
+                <span className="f_right">
+                  <a href="/ListRoom" className="button btn_sm btn_blue">
                     VIEW DETAILS
                   </a>
                 </span>
@@ -70,7 +70,7 @@ function Favorite_Room() {
               <a className="hover-effect">
                 <img
                   src="https://preview.eagle-themes.com/html/zante/images/rooms/deluxe-room.jpg"
-                  class="img-responsive"
+                  className="img-responsive"
                   alt="Image"
                 />
               </a>
@@ -78,8 +78,8 @@ function Favorite_Room() {
                 <h4 className="favorite-figcaption-h4">
                   <a href="/ListRoom">Deluxe Room</a>
                 </h4>
-                <span class="f_right">
-                  <a href="/ListRoom" class="button btn_sm btn_blue">
+                <span className="f_right">
+                  <a href="/ListRoom" className="button btn_sm btn_blue">
                     VIEW DETAILS
                   </a>
                 </span>
@@ -88,11 +88,11 @@ function Favorite_Room() {
           </article>
         </div>
       </div>
-      <div class="mt40 a_center">
-<a class="button btn_sm btn_yellow" href="/ListRoom">VIEW ROOMS LIST</a>
+      <div className="mt40 a_center">
+<a className="button btn_sm btn_yellow" href="/ListRoom">VIEW ROOMS LIST</a>
 </div>
     </div>
   );
 }
 
-export default Favorite_Room;
+export default FavoriteRoom;

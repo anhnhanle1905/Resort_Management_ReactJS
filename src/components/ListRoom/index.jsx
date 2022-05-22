@@ -1,9 +1,15 @@
 import React from "react";
+import { useState } from "react";
 import "./styles.css";
-function RoomList() {
+import SweetPagination from "sweetpagination";
+
+function ListRoom() {
+  const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+  const [currentPageData, setCurrentPageData] = useState(new Array(2).fill());
+ 
+
   return (
     <div>
-      {/* header-booking-form */}
       <div className="header-booking-form">
         <img
           src="	https://preview.eagle-themes.com/html/zante/images/slider/slider-1.jpg"
@@ -26,18 +32,18 @@ function RoomList() {
             <div className="rooms_list-item-container">
               <div className="rooms_list-item-container-left">
                 <figure>
-                  <a href="room.html" class="hover_effect h_link h_blue">
+                  <a href="room.html" className="hover_effect h_link h_blue">
                     <img
                       src="	https://preview.eagle-themes.com/html/zante/images/rooms/single.jpg"
-                      class="img-responsive"
+                      className="img-responsive"
                       alt="Image"
                     />
                   </a>
                 </figure>
               </div>
-              <div class="rooms_list-item-container-right">
-                <div class="room_details row-flex">
-                  <div class="col-md-9 col-sm-9 col-xs-12 room_desc">
+              <div className="rooms_list-item-container-right">
+                <div className="room_details row-flex">
+                  <div className="col-md-9 col-sm-9 col-xs-12 room_desc">
                     <h3>
                       <a href="room.html"> Single Room </a>
                     </h3>
@@ -46,9 +52,9 @@ function RoomList() {
                       sed diam nonummy nibh euismod tincidunt ut laoreet dolore
                       magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
                     </p>
-                    <div class="room_services">
+                    <div className="room_services">
                       <i
-                        class="fa fa-coffee"
+                        className="fa fa-coffee"
                         data-toggle="popover"
                         data-placement="top"
                         data-trigger="hover"
@@ -56,7 +62,7 @@ function RoomList() {
                         data-original-title="Breakfast"
                       ></i>
                       <i
-                        class="fa fa-cutlery"
+                        className="fa fa-cutlery"
                         data-toggle="popover"
                         data-placement="top"
                         data-trigger="hover"
@@ -65,13 +71,13 @@ function RoomList() {
                       ></i>
                     </div>
                   </div>
-                  <div class="col-md-3 col-sm-3 col-xs-12 room_price">
-                    <div class="room_price_inner">
-                      <span class="room_price_number"> €89,00 </span>
-                      <small class="upper"> per night </small>
+                  <div className="col-md-3 col-sm-3 col-xs-12 room_price">
+                    <div className="room_price_inner">
+                      <span className="room_price_number"> €89,00 </span>
+                      <small className="upper"> per night </small>
                       <a
                         href="room.html"
-                        class="button  btn_blue btn_full upper"
+                        className="button  btn_blue btn_full upper"
                       >
                         Book Now
                       </a>
@@ -85,18 +91,18 @@ function RoomList() {
             <div className="rooms_list-item-container">
               <div className="rooms_list-item-container-left">
                 <figure>
-                  <a href="room.html" class="hover_effect h_link h_blue">
+                  <a href="room.html" className="hover_effect h_link h_blue">
                     <img
                       src="	https://preview.eagle-themes.com/html/zante/images/rooms/single.jpg"
-                      class="img-responsive"
+                      className="img-responsive"
                       alt="Image"
                     />
                   </a>
                 </figure>
               </div>
-              <div class="rooms_list-item-container-right">
-                <div class="room_details row-flex">
-                  <div class="col-md-9 col-sm-9 col-xs-12 room_desc">
+              <div className="rooms_list-item-container-right">
+                <div className="room_details row-flex">
+                  <div className="col-md-9 col-sm-9 col-xs-12 room_desc">
                     <h3>
                       <a href="room.html"> Single Room </a>
                     </h3>
@@ -105,9 +111,9 @@ function RoomList() {
                       sed diam nonummy nibh euismod tincidunt ut laoreet dolore
                       magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
                     </p>
-                    <div class="room_services">
+                    <div className="room_services">
                       <i
-                        class="fa fa-coffee"
+                        className="fa fa-coffee"
                         data-toggle="popover"
                         data-placement="top"
                         data-trigger="hover"
@@ -115,7 +121,7 @@ function RoomList() {
                         data-original-title="Breakfast"
                       ></i>
                       <i
-                        class="fa fa-cutlery"
+                        className="fa fa-cutlery"
                         data-toggle="popover"
                         data-placement="top"
                         data-trigger="hover"
@@ -124,13 +130,13 @@ function RoomList() {
                       ></i>
                     </div>
                   </div>
-                  <div class="col-md-3 col-sm-3 col-xs-12 room_price">
-                    <div class="room_price_inner">
-                      <span class="room_price_number"> €89,00 </span>
-                      <small class="upper"> per night </small>
+                  <div className="col-md-3 col-sm-3 col-xs-12 room_price">
+                    <div className="room_price_inner">
+                      <span className="room_price_number"> €89,00 </span>
+                      <small className="upper"> per night </small>
                       <a
                         href="room.html"
-                        class="button  btn_blue btn_full upper"
+                        className="button  btn_blue btn_full upper"
                       >
                         Book Now
                       </a>
@@ -144,18 +150,18 @@ function RoomList() {
             <div className="rooms_list-item-container">
               <div className="rooms_list-item-container-left">
                 <figure>
-                  <a href="room.html" class="hover_effect h_link h_blue">
+                  <a href="room.html" className="hover_effect h_link h_blue">
                     <img
                       src="	https://preview.eagle-themes.com/html/zante/images/rooms/single.jpg"
-                      class="img-responsive"
+                      className="img-responsive"
                       alt="Image"
                     />
                   </a>
                 </figure>
               </div>
-              <div class="rooms_list-item-container-right">
-                <div class="room_details row-flex">
-                  <div class="col-md-9 col-sm-9 col-xs-12 room_desc">
+              <div className="rooms_list-item-container-right">
+                <div className="room_details row-flex">
+                  <div className="col-md-9 col-sm-9 col-xs-12 room_desc">
                     <h3>
                       <a href="room.html"> Single Room </a>
                     </h3>
@@ -164,9 +170,9 @@ function RoomList() {
                       sed diam nonummy nibh euismod tincidunt ut laoreet dolore
                       magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
                     </p>
-                    <div class="room_services">
+                    <div className="room_services">
                       <i
-                        class="fa fa-coffee"
+                        className="fa fa-coffee"
                         data-toggle="popover"
                         data-placement="top"
                         data-trigger="hover"
@@ -174,7 +180,7 @@ function RoomList() {
                         data-original-title="Breakfast"
                       ></i>
                       <i
-                        class="fa fa-cutlery"
+                        className="fa fa-cutlery"
                         data-toggle="popover"
                         data-placement="top"
                         data-trigger="hover"
@@ -183,13 +189,13 @@ function RoomList() {
                       ></i>
                     </div>
                   </div>
-                  <div class="col-md-3 col-sm-3 col-xs-12 room_price">
-                    <div class="room_price_inner">
-                      <span class="room_price_number"> €89,00 </span>
-                      <small class="upper"> per night </small>
+                  <div className="col-md-3 col-sm-3 col-xs-12 room_price">
+                    <div className="room_price_inner">
+                      <span className="room_price_number"> €89,00 </span>
+                      <small className="upper"> per night </small>
                       <a
                         href="room.html"
-                        class="button  btn_blue btn_full upper"
+                        className="button  btn_blue btn_full upper"
                       >
                         Book Now
                       </a>
@@ -203,18 +209,18 @@ function RoomList() {
             <div className="rooms_list-item-container">
               <div className="rooms_list-item-container-left">
                 <figure>
-                  <a href="room.html" class="hover_effect h_link h_blue">
+                  <a href="room.html" className="hover_effect h_link h_blue">
                     <img
                       src="	https://preview.eagle-themes.com/html/zante/images/rooms/single.jpg"
-                      class="img-responsive"
+                      className="img-responsive"
                       alt="Image"
                     />
                   </a>
                 </figure>
               </div>
-              <div class="rooms_list-item-container-right">
-                <div class="room_details row-flex">
-                  <div class="col-md-9 col-sm-9 col-xs-12 room_desc">
+              <div className="rooms_list-item-container-right">
+                <div className="room_details row-flex">
+                  <div className="col-md-9 col-sm-9 col-xs-12 room_desc">
                     <h3>
                       <a href="room.html"> Single Room </a>
                     </h3>
@@ -223,9 +229,9 @@ function RoomList() {
                       sed diam nonummy nibh euismod tincidunt ut laoreet dolore
                       magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
                     </p>
-                    <div class="room_services">
+                    <div className="room_services">
                       <i
-                        class="fa fa-coffee"
+                        className="fa fa-coffee"
                         data-toggle="popover"
                         data-placement="top"
                         data-trigger="hover"
@@ -233,7 +239,7 @@ function RoomList() {
                         data-original-title="Breakfast"
                       ></i>
                       <i
-                        class="fa fa-cutlery"
+                        className="fa fa-cutlery"
                         data-toggle="popover"
                         data-placement="top"
                         data-trigger="hover"
@@ -242,13 +248,13 @@ function RoomList() {
                       ></i>
                     </div>
                   </div>
-                  <div class="col-md-3 col-sm-3 col-xs-12 room_price">
-                    <div class="room_price_inner">
-                      <span class="room_price_number"> €89,00 </span>
-                      <small class="upper"> per night </small>
+                  <div className="col-md-3 col-sm-3 col-xs-12 room_price">
+                    <div className="room_price_inner">
+                      <span className="room_price_number"> €89,00 </span>
+                      <small className="upper"> per night </small>
                       <a
                         href="room.html"
-                        class="button  btn_blue btn_full upper"
+                        className="button  btn_blue btn_full upper"
                       >
                         Book Now
                       </a>
@@ -262,18 +268,18 @@ function RoomList() {
             <div className="rooms_list-item-container">
               <div className="rooms_list-item-container-left">
                 <figure>
-                  <a href="room.html" class="hover_effect h_link h_blue">
+                  <a href="room.html" className="hover_effect h_link h_blue">
                     <img
                       src="	https://preview.eagle-themes.com/html/zante/images/rooms/single.jpg"
-                      class="img-responsive"
+                      className="img-responsive"
                       alt="Image"
                     />
                   </a>
                 </figure>
               </div>
-              <div class="rooms_list-item-container-right">
-                <div class="room_details row-flex">
-                  <div class="col-md-9 col-sm-9 col-xs-12 room_desc">
+              <div className="rooms_list-item-container-right">
+                <div className="room_details row-flex">
+                  <div className="col-md-9 col-sm-9 col-xs-12 room_desc">
                     <h3>
                       <a href="room.html"> Single Room </a>
                     </h3>
@@ -282,9 +288,9 @@ function RoomList() {
                       sed diam nonummy nibh euismod tincidunt ut laoreet dolore
                       magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
                     </p>
-                    <div class="room_services">
+                    <div className="room_services">
                       <i
-                        class="fa fa-coffee"
+                        className="fa fa-coffee"
                         data-toggle="popover"
                         data-placement="top"
                         data-trigger="hover"
@@ -292,7 +298,7 @@ function RoomList() {
                         data-original-title="Breakfast"
                       ></i>
                       <i
-                        class="fa fa-cutlery"
+                        className="fa fa-cutlery"
                         data-toggle="popover"
                         data-placement="top"
                         data-trigger="hover"
@@ -301,13 +307,13 @@ function RoomList() {
                       ></i>
                     </div>
                   </div>
-                  <div class="col-md-3 col-sm-3 col-xs-12 room_price">
-                    <div class="room_price_inner">
-                      <span class="room_price_number"> €89,00 </span>
-                      <small class="upper"> per night </small>
+                  <div className="col-md-3 col-sm-3 col-xs-12 room_price">
+                    <div className="room_price_inner">
+                      <span className="room_price_number"> €89,00 </span>
+                      <small className="upper"> per night </small>
                       <a
                         href="room.html"
-                        class="button  btn_blue btn_full upper"
+                        className="button  btn_blue btn_full upper"
                       >
                         Book Now
                       </a>
@@ -317,11 +323,29 @@ function RoomList() {
               </div>
             </div>
           </article>
+        </div>
+        <div className="center">
+          <div className="center">
+            <div>
+              {/* {currentPageData.map((item) => (
+                <div>
+                  <h3>{item}</h3>
+                </div>
+              ))} */}
 
+              <SweetPagination
+                currentPageData={setCurrentPageData}
+                dataPerPage={1}
+                getData={items}
+                navigation={true}
+              />
+            </div>
+           
+          </div>
         </div>
       </main>
     </div>
   );
 }
 
-export default RoomList;
+export default ListRoom;

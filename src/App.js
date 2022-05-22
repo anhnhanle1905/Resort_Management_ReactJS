@@ -9,6 +9,7 @@ import Hotel from "./views/Hotel";
 import Booking from "./views/Booking";
 import "../src/fontawasome.js";
 import ListRoom from "./views/ListRoom";
+import './App.css'
 function App() {
   return (
     <Router>
