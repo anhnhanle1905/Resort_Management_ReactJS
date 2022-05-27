@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "../../components/Header/index";
 import Footer from "../../components/Footer/index";
-import Hero from "../../components/Hero";
-import Flash_sale from "../../components/flash-sale";
+// import Hero from "../../components/Hero";
+import FlashSale from "../../components/FlashSale";
 // import Slider from "../../components/Slider";
 import Fly from "../../components/Fly";
-import Favorite_Place from "../../components/Favorite_Place";
+import FavoritePlace from "../../components/FavoritePlace";
 import Banner from "../../components/Banner";
 import ButtonCard from "../../components/ButtonCard";
-import Favorite_Room from "../../components/Favorite_Room";
+import FavoriteRoom from "../../components/FavoriteRoom";
 import ImageGallery from "../../components/ImageGallery";
 import AwesomeServices from "../../components/AwesomeServices";
 import ButtonScrollTop from "../../components/ButtonScrollTop";
@@ -27,15 +27,14 @@ export default function Home() {
       <main>
         <Banner />
         {/* <Slider /> */}
-        <Favorite_Room />
+        <FavoriteRoom />
         {/* <Hero /> */}
         <AwesomeServices />
         <ImageGallery />
         <ButtonScrollTop />
-        <Flash_sale />
-        <Favorite_Place />
+        <FlashSale />
+        <FavoritePlace />
         <Fly />
-
         <ButtonCard />
       </main>
       <Footer />
