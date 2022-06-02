@@ -12,6 +12,7 @@ import FavoriteRoom from "../../components/FavoriteRoom";
 import ImageGallery from "../../components/ImageGallery";
 import AwesomeServices from "../../components/AwesomeServices";
 import ButtonScrollTop from "../../components/ButtonScrollTop";
+import FavoriteRestaurant from "../../components/FavoriteRestaurant";
 
 export default function Home() {
   // const settings = {
@@ -28,6 +29,7 @@ export default function Home() {
         <Banner />
         {/* <Slider /> */}
         <FavoriteRoom />
+        <FavoriteRestaurant />
         {/* <Hero /> */}
         <AwesomeServices />
         <ImageGallery />

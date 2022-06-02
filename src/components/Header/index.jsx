@@ -7,6 +7,8 @@ import { AiOutlineLogin } from "react-icons/ai";
 import { AiOutlineLogout } from "react-icons/ai";
 import { AiFillDownSquare } from "react-icons/ai";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import logo1 from '../../Logo/logo-trang.png'
+import logo2 from '../../Logo/logo-xanh.png'
 
 
 const Header = () => {
@@ -69,8 +71,8 @@ const Header = () => {
                     style={{ cursor: "pointer", marginRight: "200px" }}
                   >
                     <img
-                      src="https://storage.googleapis.com/tripi-assets/mytour/icons/icon_logo_mytour_white.svg "
-                      className="jss1181"
+                      src={show ? logo2 : logo1}
+                      className="jss1181 logo-component"
                       alt="logo_mytour"
                       style={{ marginRight: "56px" }}
                     />
