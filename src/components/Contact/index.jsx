@@ -80,13 +80,13 @@ function Contact_Component() {
                 <span>ADDRESS:</span> Đại học Công Nghệ Thông Tin, Linh Trung ,Thủ Đức
               </li>
               <li>
-                <span>EMAIL:</span> example@site.com, contact@site.com
+                <span>EMAIL:</span> 19522167@gm.uit.edu.vn
               </li>
               <li>
                 <span>WEB:</span> www.site.com
               </li>
               <li>
-                <span>PHONE:</span> +84 (070) <strong>333-4444</strong> , +84 (090){" "}
+                <span>PHONE:</span> +84 (076) <strong>3638074</strong> , +84 (090){" "}
                 <strong>999-999</strong>
               </li>
               <li>

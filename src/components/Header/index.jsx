@@ -73,7 +73,7 @@ const Header = () => {
                     <img
                       src={show ? logo2 : logo1}
                       className="jss1181 logo-component"
-                      alt="logo_mytour"
+                      alt="logo"
                       style={{ marginRight: "56px" }}
                     />
                   </a>

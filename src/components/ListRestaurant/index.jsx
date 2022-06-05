@@ -16,13 +16,13 @@ function ListRestaurant() {
           alt=""
         />
         <div className="content">
-          <h1>Rooms List View</h1>
+          <h1>Restaurant List View</h1>
           <div className="sub-title">
             <span>
               <a href="/">Home</a>
             </span>
             <span>/</span>
-            <span>Rooms List View</span>
+            <span>Restaurant List View</span>
           </div>
         </div>
       </div>
@@ -34,7 +34,7 @@ function ListRestaurant() {
                 <figure>
                   <a href="room.html" className="hover_effect h_link h_blue">
                     <img
-                      src="	https://preview.eagle-themes.com/html/zante/images/rooms/single.jpg"
+                      src="	https://pasgo.vn/Upload/anh-diem-den/hem-quan-hoang-cau-300-12961690845.jpg"
                       className="img-responsive"
                       alt="Image"
                     />
@@ -45,7 +45,7 @@ function ListRestaurant() {
                 <div className="room_details row-flex">
                   <div className="col-md-9 col-sm-9 col-xs-12 room_desc">
                     <h3>
-                      <a href="room.html"> Single Room </a>
+                      <a href="room.html"> Hotpot story </a>
                     </h3>
                     <p>
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -73,8 +73,7 @@ function ListRestaurant() {
                   </div>
                   <div className="col-md-3 col-sm-3 col-xs-12 room_price">
                     <div className="room_price_inner">
-                      <span className="room_price_number"> €89,00 </span>
-                      <small className="upper"> per night </small>
+                    
                       <a
                         href="room.html"
                         className="button  btn_blue btn_full upper"
@@ -93,7 +92,7 @@ function ListRestaurant() {
                 <figure>
                   <a href="room.html" className="hover_effect h_link h_blue">
                     <img
-                      src="	https://preview.eagle-themes.com/html/zante/images/rooms/single.jpg"
+                      src="	https://pasgo.vn/Upload/anh-diem-den/botanica-thai-bistro-le-van-huu-300-184496461891.jpg"
                       className="img-responsive"
                       alt="Image"
                     />
@@ -104,7 +103,7 @@ function ListRestaurant() {
                 <div className="room_details row-flex">
                   <div className="col-md-9 col-sm-9 col-xs-12 room_desc">
                     <h3>
-                      <a href="room.html"> Single Room </a>
+                      <a href="room.html"> Hotpot story </a>
                     </h3>
                     <p>
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -132,8 +131,7 @@ function ListRestaurant() {
                   </div>
                   <div className="col-md-3 col-sm-3 col-xs-12 room_price">
                     <div className="room_price_inner">
-                      <span className="room_price_number"> €89,00 </span>
-                      <small className="upper"> per night </small>
+
                       <a
                         href="room.html"
                         className="button  btn_blue btn_full upper"
@@ -152,7 +150,7 @@ function ListRestaurant() {
                 <figure>
                   <a href="room.html" className="hover_effect h_link h_blue">
                     <img
-                      src="	https://preview.eagle-themes.com/html/zante/images/rooms/single.jpg"
+                      src="	https://pasgo.vn/Upload/anh-diem-den/sushi-kei-aeon-mall-long-bien-300-13213461366.jpg"
                       className="img-responsive"
                       alt="Image"
                     />
@@ -163,7 +161,7 @@ function ListRestaurant() {
                 <div className="room_details row-flex">
                   <div className="col-md-9 col-sm-9 col-xs-12 room_desc">
                     <h3>
-                      <a href="room.html"> Single Room </a>
+                      <a href="room.html"> Hotpot story </a>
                     </h3>
                     <p>
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -191,8 +189,6 @@ function ListRestaurant() {
                   </div>
                   <div className="col-md-3 col-sm-3 col-xs-12 room_price">
                     <div className="room_price_inner">
-                      <span className="room_price_number"> €89,00 </span>
-                      <small className="upper"> per night </small>
                       <a
                         href="room.html"
                         className="button  btn_blue btn_full upper"
@@ -211,7 +207,7 @@ function ListRestaurant() {
                 <figure>
                   <a href="room.html" className="hover_effect h_link h_blue">
                     <img
-                      src="	https://preview.eagle-themes.com/html/zante/images/rooms/single.jpg"
+                      src="	https://pasgo.vn/Upload/anh-diem-den/nha-hang-tru-ky-hotpot-tran-nhan-tong-300-135885342872.jpg"
                       className="img-responsive"
                       alt="Image"
                     />
@@ -222,7 +218,7 @@ function ListRestaurant() {
                 <div className="room_details row-flex">
                   <div className="col-md-9 col-sm-9 col-xs-12 room_desc">
                     <h3>
-                      <a href="room.html"> Single Room </a>
+                      <a href="room.html"> Hotpot story </a>
                     </h3>
                     <p>
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -250,8 +246,7 @@ function ListRestaurant() {
                   </div>
                   <div className="col-md-3 col-sm-3 col-xs-12 room_price">
                     <div className="room_price_inner">
-                      <span className="room_price_number"> €89,00 </span>
-                      <small className="upper"> per night </small>
+
                       <a
                         href="room.html"
                         className="button  btn_blue btn_full upper"
@@ -270,7 +265,7 @@ function ListRestaurant() {
                 <figure>
                   <a href="room.html" className="hover_effect h_link h_blue">
                     <img
-                      src="	https://preview.eagle-themes.com/html/zante/images/rooms/single.jpg"
+                      src="	https://pasgo.vn/Upload/anh-diem-den/nha-hang-tru-ky-hotpot-tran-nhan-tong-300-135885342872.jpg"
                       className="img-responsive"
                       alt="Image"
                     />
@@ -281,7 +276,7 @@ function ListRestaurant() {
                 <div className="room_details row-flex">
                   <div className="col-md-9 col-sm-9 col-xs-12 room_desc">
                     <h3>
-                      <a href="room.html"> Single Room </a>
+                      <a href="room.html"> Hotpot story </a>
                     </h3>
                     <p>
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit,

@@ -233,7 +233,7 @@ export default function FavoriteRestaurant() {
 
                       <div className="list-view-detail">
                       <span>
-                        <a href="/Restaurant" className="button btn_sm btn_blue">
+                        <a href="/ListRestaurant" className="button btn_sm btn_blue">
                           VIEW DETAILS
                         </a>
                       </span>
@@ -246,8 +246,8 @@ export default function FavoriteRestaurant() {
           </div>
         </div>
         <div className="mt40 a_center">
-          <a className="button btn_sm btn_yellow" href="/Restaurant">
-            VIEW ROOMS LIST
+          <a className="button btn_sm btn_yellow" href="/ListRestaurant">
+            VIEW MORE
           </a>
         </div>
       </div>
