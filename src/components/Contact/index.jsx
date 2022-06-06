@@ -75,18 +75,18 @@ function Contact_Component() {
             <h2>GET IN TOUCH</h2>
           </div>
           <div className="contact-right-content">
-            <ul class="contact-info upper">
+            <ul className="contact-info upper">
               <li>
                 <span>ADDRESS:</span> Đại học Công Nghệ Thông Tin, Linh Trung ,Thủ Đức
               </li>
               <li>
-                <span>EMAIL:</span> example@site.com, contact@site.com
+                <span>EMAIL:</span> 19522167@gm.uit.edu.vn
               </li>
               <li>
                 <span>WEB:</span> www.site.com
               </li>
               <li>
-                <span>PHONE:</span> +84 (070) <strong>333-4444</strong> , +84 (090){" "}
+                <span>PHONE:</span> +84 (076) <strong>3638074</strong> , +84 (090){" "}
                 <strong>999-999</strong>
               </li>
               <li>
@@ -95,27 +95,27 @@ function Contact_Component() {
               </li>
             </ul>
           </div>
-          <div class="social_media" style={{ paddingLeft: '40px'}}>
-            <a class="facebook" >
-              <i class="fa fa-facebook"></i>
+          <div className="social_media" style={{ paddingLeft: '40px'}}>
+            <a className="facebook" >
+              <i className="fa fa-facebook"></i>
             </a>
-            <a class="twitter" >
-              <i class="fa fa-twitter"></i>
+            <a className="twitter" >
+              <i className="fa fa-twitter"></i>
             </a>
-            <a class="googleplus" >
-              <i class="fa fa-google-plus"></i>
+            <a className="googleplus" >
+              <i className="fa fa-google-plus"></i>
             </a>
-            <a class="pinterest" >
-              <i class="fa fa-pinterest"></i>
+            <a className="pinterest" >
+              <i className="fa fa-pinterest"></i>
             </a>
-            <a class="linkedin" >
-              <i class="fa fa-linkedin"></i>
+            <a className="linkedin" >
+              <i className="fa fa-linkedin"></i>
             </a>
-            <a class="youtube" >
-              <i class="fa fa-youtube"></i>
+            <a className="youtube" >
+              <i className="fa fa-youtube"></i>
             </a>
-            <a class="instagram" >
-              <i class="fa fa-instagram"></i>
+            <a className="instagram" >
+              <i className="fa fa-instagram"></i>
             </a>
           </div>
         </div>

@@ -1,114 +1,101 @@
 import React from 'react'
 import "./styles.css";
+import logo2 from '../../Logo/logo-xanh.png' 
 export default function Footer() {
   return (
-    <div style={{ background: 'antiquewhite'}}>
-      <div className="Footer-component">
-        <div className="Footer-banner">
-          <div className="Footer-banner-container">
-            <div className="Footer-banner-main">
-              <div className="Footer-banner-left">
-                <div className="footer-logo">
-                  <img src="https://storage.googleapis.com/tripi-assets/mytour/icons/icon_mail_red.svg" />
-                </div>
-                <div className="Footer-banner-left-content">
-                  <h6>
-                    Bạn muốn tiết kiệm tới 50% khi đặt phòng khách sạn, vé máy
-                    bay?
-                  </h6>
-                  <p>
-                    Nhập số điện thoại để Mytour có thể gửi đến bạn những chương
-                    trình khuyến mại mới nhất!
-                  </p>
-                </div>
-              </div>
-              <div className="Footer-banner-right">
-                <div className="Footer-banner-right-main">
-                  <form className="Footer-banner-main-form">
-                    <div className="Footer-form">
-                      <input
-                        placeholder="Nhập số điện thoại"
-                        type="text"
-                        className="input-main input-main-container"
-                      />
-                    </div>
-                    <div className="home-main jss343">
-                      <button
-                        className="btn-main btn-container btn-container-input jss344 jss345 jss336"
-                        tabIndex="0"
-                        type="button"
-                        margin="-10"
-                      >
-                        <span className="btn-label">
-                          <div className="home-main jss346">
-                            <div className="home-main jss347" opacity="1">
-                              Đăng ký
-                            </div>
-                          </div>
-                        </span>
-                        <span className="btn-container-input-ele"></span>
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="Footer-infor">
-          <div className="footer-infor-left">
-            <p>Công ty cổ phần du lịch Việt Nam VNTravel</p>
-            <p>Tổng đài chăm sóc: 1900 2083</p>
-            <p className="main-element jss296 main-element-event">
-              Email: hotro@mytour.vn
-            </p>
-          </div>
-          <div className="footer-infor-main">
-            <p>Công ty cổ phần du lịch Việt Nam VNTravel</p>
-            <p>Tổng đài chăm sóc: 1900 2083</p>
-            <p className="main-element jss296 main-element-event">
-              Email: hotro@mytour.vn
-            </p>
-          </div>
-          <div className="footer-infor-right">
-            <p>Công ty cổ phần du lịch Việt Nam VNTravel</p>
-            <p>Tổng đài chăm sóc: 1900 2083</p>
-            <p className="main-element jss296 main-element-event">
-              Email: hotro@mytour.vn
-            </p>
-          </div>
-        </div>
-        <div className="Footer-final">
-          <div className="home-main jss323 jss316">
-            <div className="home-main jss324 jss317">
-              <div className="home-main jss325 jss319">
-                <p className="main-element jss318 main-element-event">
-                  Mytour là thành viên của VNTravel Group - Một trong những tập
-                  đoàn đứng đầu Đông Nam Á về du lịch trực tuyến và các dịch vụ
-                  liên quan.
-                </p>
-                <div className="home-main jss326 jss320">
-                  <div className="jss200 jss322">
-                    <div className="jss201 jss204" ></div>
-                    <div className="lazyload-wrapper">
-                      <img
-                        src="https://storage.googleapis.com/tripi-assets/mytour/icons/icon_company_group.svg"
-                        className="jss203 jss322"
-                        alt=""
-                      />
+      <div style={{ background: 'antiquewhite'}}>
+        <div className="Footer-component">
+             <div class="FooterUp">
+               <div class="Footer-container">
+                 <div class="Footer-row">
+                   <div class="col-md-3 col-sm-6 widget">
+                     <div class="Footer-about">
+                      <a href="/">
+                        <img class="logo" src={logo2} height="50" alt="Logo"></img>
+                      </a>
+                       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper</p>
                     </div>
                   </div>
+                    <div class="col-md-3 col-sm-6 widget">
+                       <h5>Latest News</h5>
+                         <ul class="blog_posts">
+                            <li><a href="">Live your myth in Greece</a>
+                                <small>MAY 13, 2022</small>
+                            </li>
+                            <li><a href="">Zent Resort</a>
+                              <small>MAY 16, 2022</small>
+                           </li>
+                          <li><a href="/">Zent Resort family party</a>
+                             <small>MAY 15, 2022</small>
+                          </li>
+                        </ul>
+                    </div>
+                   <div class="col-md-3 col-sm-6 widget">
+                        <h5>Useful Links</h5>
+                          <ul class="useful_links">
+                           <li><a href="#">About us</a></li>
+                           <li><a href="#">Contact us</a></li>
+                           <li><a href="#">History</a></li>
+                           <li><a href="#">Gallery</a></li>
+                           <li><a href="#">Location</a></li>
+                         </ul>
+                  </div>
+                   <div class="col-md-3 col-sm-6 widget">
+                         <h5>Contact Us</h5>
+                        <address>
+                        <ul class="address_details">
+                         <li><i class="glyphicon glyphicon-map-marker">
+                             </i> ĐẠI HỌC CÔNG NGHỆ THÔNG TIN, LINH TRUNG ,THỦ ĐỨC
+                         </li>
+                         <li><i class="glyphicon glyphicon-phone-alt">
+                         </i> Phone: +84 0763638074
+                         </li>
+                         <li><i class="fa fa-fax">
+                         </i> Fax:  123 3456
+                         </li>
+                         <li><i class="fa fa-envelope">
+                         </i> Email: <a href="">19522167@gm.uit.edu.vn</a>
+                         </li>
+                         </ul>
+                        </address>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                <div class="footerdown">
+              <div class="container">
+                <div class="row">
+                   <div class="col-md-6 col-sm-6">
+                      <div class="copyrights">
+                        Copyright 2021 <a href="/"> Zent Resort </a> All Rights Reserved.
+                     </div>
+                  </div>
+                   <div class="col-md-6 col-sm-6">
+                     <div class="social_media">
+                    <a class="facebook" data-original-title="Facebook" data-toggle="tooltip" href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="twitter" data-original-title="Twitter" data-toggle="tooltip" href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="googleplus" data-original-title="Google Plus" data-toggle="tooltip" href="#">
+                       <i class="fa fa-google-plus"></i>
+                    </a>
+                    <a class="pinterest" data-original-title="Pinterest" data-toggle="tooltip" href="#">
+                      <i class="fa fa-pinterest"></i>
+                    </a>
+                    <a class="linkedin" data-original-title="Linkedin" data-toggle="tooltip" href="#">
+                      <i class="fa fa-linkedin"></i>
+                   </a>
+                    <a class="instagram" data-original-title="Instagram" data-toggle="tooltip" href="#">
+                      <i class="fa fa-instagram"></i>
+                   </a>
+                   </div>
                 </div>
-                <p className="main-element jss318 main-element-event">
-                  Copyright © 2020 - CÔNG TY CỔ PHẦN DU LỊCH VIỆT NAM VNTRAVEL -
-                  Đăng ký kinh doanh số 0108886908 - do Sở Kế hoạch và Đầu tư
-                  thành phố Hà Nội cấp lần đầu ngày 04 tháng 09 năm 2019
-                </p>
-              </div>
+             </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  );
-}
+    );
+  }

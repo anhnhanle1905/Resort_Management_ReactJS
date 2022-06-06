@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-export default function Flash_sale() {
+export default function FlashSale() {
   SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
   const flase_sale = [
     {
@@ -55,7 +55,7 @@ export default function Flash_sale() {
     },
   ];
   return (
-    <div className="home-main flash_sale-component">
+    <div className="home-main flash_sale-component body-container">
       <div className="home-maim flash_sale-content">
         <div className="home-main flash_sale-center">
           <div className="home-main flash_sale-header">

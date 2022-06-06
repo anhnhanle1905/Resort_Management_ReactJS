@@ -7,6 +7,8 @@ import { AiOutlineLogin } from "react-icons/ai";
 import { AiOutlineLogout } from "react-icons/ai";
 import { AiFillDownSquare } from "react-icons/ai";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import logo1 from '../../Logo/logo-trang.png'
+import logo2 from '../../Logo/logo-xanh.png'
 
 
 const Header = () => {
@@ -69,9 +71,9 @@ const Header = () => {
                     style={{ cursor: "pointer", marginRight: "200px" }}
                   >
                     <img
-                      src="https://storage.googleapis.com/tripi-assets/mytour/icons/icon_logo_mytour_white.svg "
-                      className="jss1181"
-                      alt="logo_mytour"
+                      src={show ? logo2 : logo1}
+                      className="jss1181 logo-component"
+                      alt="logo"
                       style={{ marginRight: "56px" }}
                     />
                   </a>
@@ -109,18 +111,18 @@ const Header = () => {
                     }}
                     href="/hotel"
                   >
-                    Room <i class="fa-solid fa-angle-down"></i>
+                    Room <i className="fa-solid fa-angle-down"></i>
                     <div
                       className="ks-position"
                     >
-                      <div class="home-main ks-drop-down">
-                        <div class="home-main  ks-drop-down-main">
-                          <div class="home-main header-btn"></div>
-                          <div class="home-main btn-ks">
-                            <div class="home-main btn-ks-lable">
+                      <div className="home-main ks-drop-down">
+                        <div className="home-main  ks-drop-down-main">
+                          <div className="home-main header-btn"></div>
+                          <div className="home-main btn-ks">
+                            <div className="home-main btn-ks-lable">
                               <a
                                 exact="true"
-                                class="btn-ks-lable log-btn btn-type"
+                                className="btn-ks-lable log-btn btn-type"
                                 href="/hotel"
                                 style={{ fontSize: '0.9rem' }}
                               >
@@ -128,11 +130,11 @@ const Header = () => {
                               </a>
                             </div>
                           </div>
-                          <div class="home-main btn-ks">
-                            <div class="home-main btn-ks-label">
+                          <div className="home-main btn-ks">
+                            <div className="home-main btn-ks-label">
                               <a
                                 exact="true"
-                                class="btn-ks-label log-btn btn-type"
+                                className="btn-ks-label log-btn btn-type"
                                 href="/hotel"
                                 style={{
                                   textDecoration: "none",
@@ -143,11 +145,11 @@ const Header = () => {
                               </a>
                             </div>
                           </div>
-                          <div class="home-main btn-ks">
-                            <div class="home-main btn-ks-label">
+                          <div className="home-main btn-ks">
+                            <div className="home-main btn-ks-label">
                               <a
                                 exact="true"
-                                class="btn-ks-label log-btn btn-type"
+                                className="btn-ks-label log-btn btn-type"
                                 href="/hotel"
                                 style={{
                                   textDecoration: "none",
@@ -180,18 +182,18 @@ const Header = () => {
                     onMouseEnter={() => setShowNg(false)}
                     href="/restaurant"
                   >
-                    Restaurant <i class="fa-solid fa-angle-down"></i>
+                    Restaurant <i className="fa-solid fa-angle-down"></i>
                     <div
                       className="ks-position"
                     >
-                      <div class="home-main ks-drop-down">
-                        <div class="home-main ks-drop-down-main">
-                          <div class="home-main header-btn"></div>
-                          <div class="home-main btn-ks">
-                            <div class="home-main btn-ks-lable">
+                      <div className="home-main ks-drop-down">
+                        <div className="home-main ks-drop-down-main">
+                          <div className="home-main header-btn"></div>
+                          <div className="home-main btn-ks">
+                            <div className="home-main btn-ks-lable">
                               <a
                                 exact="true"
-                                class="btn-ks-lable log-btn btn-type"
+                                className="btn-ks-lable log-btn btn-type"
                                 href="/restaurant"
 
                               >
@@ -199,11 +201,11 @@ const Header = () => {
                               </a>
                             </div>
                           </div>
-                          <div class="home-main btn-ks">
-                            <div class="home-main btn-ks-label">
+                          <div className="home-main btn-ks">
+                            <div className="home-main btn-ks-label">
                               <a
                                 exact="true"
-                                class="btn-ks-label log-btn btn-type"
+                                className="btn-ks-label log-btn btn-type"
                                 href="/restaurant"
                                 style={{
                                   textDecoration: "none",
@@ -214,11 +216,11 @@ const Header = () => {
                               </a>
                             </div>
                           </div>
-                          <div class="home-main btn-ks">
-                            <div class="home-main btn-ks-label">
+                          <div className="home-main btn-ks">
+                            <div className="home-main btn-ks-label">
                               <a
                                 exact="true"
-                                class="btn-ks-label log-btn btn-type"
+                                className="btn-ks-label log-btn btn-type"
                                 href="/restaurant"
                                 style={{
                                   textDecoration: "none",
@@ -346,13 +348,11 @@ const Header = () => {
                       </div>
                     </div>
                   </div>
-                  <div onClick={() => onChangeSidebar()}>
-                    
+                  <div onClick={() => onChangeSidebar()}> 
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>

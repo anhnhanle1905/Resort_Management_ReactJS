@@ -1,0 +1,139 @@
+.flash_sale-content {
+    width: 100%;
+    font-size: 14px;
+    background: #fafafa;
+    font-weight: normal;
+    line-height: 17px;
+    margin-bottom: 44px;
+  }
+  .flash_sale-center {
+    margin: 0 auto;
+    max-width: 1188px;
+  }
+  .falsh_sale-dd{
+    display: flex;
+    align-items: center;
+  }
+  .flash_sale-header {
+    display: flex;
+    padding: 24px 0 16px 0;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .flash_sale-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .flash_ing {
+    width: 198px;
+    height: 44px;
+  }
+  .flash-sale-left-content {
+    display: flex;
+    align-items: center;
+    padding-top: 6px;
+  }
+  
+  .flash_sale-icon{
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .flash_sale-span{
+    top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+      overflow: hidden;
+      position: absolute;
+      border-radius: inherit;
+      pointer-events: none;
+  }
+  .flash_sale-donw{
+    outline: none;
+    height: calc(100% - 155px);
+    display: flex;
+    padding: 12px;
+    min-height: 180px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .flash_sale-down-content{
+    outline: none;
+  }
+  .swiper-pagination{
+    display: none;
+  }
+  .favorite_room_header-title {
+    color: #1dc1f8;
+    font-size: 2.2em;
+    font-family: "Raleway", sans-serif;
+    display: inline-block;
+    position: relative;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    text-align: center;
+    width: 100%;
+  }
+  .favorite_room_header-title::after {
+    background: url("https://preview.eagle-themes.com/html/zante/images/icons/wave.svg");
+    content: "";
+    display: block;
+    height: 5px;
+    position: relative;
+    width: 80px;
+    margin: 10px auto;
+    opacity: 0.5;
+  }
+.btn_view_detail
+{
+    font-size: 0.8em;
+    padding: 3px 10px;
+    background: #deb666;
+    border-color: #deb666;
+    color: #fff;
+    border: 1px solid;
+    border-radius: 1px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    transition: all ease 0.3s;
+    display: inline-block;
+    line-height: 1.82857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.favorite-figcaption {
+  padding: 15px 10px;
+  border: 1px solid #f0f2f6;
+  border-top: none;
+}
+.favorite-figcaption h4 {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-family: "Raleway", sans-serif;
+  color: #606060;
+  margin: 0;
+}
+.favorite-figcaption h4 a {
+  color: #606060;
+  font-size: 18px;
+  text-decoration: none;
+}
+.favorite-figcaption span {
+  float: right;
+}
+.list-view-detail span{
+  background-color: red;
+  float: inherit;
+}
+.list-view-detail{
+  display: flex;
+  justify-content: flex-end;
+}
