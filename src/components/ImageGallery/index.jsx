@@ -67,6 +67,12 @@ function ImageGallery() {
       <div className="image-main-title">
         <h2>IMAGE GALLERY</h2>
       </div>
+      <div className="image-title">
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
+        quis nostrud exerci tation ullamcorper suscipit.
+      </p>
+      </div>
       <div className="image-gallery">
         <div
           className="image-gallery-item"

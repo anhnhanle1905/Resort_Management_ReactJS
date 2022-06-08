@@ -1,29 +1,12 @@
 
 .Footer-component{
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1188px;
-    padding-top: 20px;
-}
-.Footer-banner-container{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-}
-.Footer-banner-main{
-    border: 1px solid #EDF2F7;
-    display: flex;
-    background: #ffffff;
-    box-shadow: 0px 8px 8px rgb(0 0 0 / 3%);
-    border-radius: 16px;
-    justify-content: space-between;
-}
-.Footer-banner-left{
-    display: flex;
-    flex-grow: 0;
-    max-width: 58.333333%;
-    flex-basis: 58.333333%;
+    margin: 0;
+    padding: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1200px;
 }
 
 .Footer-banner-main-form{
@@ -71,90 +54,113 @@
     animation-duration: 10ms;
     -webkit-tap-highlight-color: transparent;
 }
-.jss345 {
-    color: rgb(253, 253, 253);
-    width: 101px;
-    border: none;
-    height: 44px;
-    margin: 0px;
-    padding: 6px 8px;
-    font-size: 16px;
-    min-height: 20px;
-    font-weight: 600;
-    border-radius: 8px;
-    text-transform: none;
-    background-color: rgb(255, 51, 102);
-}
-.jss336 {
-    margin-left: -5px;
-    white-space: nowrap;
-}
-.footer-logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-}
-.Footer-banner-left-content h6{
-    font-size: 16px;
-    font-family: -apple-system,BlinkMacSystemFont,sans-serif;
-    font-weight: 600;
-    line-height: 20px;
-    margin: 0;
 
-}
-.Footer-banner-left-content p{
-    font-size: 14px;
-    margin-top: 6px;
-    font-weight: 400;
-    line-height: 22px;
-    padding-bottom: 18px;
-    font-family: -apple-system,BlinkMacSystemFont,sans-serif;
-    margin: 0;
-}
-.Footer-banner-left-content{
-    margin: 19px 0 0 29px;
-}
+
+
+
 .Footer-infor{
     margin-top: 24px;
-    width: calc(100% + 24px);
+    width:100%;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
     justify-content: space-around;
 }
-
-.jss316 {
-    width: 100%;
-    background: #F7FAFC;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-.jss317 {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1188px;
-}
-.jss319 {
-    text-align: center;
-}
-.jss318 {
-    color: #4A5568;
-    font-size: 12px;
-    line-height: 24px;
-}
-.main-element-event {
-    font-family: -apple-system,BlinkMacSystemFont,sans-serif;
-    font-weight: normal;
-    line-height: 14px;
+.widget {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: .2px;
+    color: #777777;
+    box-sizing: border-box;
     margin: 0;
-}
+    padding: 0;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 25%;
+    padding-bottom: 20px;
+} 
 .Footer-final{
-    margin-top: 40px;
+    margin-top: auto;
 }
 .footer-infor-left p:hover,
 .footer-infor-main p:hover,
 .footer-infor-right p:hover{
   color: #00b6f3;
 
+ }
+ ul a:hover {
+    color: #00b6f3
+  }
+  .col-md-6 {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: .2px;
+    color: #777777;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 50%;
+}
+.useful_links li {
+    padding: 6px 0;
+} 
+.blog_posts li small {
+    color: #acbac4;
+    display: block;
+    padding-top: 4px;
+}
+.blog_posts{
+    padding-top: 15px;
+}
+.blog_posts li {
+    padding: 8px 0;
+}
+.col-md-6{
+float: left;
+width: 50%;
+}
+.logo {
+    margin-bottom: 22px;
+    width: 120px;
+}
+img {
+    vertical-align: middle;
+}
+.widget h5 {
+    color: #606060;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px 0;
+}
+h5 {
+    font-size: 1.3em;
+    line-height: 1.1em;
+}
+.widget a{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+    color: #858a99;
+}
+.social_media a:hover{
+    transform: scale(1,01.1);  
+}
+.social_media a:hover{
+    background: #abe1f3;
+    
+    text-decoration: none;
+    outline: none;
 }

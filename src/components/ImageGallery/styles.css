@@ -92,3 +92,16 @@
 }.image-item-content{
     padding: 0 20px;
   }
+.image-title {
+      display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.image-title p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #858a99;
+    line-height: 1.7;
+    margin: 30px;
+    width: 60%;
+    text-align: center;
+}
