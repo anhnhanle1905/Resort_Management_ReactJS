@@ -7,6 +7,8 @@ import { AiOutlineLogin } from "react-icons/ai";
 import { AiOutlineLogout } from "react-icons/ai";
 import { AiFillDownSquare } from "react-icons/ai";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import logo1 from '../../Logo/logo-trang.png'
+import logo2 from '../../Logo/logo-xanh.png'
 
 
 const Header = () => {
@@ -69,9 +71,9 @@ const Header = () => {
                     style={{ cursor: "pointer", marginRight: "200px" }}
                   >
                     <img
-                      src="https://storage.googleapis.com/tripi-assets/mytour/icons/icon_logo_mytour_white.svg "
-                      className="jss1181"
-                      alt="logo_mytour"
+                      src={show ? logo2 : logo1}
+                      className="jss1181 logo-component"
+                      alt="logo"
                       style={{ marginRight: "56px" }}
                     />
                   </a>
@@ -93,8 +95,9 @@ const Header = () => {
                   >
                     Home
                   </a>
-                  <a
+                  <a  
                     className="main-element link-event link-event-delay single-navbar color-main"
+                    href="/ListRoom"
                     target="_blank"
                     style={{
                       marginRight: "24px",
@@ -107,7 +110,7 @@ const Header = () => {
                       color: '#ffffff',
                       padding: "10px 0"
                     }}
-                    href="/hotel"
+                   
                   >
                     Room <i className="fa-solid fa-angle-down"></i>
                     <div
@@ -118,13 +121,28 @@ const Header = () => {
                           <div className="home-main header-btn"></div>
                           <div className="home-main btn-ks">
                             <div className="home-main btn-ks-lable">
-                              <a
+                              <a  href="/ListRoom"
                                 exact="true"
                                 className="btn-ks-lable log-btn btn-type"
-                                href="/hotel"
                                 style={{ fontSize: '0.9rem' }}
                               >
-                                khách sạn 1
+                                Single Room
+                              </a>
+                              
+                            </div>
+                          </div>
+                          <div className="home-main btn-ks">
+                            <div className="home-main btn-ks-label">
+                              <a  href="/ListRoom"
+                                exact="true"
+                                className="btn-ks-label log-btn btn-type"
+                                
+                                style={{
+                                  textDecoration: "none",
+                                  color: "black",
+                                }}
+                              >
+                                Double Room
                               </a>
                             </div>
                           </div>
@@ -133,28 +151,13 @@ const Header = () => {
                               <a
                                 exact="true"
                                 className="btn-ks-label log-btn btn-type"
-                                href="/hotel"
+                                href="/ListRoom"
                                 style={{
                                   textDecoration: "none",
                                   color: "black",
                                 }}
                               >
-                                khách sạn 2
-                              </a>
-                            </div>
-                          </div>
-                          <div className="home-main btn-ks">
-                            <div className="home-main btn-ks-label">
-                              <a
-                                exact="true"
-                                className="btn-ks-label log-btn btn-type"
-                                href="/hotel"
-                                style={{
-                                  textDecoration: "none",
-                                  color: "black",
-                                }}
-                              >
-                                khách sạn 3
+                                Deluxe Room
                               </a>
                             </div>
                           </div>
@@ -163,7 +166,7 @@ const Header = () => {
                     </div>
                   </a>
                  
-                  <a
+                  <a 
                     className="main-element link-event link-event-delay single-navbar color-main"
                     target="_blank"
                     style={{
@@ -176,61 +179,15 @@ const Header = () => {
                       color: '#ffffff',
                       padding: "10px 0"
                     }}
+                    href="/ListRestaurant"
                     onMouseLeave={() => onHangleState(setShowNg)}
                     onMouseEnter={() => setShowNg(false)}
-                    href="/restaurant"
+                    
                   >
-                    Restaurant <i className="fa-solid fa-angle-down"></i>
+                    Restaurant 
                     <div
                       className="ks-position"
                     >
-                      <div className="home-main ks-drop-down">
-                        <div className="home-main ks-drop-down-main">
-                          <div className="home-main header-btn"></div>
-                          <div className="home-main btn-ks">
-                            <div className="home-main btn-ks-lable">
-                              <a
-                                exact="true"
-                                className="btn-ks-lable log-btn btn-type"
-                                href="/restaurant"
-
-                              >
-                                Nhà hàng 1
-                              </a>
-                            </div>
-                          </div>
-                          <div className="home-main btn-ks">
-                            <div className="home-main btn-ks-label">
-                              <a
-                                exact="true"
-                                className="btn-ks-label log-btn btn-type"
-                                href="/restaurant"
-                                style={{
-                                  textDecoration: "none",
-                                  color: "black",
-                                }}
-                              >
-                                Nhà hàng 2
-                              </a>
-                            </div>
-                          </div>
-                          <div className="home-main btn-ks">
-                            <div className="home-main btn-ks-label">
-                              <a
-                                exact="true"
-                                className="btn-ks-label log-btn btn-type"
-                                href="/restaurant"
-                                style={{
-                                  textDecoration: "none",
-                                  color: "black",
-                                }}
-                              >
-                                Nhà hàng 3
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </a>
                  
@@ -327,7 +284,7 @@ const Header = () => {
                                 to="/login"
                                 exact="true"
                               >
-                                <AiOutlineLogin /> Đăng nhập
+                                <AiOutlineLogin /> Log in
                               </NavLink>
                             </div>
                           </div>
@@ -338,7 +295,7 @@ const Header = () => {
                                 to="/register"
                                 exact="true"
                               >
-                                <AiOutlineLogout /> Đăng ký
+                                <AiOutlineLogout /> Sign up
                               </NavLink>
                             </div>
                           </div>
