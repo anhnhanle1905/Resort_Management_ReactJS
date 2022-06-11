@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { registerApi } from '../../api/registerApi';
@@ -6,9 +5,9 @@ import './styles.scss';
 import swal from 'sweetalert'
 function Register() {
   const [dataFrom,setDataForm]=useState({
-    Email:'',
-    Password:'',
-    FullName:'',
+    email:'',
+    password:'',
+    fullname:'',
     Phone:'',
     Address:'',
     Username:'',
@@ -16,6 +15,7 @@ function Register() {
 
 const handleOnchange=(e)=>{ setDataForm({...dataFrom,[e.target.name]:e.target.value})}
 const handleSubmit = async (e) => {
+  console.log(e);
   e.preventDefault();
   const res =  await registerApi(dataFrom);
   if(!res)
@@ -47,17 +47,17 @@ const handleSubmit = async (e) => {
                     
                     <form onSubmit={handleSubmit} className="login_form" id="form-1">
                       <div className="form-group">
-                        <input id="email" name="Email"  value={dataFrom.Email} onChange={e=>handleOnchange(e)} type="email" placeholder="Email" className="form-control" required/>
+                        <input id="email" name="email"  value={dataFrom.Email} onChange={e=>handleOnchange(e)} type="email" placeholder="Email" className="form-control" required/>
                         <span className="form-message"></span>
                       </div>
 
                       <div className="form-group">
-                        <input id="FullName" name="FullName" type="text" value={dataFrom.FullName} onChange={e=>handleOnchange(e)} placeholder="Full name" className="form-control" required/>
+                        <input id="FullName" name="fullname" type="text" value={dataFrom.FullName} onChange={e=>handleOnchange(e)} placeholder="Full name" className="form-control" required/>
                         <span className="form-message"></span>
                       </div>
 
                       <div className="form-group">
-                        <input id="password" name="Password" value={dataFrom.Password} onChange={e=>handleOnchange(e)} type="password" placeholder="Password" className="form-control" required/>
+                        <input id="password" name="password" value={dataFrom.Password} onChange={e=>handleOnchange(e)} type="password" placeholder="Password" className="form-control" required/>
                       </div>
 
                       <div className="wthree-text">
