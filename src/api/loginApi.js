@@ -6,6 +6,7 @@ const url = 'http://localhost:3030/auth/'
     try {
         const res = await axios.post(`${url}login`,data)
         if(res){
+            localStorage.setItem('idUser',res?.data?.user?._id)
             localStorage.setItem("token",res?.data?.token)
             return true
         }
