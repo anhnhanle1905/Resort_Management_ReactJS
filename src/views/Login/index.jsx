@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link,useNavigate, useHistory } from "react-router-dom";
 import "./styles.scss";
 // import GoogleLogin from "react-google-login";
 // import FacebookLogin from "react-facebook-login";
@@ -17,15 +17,19 @@ function Login() {
   }
   */
 //  const history = useHistory()
+const useNatigigaton = useNavigate()
   const [user, setUser] = useState({
-    Username: "",
-    Password: "",
+    email: "",
+    password: "",
   });
   const loginUser = async () =>{
     const res =  await loginApi(user)
     console.log(res); 
-    if(!res)
+    if(!res){
       return swal("Here's a message!", "Some thing wrong")
+    }
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useNatigigaton('/')
     swal("Here's a message!", "Login success")
     // history.push('/')
   }
@@ -85,7 +89,7 @@ function Login() {
                   type="text"
                   placeholder="Username/Email"
                   className="form-control"
-                  onChange={(e) => setUser({...user,Username: e.target.value})}
+                  onChange={(e) => setUser({...user,email: e.target.value})}
                 />
                 <span className="form-message"></span>
               </div>
@@ -97,7 +101,7 @@ function Login() {
                   type="password"
                   placeholder="Password"
                   className="form-control"
-                  onChange={(e) => setUser({...user,Password: e.target.value})}
+                  onChange={(e) => setUser({...user,password: e.target.value})}
                 />
                 <span className="form-message"></span>
               </div>
