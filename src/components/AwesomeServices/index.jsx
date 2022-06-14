@@ -1,15 +1,30 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import PropTypes from "prop-types";
 import "./styles.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import axios from "axios";
 
 const AwesomeServices = (props) => {
   const [nav1, setNav1] = useState();
   const [nav2, setNav2] = useState();
-
+  const [arr, setArr] = useState([]);
+  useEffect(() => {
+    getData();
+  }, []);
+  console.log(arr);
+  const getData = async () => {
+    try {
+      const res = await axios.get(
+        "http://localhost:3030/awesomeService/getData"
+      );
+      if (res) {
+        setArr(res?.data?.data);
+      }
+    } catch (error) {}
+  };
   return (
     <div className="AwesomeServices">
       <h2 className="favorite_room_header-title">OUR AWESOME SERVICES</h2>
@@ -31,30 +46,16 @@ const AwesomeServices = (props) => {
             autoplaySpeed={2500}
             arrows={false}
           >
-            <div>
-              <img
-                src="https://preview.eagle-themes.com/html/zante/images/restaurant.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="https://preview.eagle-themes.com/html/zante/images/spa.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="https://preview.eagle-themes.com/html/zante/images/conference.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="https://preview.eagle-themes.com/html/zante/images/swimming.jpg"
-                alt=""
-              />
-            </div>
+            {arr.map((e,index) => {
+              return (
+                <div key={index}>
+                  <img
+                    src={e?.image}
+                    alt=""
+                  />
+                </div>
+              );
+            })}
           </Slider>
         </div>
         <div className="right">
