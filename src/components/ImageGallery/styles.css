@@ -1,20 +1,22 @@
-.image-container{
+.image-container {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
     overflow: hidden;
 }
-.image-main-title{
+
+.image-main-title {
     margin-bottom: 30px;
     margin-top: 20px;
     position: relative;
     text-align: center;
 }
-.image-main-title h2{
+
+.image-main-title h2 {
     color: #1dc1f8;
     font-size: 2.2em;
-    font-family: 'Raleway', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     position: relative;
     font-weight: 700;
@@ -22,7 +24,8 @@
     letter-spacing: 0.5px;
     text-align: center;
 }
-.image-main-title::after{
+
+.image-main-title::after {
     background: url('https://preview.eagle-themes.com/html/zante/images/icons/wave_blue.svg');
     content: "";
     display: block;
@@ -32,13 +35,14 @@
     margin: 10px auto;
     opacity: .5;
 }
-.image-gs2{
 
+.image-gs2 {
     box-sizing: border-box;
     position: relative;
     margin-bottom: 50px;
 }
-.image-gs2::before{
+
+.image-gs2::before {
     content: "";
     display: block;
     position: absolute;
@@ -50,7 +54,8 @@
     transform: rotate(135deg);
     z-index: 9;
 }
-.image-gs2::after{
+
+.image-gs2::after {
     content: "";
     display: block;
     position: absolute;
@@ -62,7 +67,8 @@
     transform: rotate(135deg);
     z-index: 9;
 }
-.hover_effect{
+
+.hover_effect {
     display: block;
     position: relative;
     background: none;
@@ -71,7 +77,8 @@
     color: #1dc1f8;
     text-decoration: none;
 }
-.img-responsive{
+
+.img-responsive {
     display: block;
     position: relative;
     backface-visibility: hidden;
@@ -79,24 +86,29 @@
     max-width: 100%;
     height: auto;
 }
-.hover_effect:hover{
+
+.hover_effect:hover {
     background: #1dc1f8;
     color: #2c88c0;
     text-decoration: none;
     outline: none;
 }
 
-.hover_effect:hover .img-responsive{
+.hover_effect:hover .img-responsive {
     transform: scale(1.1);
     opacity: 0.4;
-}.image-item-content{
+}
+
+.image-item-content {
     padding: 0 20px;
-  }
+}
+
 .image-title {
-      display: flex;
+    display: flex;
     width: 100%;
     justify-content: center;
 }
+
 .image-title p {
     font-family: Arial, Helvetica, sans-serif;
     color: #858a99;

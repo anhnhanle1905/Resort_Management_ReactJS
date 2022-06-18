@@ -42,7 +42,7 @@ export default function Footer() {
                         <address>
                         <ul class="address_details">
                          <li><i class="glyphicon glyphicon-map-marker">
-                             </i> ĐẠI HỌC CÔNG NGHỆ THÔNG TIN, LINH TRUNG ,THỦ ĐỨC
+                             </i> Đại học Công Nghệ Thông Tin, Linh Trung ,Thủ đức
                          </li>
                          <li><i class="glyphicon glyphicon-phone-alt">
                          </i> Phone: +84 0763638074

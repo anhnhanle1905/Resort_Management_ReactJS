@@ -1,22 +1,25 @@
 .contact-container {
     padding: 0 40px;
-  }
-  .contact-info {
+}
+
+.contact-info {
     list-style-type: none;
-  }
-  .contact-info li {
+}
+
+.contact-info li {
     padding: 8px 0;
     font-weight: 700;
-  }
-  .contact-info li span {
+}
+
+.contact-info li span {
     display: block;
     font-size: 1em;
     color: #deb666;
     font-weight: 900;
     margin-bottom: 10px;
-  }
-  
-  .social_media a {
+}
+
+.social_media a {
     background: #fff;
     border: 1px solid #e6eff2;
     display: inline-block;
@@ -26,34 +29,41 @@
     line-height: 40px;
     margin: 4px;
     text-align: center;
-  }
-  .twitter {
+}
+
+.twitter {
     color: #4099ff;
-  }
-  .googleplus {
+}
+
+.googleplus {
     color: #d34836;
-  }
-  .pinterest {
+}
+
+.pinterest {
     color: #cb2027;
-  }
-  .linkedin {
+}
+
+.linkedin {
     color: #007bb6;
-  }
-  .youtube {
+}
+
+.youtube {
     color: #bb0000;
-  }
-  .facebook {
+}
+
+.facebook {
     color: #3b5998;
-  }
-  .instagram {
+}
+
+.instagram {
     margin-right: 0;
-  }
-  
-  .container {
+}
+
+.container {
     display: flex;
-  }
-  
-  .contact-form-label {
+}
+
+.contact-form-label {
     font-size: 0.9em;
     color: #606060;
     letter-spacing: 1px;
@@ -61,8 +71,9 @@
     margin-bottom: 10px;
     display: inline-block;
     max-width: 100%;
-  }
-  .contact-fomr-input {
+}
+
+.contact-fomr-input {
     height: 52px;
     border-radius: 1px;
     border: 1px solid #dfdfdf;
@@ -73,15 +84,32 @@
     width: 100%;
     padding: 6px 12px;
     outline: none;
-  }
-  .contact-form-content {
+}
+
+.contact-form-content {
     display: flex;
     flex-direction: column;
     width: 400px;
     padding: 0 10px 20px;
-  }
-  .contact-form-container-header {
+}
+
+.contact-form-container-header {
     display: flex;
     gap: 0 20px;
-  }
-  
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.button.btn_blue {
+    background: #deb666;
+    border-color: #deb666;
+    color: #fff;
+    vertical-align: middle;
+    cursor: pointer;
+}
