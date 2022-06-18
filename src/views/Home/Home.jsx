@@ -34,7 +34,7 @@ export default function Home() {
         <ButtonScrollTop />
         <FlashSale />
         <FavoritePlace />
-        <Fly />
+        {/* <Fly /> */}
         <ButtonCard />
       </main>
       <Footer />
