@@ -7,17 +7,7 @@ import "./styles.scss";
 import { loginApi } from "../../api/loginApi";
 import swal from "sweetalert";
 import logo1 from "../../Logo/logo-trang.png";
-function Login() {
-  //Xử lý sumit form
-  /*
-  const [email,setEmail] = useState('')
-  const [name,setName] = useState('')
-  const handleSubmit = () => {
-    //Call API 
-    console.log({name,email})
-  }
-  */
-  //  const history = useHistory()
+function ChangePassword() {
   const useNatigigaton = useNavigate();
   const [user, setUser] = useState({
     email: "",
@@ -34,32 +24,9 @@ function Login() {
     swal("Here's a message!", "Login success");
     // history.push('/')
   };
-  // const { checkUser, setCheckUser } = useContext(Couter);
 
-  // const responseGoogle = (response) => {
-  //   let dataGoogle = {
-  //     HoTen: response?.profileObj.name,
-  //     Email: response.profileObj.email,
-  //     Username: response.profileObj.googleId,
-  //     Picture: response.profileObj.imageUrl,
-  //   };
-  //   localStorage.setItem("UserId", 11);
-  //   setCheckUser(localStorage.getItem("UserId") || false);
-  //   console.log(dataGoogle);
-  //   if (dataGoogle) history.push("");
-  // };
-
-  // const responseFacebook = (response) => {
-  //   let dataFacebook = {
-  //     Username: response.userID,
-  //     HoTen: response.name,
-  //     Email: response.email,
-  //     Picture: response.picture.data,
-  //   };
-  //   console.log(dataFacebook);
-  // };
   return (
-    <div className="Login">
+    <div className="ChangePassword">
       <div className="login-form">
         <div className="login-left">
           <div className="content">
@@ -80,7 +47,7 @@ function Login() {
 
         <div className="login-right">
           <div className="content">
-            <p className="hellothere">Hello there</p>
+            <p className="hellothere">Change Password</p>
 
             <div className="login_form" id="form-1">
               <div className="form-group">
@@ -100,7 +67,7 @@ function Login() {
                   id="password"
                   name="password"
                   type="password"
-                  placeholder="Password"
+                  placeholder="Current password"
                   className="form-control"
                   onChange={(e) =>
                     setUser({ ...user, password: e.target.value })
@@ -109,45 +76,45 @@ function Login() {
                 <span className="form-message"></span>
               </div>
 
-              <p className="change-password">
-                <Link className="changePassword" to="/changePassword">
-                  Change password
-                </Link>
-              </p>
+              <div className="form-group">
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  placeholder="New password"
+                  className="form-control"
+                  onChange={(e) =>
+                    setUser({ ...user, password: e.target.value })
+                  }
+                />
+                <span className="form-message"></span>
+              </div>
+
+              <div className="form-group">
+                <input
+                  id="re-password"
+                  name="re-password"
+                  type="re-password"
+                  placeholder="Confirm new password"
+                  className="form-control"
+                  onChange={(e) =>
+                    setUser({ ...user, password: e.target.value })
+                  }
+                />
+                <span className="form-message"></span>
+              </div>
 
               <button className="form-submit btn" onClick={() => loginUser()}>
-                Login
+                Confirm
               </button>
-              <p className="sign-up">
-                Don't have an Account?{" "}
-                <Link className="signup" to="/register">
-                  Register!
+              <p className="return-home">
+                Return{" "}
+                <Link className="home" to="/">
+                  Home Page
                 </Link>
               </p>
               <div className="signin-fb-gg"></div>
             </div>
-
-            {/* <FacebookLogin
-              appId="404801124635752"
-              autoLoad={true}
-              fields="name,email,picture"
-              callback={responseFacebook}
-              cssClass="my-facebook-button-class"
-              render={(renderProps) => (
-                <button onClick={renderProps.onClick}>
-                  This is my custom FB button
-                </button>
-              )}
-            />
-
-            <GoogleLogin
-              clientId="472545936062-074brscdde3hk8v2u4jjs2r474302qkg.apps.googleusercontent.com"
-              buttonText={"Login with Google"}
-              onSuccess={responseGoogle}
-              cookiePolicy={"single_host_origin"}
-              className="my-google-button-class"
-              isSignedIn={false}
-            /> */}
           </div>
         </div>
       </div>
@@ -155,4 +122,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default ChangePassword;
