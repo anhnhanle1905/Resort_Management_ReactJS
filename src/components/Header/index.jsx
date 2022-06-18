@@ -10,13 +10,37 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import logo1 from '../../Logo/logo-trang.png'
 import logo2 from '../../Logo/logo-xanh.png'
 
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+
 
 const Header = () => {
   const [show, setShow] = React.useState(false);
   const [showKs, setShowKs] = React.useState(true);
   const [showNh, setShowNg] = React.useState(true);
+  const router = useNavigate()
+  const url = 'http://localhost:3030/auth/'
 
   const [isSignUp, setIsSignUp] = React.useState(false);
+  const logout = async () =>{
+    try {
+      console.log('asa')
+      const token = localStorage.getItem('token')
+      const res = await axios.post(`${url}logOut`,{
+      },
+      {
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      }
+      )
+      if(res){
+        return router('/login')
+      }
+  } catch (error) {
+     return false
+  }
+  }
   const handleShow = () => {
     if (typeof window !== "undefined") {
       if (window.pageYOffset > 120) {
@@ -279,13 +303,14 @@ const Header = () => {
                           <div className="home-main header-btn"></div>
                           <div className="home-main btn-dangnhap hover-btn-dangnhap">
                             <div className="home-main btn-dangnhap-lable">
-                              <NavLink
+                              <button
                                 className="btn-dangnhap-lable log-btn"
                                 to="/login"
                                 exact="true"
+                                onClick={() => logout()}
                               >
-                                <AiOutlineLogin /> Log in
-                              </NavLink>
+                                <AiOutlineLogin /> Log out
+                              </button>
                             </div>
                           </div>
                           <div className="home-main btn-dangki hover-btn-dangnhap">

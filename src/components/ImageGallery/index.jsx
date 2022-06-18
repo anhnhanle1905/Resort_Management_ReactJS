@@ -4,10 +4,11 @@ import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import { useState } from "react";
 import { useEffect } from "react";
+import axios from "axios";
 function ImageGallery() {
   const [isOpen, setIsopen] = useState(false);
   const [image,setImage] = useState('')
-  const arr = [
+  const [arr,setArr] = useState( [
     {
       id: 1,
       img: "https://preview.eagle-themes.com/html/zante/images/gallery/gallery1.jpg",
@@ -56,7 +57,20 @@ function ImageGallery() {
       id: 1,
       img: "https://preview.eagle-themes.com/html/zante/images/gallery/gallery12.jpg",
     },
-  ];
+  ])
+  useEffect(() =>{
+    getData()
+  },[])
+  const getData  = async () =>{
+    try {
+      const res = await axios.get('http://localhost:3030/imageGallery/getData')
+      if(res){
+        setArr(res?.data?.data)
+      }
+    } catch (error) {
+      
+    }
+  }
   
   const setData = (img) =>{
     setIsopen(!isOpen)
@@ -84,7 +98,7 @@ function ImageGallery() {
                 <figure className="image-gs2">
                   <a className="hover_effect h_lightbox h_blue">
                     <img
-                      src={e?.img}
+                      src={e?.image}
                       className="img-responsive"
                       alt="Image"
                     />

@@ -3,10 +3,37 @@ import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./styles.scss";
+import { useState } from "react";
+import { bookingApi } from "../../api/bookingApi";
+import swal from "sweetalert";
 
 BookingForm.propTypes = {};
 
 function BookingForm(props) {
+  const [book, setBook] = useState({
+    idUserBooking: localStorage.getItem('idUser'),
+    fullname:'',
+    emailBook:'',
+    phone:'',
+    roomtype:'',
+    dateArrival : '',
+    dateDeparture : '',
+    adults :'',
+    children :'',
+    comment :'',
+  })
+  const bookingOnline = async() =>{
+    try {
+      const res = await bookingApi(book)
+      if(res === true){
+        console.log(res)
+        return swal("Here's a message!", "Success")
+      }
+    } catch (error) {
+      return swal("Here's a message!", "Something wrong")
+      
+    }
+  }
   return (
     <div>
       <div className="booking-page">
@@ -28,7 +55,6 @@ function BookingForm(props) {
           </div>
         </div>
 
-        {/* booking-form */}
 
         <div className="container">
           <div className="body-booking-page container">
@@ -43,6 +69,7 @@ function BookingForm(props) {
                     type="text"
                     placeholder="Your Name"
                     className="form-control"
+                    onChange={(e) => setBook({...book,fullname: e.target.value})}
                   />
                   <span className="form-message"></span>
                 </div>
@@ -55,6 +82,8 @@ function BookingForm(props) {
                     type="text"
                     placeholder="Your Email Address"
                     className="form-control"
+                    onChange={(e) => setBook({...book,emailBook: e.target.value})}
+
                   />
                   <span className="form-message"></span>
                 </div>
@@ -67,6 +96,8 @@ function BookingForm(props) {
                     type="text"
                     placeholder="Your Phone Number"
                     className="form-control"
+                    onChange={(e) => setBook({...book,phone: e.target.value})}
+
                   />
                   <span className="form-message"></span>
                 </div>
@@ -79,6 +110,8 @@ function BookingForm(props) {
                     class="form-control"
                     title="Room Type"
                     data-header="Room Type"
+                    onChange={(e) => setBook({...book,roomtype: e.target.value})}
+
                   >
                     <option selected disabled>
                       Room Type
@@ -97,6 +130,8 @@ function BookingForm(props) {
                     type="date"
                     placeholder="Date Arrival"
                     className="form-control"
+                    onChange={(e) => setBook({...book,dateArrival: e.target.value})}
+
                   />
                 </div>
                 <div className="form-group date date-departure">
@@ -107,6 +142,8 @@ function BookingForm(props) {
                     type="date"
                     placeholder="Date Departure"
                     className="form-control"
+                    onChange={(e) => setBook({...book,dateDeparture: e.target.value})}
+
                   />
                 </div>
 
@@ -118,6 +155,8 @@ function BookingForm(props) {
                     class="form-control"
                     title="Room Type"
                     data-header="Room Type"
+                    onChange={(e) => setBook({...book,adults: e.target.value})}
+
                   >
                     <option selected disabled>
                       Adults
@@ -138,6 +177,8 @@ function BookingForm(props) {
                     class="form-control"
                     title="Room Type"
                     data-header="Room Type"
+                    onChange={(e) => setBook({...book,children: e.target.value})}
+
                   >
                     <option selected disabled>
                       Children
@@ -153,10 +194,20 @@ function BookingForm(props) {
                 <div className="form-group comment">
                   <label htmlFor="">Your Comment</label>
                   <form action="">
-                    <textarea name="" id="" cols="30" rows="10">
-                      Your Comment
+                    <textarea name="" id="" cols="30" rows="10" 
+                    placeholder="Your Message..."
+                    onChange={(e) => setBook({...book,comment: e.target.value})}
+                    
+                    >
+                    
                     </textarea>
                   </form>
+                  <div className="btn-book" onClick={()=> bookingOnline()}>
+                    <a>
+                      <FontAwesomeIcon icon="fa-solid fa-calendar-days" />
+                      BOOK NOW
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
