@@ -9,7 +9,8 @@ import Booking from "./views/Booking";
 import "../src/fontawasome.js";
 import ListRoom from "./views/ListRoom";
 import ListRestaurant from "./views/ListRestaurant";
-import './App.css'
+import "./App.css";
+import ChangePassword from "./views/ChangePassword";
 function App() {
   return (
     <Router>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/hotel" element={<Hotel />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/changePassword" element={<ChangePassword />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/ListRoom" element={<ListRoom />} />
         <Route path="/ListRestaurant" element={<ListRestaurant />} />

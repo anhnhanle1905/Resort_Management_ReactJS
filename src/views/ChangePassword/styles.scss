@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pragati+Narrow&family=Sacramento&display=swap");
 @import "../../variable.css";
 
-.Register {
+.ChangePassword {
   display: flex;
   width: 100%;
   height: 100vh;
@@ -75,7 +75,7 @@
           font-size: 14px;
           margin-bottom: 15px;
         }
-        form {
+        .login_form {
           .form-group {
             margin-bottom: 15px;
             input {
@@ -92,26 +92,19 @@
               }
             }
           }
-
-          .wthree-text {
-            font-size: 12px;
-            text-align: start;
-            label {
-              display: flex;
-              cursor: pointer;
-              span {
-                color: #82ccdd;
-              }
-              input {
-                margin-right: 8px;
-                background-color: #82ccdd;
-                cursor: pointer;
-              }
+          p.forgot-password {
+            cursor: pointer;
+            text-align: end;
+            font-size: 11px;
+            color: #82ccdd;
+            &:hover {
+              text-decoration: underline;
+              color: #82ccdd;
+              transition: all 0.3s;
             }
           }
-
           button.form-submit {
-            //create account
+            //login
             width: 265px;
             height: 35px;
             color: #fff;
@@ -123,16 +116,16 @@
               transition: all 0.3s;
             }
           }
-          p.loginnow {
+          p.return-home {
             margin-bottom: 15px;
-            font-size: 12px;
-            .login-now {
+            font-size: 14px;
+            .home {
               color: #82ccdd;
               text-decoration: none;
               font-size: 14px;
               &:hover {
                 text-decoration: underline;
-                color: #86d0e1e0;
+                color: #82ccdd;
                 transition: all 0.3s;
               }
             }
@@ -149,17 +142,6 @@
             border: none;
             border-radius: 30px;
           }
-
-          // .signin-fb-gg {
-          //     display: flex;
-          //     justify-content: space-between;
-          //     .btn-fb, .btn-gg {
-          //         background-color: #fff;
-          //         border:1px solid rgb(222, 120, 86);
-          //         color: #333;
-          //         font-size: 11px;
-          //     }
-          // }
         }
       }
     }
@@ -167,7 +149,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .Signup {
+  .Login {
     .login-form {
       width: 521px;
       height: 377px;
@@ -212,16 +194,6 @@
                 padding-left: 7px;
                 width: 185px;
                 height: 25px;
-                font-size: 11px;
-              }
-            }
-            .wthree-text {
-              font-size: 7px;
-              input {
-                margin-right: 4px;
-              }
-              label {
-                font-size: 8px;
               }
             }
             p.forgot-password {
@@ -231,17 +203,24 @@
               width: 185px;
               height: 25px;
             }
-            p.loginnow {
-              margin-bottom: 15px;
-              font-size: 10px;
-              .login-now {
-                font-size: 10px;
+            p.sign-up {
+              margin-bottom: 10px;
+              font-size: 8px;
+              .signup {
+                font-size: 8px;
               }
             }
             .btn {
               width: 91px;
               height: 24px;
-              font-size: 12px;
+              font-size: 8px;
+            }
+            //k chinh dc icon fb gg
+            .signin-fb-gg {
+              .btn-fb,
+              .btn-gg {
+                font-size: 8px;
+              }
             }
           }
         }
@@ -251,15 +230,15 @@
 }
 
 @media screen and (max-width: 414px) {
-  .Signup {
+  .Login {
     .login-form {
-      width: 350px;
-      height: 320px;
+      width: 260px;
+      height: 190px;
       .login-left {
-        width: 175px;
+        width: 140px;
         .content {
           h3 {
-            font-size: 14px;
+            font-size: 12px;
             margin-bottom: 5px;
           }
           p.welcome {
@@ -279,10 +258,10 @@
         }
       }
       .login-right {
-        width: 175px;
+        width: 125px;
         .content {
           p.hellothere {
-            font-size: 14px;
+            font-size: 12px;
             margin-bottom: 5px;
           }
           p {
@@ -294,44 +273,29 @@
               margin-bottom: 5px;
               input {
                 padding-left: 4px;
-                width: 150px;
-                height: 18px;
-                font-size: 9px;
+                width: 95px;
+                height: 13px;
               }
             }
-            .wthree-text {
-              margin-top: 10px;
-              input {
-                margin-right: 2px;
-              }
-              label {
-                font-size: 7px;
-              }
+            p.forgot-password {
+              font-size: 5px;
             }
-
             button.form-submit {
               width: 95px;
               height: 13px;
             }
-            p.loginnow {
-              margin-bottom: 15px;
-              font-size: 9px;
-              .login-now {
-                font-size: 9px;
+            p.sign-up {
+              margin-bottom: 5px;
+              font-size: 5px;
+              .signup {
+                font-size: 5px;
               }
             }
             .btn {
               width: 50px;
               height: 13px;
-              font-size: 7px;
+              font-size: 5px;
             }
-            //k chinh dc icon fb gg
-            // .signin-fb-gg {
-            //     display: none;
-            //     .btn-fb, .btn-gg {
-
-            //     }
-            // }
           }
         }
       }
