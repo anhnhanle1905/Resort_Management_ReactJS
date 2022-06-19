@@ -2,15 +2,13 @@ import React from "react";
 import "./styles.css";
 function Contact_Component() {
   return (
-    <div className="contact-container"
-    style={{marginTop:"50px"}}
-    >
+    <div className="contact-container" style={{ marginTop: "50px" }}>
       <div className="container">
         <div className="contact-left-container">
-          <div className="contact-left-title" >
+          <div className="contact-left-title">
             <h2> CONTACT US</h2>
           </div>
-          <form className="contact-left-form" >
+          <form className="contact-left-form">
             <div className="contact-form-container">
               <div className="contact-form-container-header">
                 <div className="contact-form-content">
@@ -68,16 +66,26 @@ function Contact_Component() {
                 </div>
               </div>
             </div>
+            <div class="form-group">
+              <button
+                type="submit"
+                class="button  btn_blue mt40 upper pull-right"
+              >
+                <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Send Your
+                Message
+              </button>
+            </div>
           </form>
         </div>
         <div className="contact-right-container">
-          <div className="contact-right-title" style={{ paddingLeft: '40px'}}>
+          <div className="contact-right-title" style={{ paddingLeft: "40px" }}>
             <h2>GET IN TOUCH</h2>
           </div>
           <div className="contact-right-content">
             <ul className="contact-info upper">
               <li>
-                <span>ADDRESS:</span> Đại học Công Nghệ Thông Tin, Linh Trung ,Thủ Đức
+                <span>ADDRESS:</span> Đại học Công Nghệ Thông Tin, Linh Trung
+                ,Thủ Đức
               </li>
               <li>
                 <span>EMAIL:</span> example@site.com, contact@site.com
@@ -86,8 +94,8 @@ function Contact_Component() {
                 <span>WEB:</span> www.site.com
               </li>
               <li>
-                <span>PHONE:</span> +84 (070) <strong>333-4444</strong> , +84 (090){" "}
-                <strong>999-999</strong>
+                <span>PHONE:</span> +84 (070) <strong>333-4444</strong> , +84
+                (090) <strong>999-999</strong>
               </li>
               <li>
                 <span>FAX:</span>
@@ -95,26 +103,26 @@ function Contact_Component() {
               </li>
             </ul>
           </div>
-          <div className="social_media" style={{ paddingLeft: '40px'}}>
-            <a className="facebook" >
+          <div className="social_media" style={{ paddingLeft: "40px" }}>
+            <a className="facebook">
               <i className="fa fa-facebook"></i>
             </a>
-            <a className="twitter" >
+            <a className="twitter">
               <i className="fa fa-twitter"></i>
             </a>
-            <a className="googleplus" >
+            <a className="googleplus">
               <i className="fa fa-google-plus"></i>
             </a>
-            <a className="pinterest" >
+            <a className="pinterest">
               <i className="fa fa-pinterest"></i>
             </a>
-            <a className="linkedin" >
+            <a className="linkedin">
               <i className="fa fa-linkedin"></i>
             </a>
-            <a className="youtube" >
+            <a className="youtube">
               <i className="fa fa-youtube"></i>
             </a>
-            <a className="instagram" >
+            <a className="instagram">
               <i className="fa fa-instagram"></i>
             </a>
           </div>

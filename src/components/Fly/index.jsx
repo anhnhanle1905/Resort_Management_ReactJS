@@ -51,37 +51,12 @@ export default function Fly() {
                 style={{ display: "flex" }}
               >
                 <span className="home-main fly-haeder-left-content">
-                  Chuyến bay giá tốt{" "}
+                  Flight
                 </span>
-                <div className="home-main fly-header-left-hcm">
-                  <span className="home-main fly-header-left-from " style={{marginLeft:'4px'}}> từ</span>
-                  <span className="home-main fly-header-left-from-content" style={{marginLeft:'4px'}}>
-                    {"  "}Hồ Chí Minh
-                  </span>
-                  <svg
-                    width="10"
-                    height="6"
-                    fill="none"
-                    className="svgFillAll"
-                    style={{
-                      marginTop: "12px",
-                      stroke: "rgb(255, 51, 102)",
-                      cursor: "pointer",
-                      transform: "rotate(180deg)",
-                    }}
-                  >
-                    <path
-                      d="M1 5l4-4 4 4"
-                      stroke="#00B6F3"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                </div>
+                
               </div>
               <p className="home-main flys-span">
-                Những chuyến bay giá tốt nhất trong tháng khởi hành
+                best flights
               </p>
             </div>
             <a className="home-main fly-header-btn">
