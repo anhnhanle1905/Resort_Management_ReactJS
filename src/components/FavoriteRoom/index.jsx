@@ -60,7 +60,7 @@ function FavoriteRoom() {
           );
         })}
       </div>
-      <div className="mt40 a_center">
+      <div className="mt40 a_center" style={{ marginBottom: "50px" }}>
         <a className="button btn_sm btn_yellow" href="/ListRoom">
           VIEW ROOMS LIST
         </a>
