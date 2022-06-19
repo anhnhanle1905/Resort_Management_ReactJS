@@ -6,41 +6,50 @@ import Left_Menu from "../LeftMenu";
 import { AiOutlineLogin } from "react-icons/ai";
 import { AiOutlineLogout } from "react-icons/ai";
 import { AiFillDownSquare } from "react-icons/ai";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import logo1 from '../../Logo/logo-trang.png'
-import logo2 from '../../Logo/logo-xanh.png'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import logo1 from "../../Logo/logo-trang.png";
+import logo2 from "../../Logo/logo-xanh.png";
 
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-
 
 const Header = () => {
   const [show, setShow] = React.useState(false);
   const [showKs, setShowKs] = React.useState(true);
   const [showNh, setShowNg] = React.useState(true);
-  const router = useNavigate()
-  const url = 'http://localhost:3030/auth/'
+  const router = useNavigate();
+  const url = "http://localhost:3030/auth/";
 
   const [isSignUp, setIsSignUp] = React.useState(false);
-  const logout = async () =>{
+
+  //status login
+  const [isLogin, setIsLogin] = React.useState(false);
+  //fullname user
+  const [fullname, setFullname] = React.useState(false);
+
+  const logout = async () => {
     try {
-      console.log('asa')
-      const token = localStorage.getItem('token')
-      const res = await axios.post(`${url}logOut`,{
-      },
-      {
-        headers: {
-          'Authorization': `Bearer ${token}`
+      console.log("asa");
+      const token = localStorage.getItem("token");
+      const res = await axios.post(
+        `${url}logOut`,
+        {},
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
         }
+      );
+      if (res) {
+        localStorage.setItem("statusLogin", false);
+        setIsLogin(localStorage.getItem("statusLogin"));
+
+        return router("/login");
       }
-      )
-      if(res){
-        return router('/login')
-      }
-  } catch (error) {
-     return false
-  }
-  }
+    } catch (error) {
+      return false;
+    }
+  };
   const handleShow = () => {
     if (typeof window !== "undefined") {
       if (window.pageYOffset > 120) {
@@ -52,6 +61,12 @@ const Header = () => {
         setShow(false);
       }
     }
+  };
+  const checkLogin = () => {
+    const statusLogin = localStorage.getItem("statusLogin");
+    const fullname = localStorage.getItem("fullname");
+    setFullname(fullname);
+    setIsLogin(statusLogin);
   };
   const onHangleState = (setParam) => {
     return setParam(true);
@@ -65,6 +80,8 @@ const Header = () => {
     setData(e);
   };
   useEffect(() => {
+    checkLogin();
+    console.log(`isLogin: ${typeof isLogin}`);
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", handleShow);
     }
@@ -111,15 +128,14 @@ const Header = () => {
                       display: "flex",
                       alignItems: "center",
                       gap: "0 4px",
-                      color: '#ffffff',
-                      padding: "10px 0"
-
+                      color: "#ffffff",
+                      padding: "10px 0",
                     }}
                     href="/"
                   >
                     Home
                   </a>
-                  <a  
+                  <a
                     className="main-element link-event link-event-delay single-navbar color-main"
                     href="/ListRoom"
                     target="_blank"
@@ -131,36 +147,33 @@ const Header = () => {
                       display: "flex",
                       alignItems: "center",
                       gap: "0 4px",
-                      color: '#ffffff',
-                      padding: "10px 0"
+                      color: "#ffffff",
+                      padding: "10px 0",
                     }}
-                   
                   >
                     Room <i className="fa-solid fa-angle-down"></i>
-                    <div
-                      className="ks-position"
-                    >
+                    <div className="ks-position">
                       <div className="home-main ks-drop-down">
                         <div className="home-main  ks-drop-down-main">
                           <div className="home-main header-btn"></div>
                           <div className="home-main btn-ks">
                             <div className="home-main btn-ks-lable">
-                              <a  href="/ListRoom"
+                              <a
+                                href="/ListRoom"
                                 exact="true"
                                 className="btn-ks-lable log-btn btn-type"
-                                style={{ fontSize: '0.9rem' }}
+                                style={{ fontSize: "0.9rem" }}
                               >
                                 Single Room
                               </a>
-                              
                             </div>
                           </div>
                           <div className="home-main btn-ks">
                             <div className="home-main btn-ks-label">
-                              <a  href="/ListRoom"
+                              <a
+                                href="/ListRoom"
                                 exact="true"
                                 className="btn-ks-label log-btn btn-type"
-                                
                                 style={{
                                   textDecoration: "none",
                                   color: "black",
@@ -189,8 +202,8 @@ const Header = () => {
                       </div>
                     </div>
                   </a>
-                 
-                  <a 
+
+                  <a
                     className="main-element link-event link-event-delay single-navbar color-main"
                     target="_blank"
                     style={{
@@ -200,30 +213,23 @@ const Header = () => {
                       display: "flex",
                       alignItems: "center",
                       gap: "0 4px",
-                      color: '#ffffff',
-                      padding: "10px 0"
+                      color: "#ffffff",
+                      padding: "10px 0",
                     }}
                     href="/ListRestaurant"
                     onMouseLeave={() => onHangleState(setShowNg)}
                     onMouseEnter={() => setShowNg(false)}
-                    
                   >
-                    Restaurant 
-                    <div
-                      className="ks-position"
-                    >
-                    </div>
+                    Restaurant
+                    <div className="ks-position"></div>
                   </a>
-                 
                 </div>
                 <div className="home main home-navbar-right">
-                  
                   <a
                     className="main-element link-event link-event-delay home-header-gift color-main icon-main"
                     style={{ textDecoration: "none" }}
                     href="/contact"
                   >
-                    
                     <svg
                       width="17"
                       height="17"
@@ -247,7 +253,7 @@ const Header = () => {
                       BOOK ONLINE
                     </a>
                   </div>
-                  
+
                   <div className="home-main main-element">
                     <div
                       className="home-main jss1759 home-header-ring"
@@ -301,35 +307,59 @@ const Header = () => {
                       >
                         <div className="home-main btn-dn-dk-main">
                           <div className="home-main header-btn"></div>
-                          <div className="home-main btn-dangnhap hover-btn-dangnhap">
-                            <div className="home-main btn-dangnhap-lable">
-                              <button
-                                className="btn-dangnhap-lable log-btn"
-                                to="/login"
-                                exact="true"
-                                onClick={() => logout()}
-                              >
-                                <AiOutlineLogin /> Log out
-                              </button>
-                            </div>
-                          </div>
                           <div className="home-main btn-dangki hover-btn-dangnhap">
                             <div className="home-main btn-dangki-label ">
-                              <NavLink
-                                className="btn-dangki-label log-btn"
-                                to="/register"
-                                exact="true"
-                              >
-                                <AiOutlineLogout /> Sign up
-                              </NavLink>
+                              {isLogin === "true" ? (
+                                <p>
+                                  Hello{" "}
+                                  <span
+                                    style={{
+                                      fontSize: "15px",
+                                      fontWeight: "800",
+                                    }}
+                                  >
+                                    {fullname}
+                                  </span>{" "}
+                                  🎉
+                                </p>
+                              ) : (
+                                <NavLink
+                                  className="btn-dangki-label log-btn"
+                                  to="/register"
+                                  exact="true"
+                                >
+                                  <AiOutlineLogout /> Register
+                                </NavLink>
+                              )}
+                            </div>
+                          </div>
+                          <div className="home-main btn-dangnhap hover-btn-dangnhap">
+                            <div className="home-main btn-dangnhap-lable">
+                              {isLogin === "true" ? (
+                                <button
+                                  className="btn-dangnhap-lable log-btn"
+                                  to="/login"
+                                  exact="true"
+                                  onClick={() => logout()}
+                                >
+                                  <AiOutlineLogin /> Log out
+                                </button>
+                              ) : (
+                                <NavLink
+                                  className="btn-dangki-label log-btn"
+                                  to="/login"
+                                  exact="true"
+                                >
+                                  <AiOutlineLogout /> Login
+                                </NavLink>
+                              )}
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div onClick={() => onChangeSidebar()}> 
-                  </div>
+                  <div onClick={() => onChangeSidebar()}></div>
                 </div>
               </div>
             </div>
