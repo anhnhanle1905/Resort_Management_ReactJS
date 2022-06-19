@@ -7,22 +7,30 @@ import "./styles.scss";
 import { loginApi } from "../../api/loginApi";
 import swal from "sweetalert";
 import logo1 from "../../Logo/logo-trang.png";
+import axios from "axios";
 function ChangePassword() {
-  const useNatigigaton = useNavigate();
   const [user, setUser] = useState({
     email: "",
     password: "",
+    newPassword: '',
+    newPassword1: '',
+
   });
   const loginUser = async () => {
-    const res = await loginApi(user);
-    console.log(res);
-    if (!res) {
+    console.log('oke')
+    try {
+      const res = await axios.post('http://localhost:3030/auth/changePW',{
+        email: user.email,
+        currentpassword: user.password,
+        newpassword: user.newPassword,
+        retypenewpassword: user.newPassword1
+      })
+      if(res){
+        return swal("Here's a message!", "Change password success");
+      }
+    } catch (error) {
       return swal("Here's a message!", "Some thing wrong");
     }
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    useNatigigaton("/");
-    swal("Here's a message!", "Login success");
-    // history.push('/')
   };
 
   return (
@@ -84,7 +92,7 @@ function ChangePassword() {
                   placeholder="New password"
                   className="form-control"
                   onChange={(e) =>
-                    setUser({ ...user, password: e.target.value })
+                    setUser({ ...user, newPassword: e.target.value })
                   }
                 />
                 <span className="form-message"></span>
@@ -94,11 +102,12 @@ function ChangePassword() {
                 <input
                   id="re-password"
                   name="re-password"
-                  type="re-password"
+                  type="password"
+
                   placeholder="Confirm new password"
                   className="form-control"
                   onChange={(e) =>
-                    setUser({ ...user, password: e.target.value })
+                    setUser({ ...user, newPassword1: e.target.value })
                   }
                 />
                 <span className="form-message"></span>
