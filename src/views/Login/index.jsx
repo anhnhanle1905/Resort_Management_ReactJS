@@ -1,11 +1,12 @@
 import React, { useState, useContext } from "react";
-import { Link,useNavigate, useHistory } from "react-router-dom";
+import { Link, useNavigate, useHistory } from "react-router-dom";
 import "./styles.scss";
 // import GoogleLogin from "react-google-login";
 // import FacebookLogin from "react-facebook-login";
 // import { Couter } from "../../Context/counter";
-import {loginApi} from '../../api/loginApi'
-import swal from 'sweetalert'
+import { loginApi } from "../../api/loginApi";
+import swal from "sweetalert";
+import logo1 from "../../Logo/logo-trang.png";
 function Login() {
   //Xử lý sumit form
   /*
@@ -16,25 +17,25 @@ function Login() {
     console.log({name,email})
   }
   */
-//  const history = useHistory()
-const useNatigigaton = useNavigate()
+  //  const history = useHistory()
+  const useNatigigaton = useNavigate();
   const [user, setUser] = useState({
     email: "",
     password: "",
   });
-  const loginUser = async () =>{
-    const res =  await loginApi(user)
-    console.log(res); 
-    if(!res){
-      return swal("Here's a message!", "Some thing wrong")
+  const loginUser = async () => {
+    const res = await loginApi(user);
+    console.log(res);
+    if (!res) {
+      return swal("Here's a message!", "Some thing wrong");
     }
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    useNatigigaton('/')
-    swal("Here's a message!", "Login success")
+    useNatigigaton("/");
+    swal("Here's a message!", "Login success");
     // history.push('/')
-  }
+  };
   // const { checkUser, setCheckUser } = useContext(Couter);
-  
+
   // const responseGoogle = (response) => {
   //   let dataGoogle = {
   //     HoTen: response?.profileObj.name,
@@ -62,7 +63,7 @@ const useNatigigaton = useNavigate()
       <div className="login-form">
         <div className="login-left">
           <div className="content">
-            <h3>Logo</h3>
+            <img src={logo1} alt="" />
             <p className="welcome">Welcome to Resort App</p>
             <p className="text-introduce">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac
@@ -89,7 +90,7 @@ const useNatigigaton = useNavigate()
                   type="text"
                   placeholder="Username/Email"
                   className="form-control"
-                  onChange={(e) => setUser({...user,email: e.target.value})}
+                  onChange={(e) => setUser({ ...user, email: e.target.value })}
                 />
                 <span className="form-message"></span>
               </div>
@@ -101,18 +102,26 @@ const useNatigigaton = useNavigate()
                   type="password"
                   placeholder="Password"
                   className="form-control"
-                  onChange={(e) => setUser({...user,password: e.target.value})}
+                  onChange={(e) =>
+                    setUser({ ...user, password: e.target.value })
+                  }
                 />
                 <span className="form-message"></span>
               </div>
 
-              <p className="forgot-password">Forgot password?</p>
+              <p className="change-password">
+                <Link className="changePassword" to="/changePassword">
+                  Change password
+                </Link>
+              </p>
 
-              <button className="form-submit btn" onClick={() => loginUser()}>Login</button>
+              <button className="form-submit btn" onClick={() => loginUser()}>
+                Login
+              </button>
               <p className="sign-up">
                 Don't have an Account?{" "}
                 <Link className="signup" to="/register">
-                  Sign up
+                  Register!
                 </Link>
               </p>
               <div className="signin-fb-gg"></div>
@@ -139,7 +148,6 @@ const useNatigigaton = useNavigate()
               className="my-google-button-class"
               isSignedIn={false}
             /> */}
-           
           </div>
         </div>
       </div>

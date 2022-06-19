@@ -4,10 +4,9 @@ export default function FavoritePlace() {
   return (
     <div className="home-main favorite-component">
       <div className="home-main favorite-component-content">
-        <p className="home-main favorite-title">Điểm đến yêu thích</p>
-        <p className="home-main favorite-title2">
-          Địa điểm hot nhất do Mytour đề xuất
-        </p>
+      <div className="favorite_room_header">
+        <h2 className="favorite_room_header-title">OUR FAVORITE PLACE</h2>
+      </div>
         <div className="home-main favorite-content">
           <div className="home-main favorite-content-1">
             <a className="home-main favorite-content-1-a">

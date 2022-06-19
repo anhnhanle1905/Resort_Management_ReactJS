@@ -162,37 +162,30 @@ const Header = () => {
                                 href="/ListRoom"
                                 exact="true"
                                 className="btn-ks-lable log-btn btn-type"
-                                style={{ fontSize: "0.9rem" }}
+                                // style={{ fontSize: "0.9rem" }}
                               >
                                 Single Room
                               </a>
                             </div>
                           </div>
                           <div className="home-main btn-ks">
-                            <div className="home-main btn-ks-label">
+                            <div className="home-main btn-ks-lable">
                               <a
                                 href="/ListRoom"
                                 exact="true"
-                                className="btn-ks-label log-btn btn-type"
-                                style={{
-                                  textDecoration: "none",
-                                  color: "black",
-                                }}
+                                className="btn-ks-lable log-btn btn-type"
+                                // style={{ fontSize: "0.9rem" }}
                               >
                                 Double Room
                               </a>
                             </div>
-                          </div>
-                          <div className="home-main btn-ks">
-                            <div className="home-main btn-ks-label">
+                          </div><div className="home-main btn-ks">
+                            <div className="home-main btn-ks-lable">
                               <a
-                                exact="true"
-                                className="btn-ks-label log-btn btn-type"
                                 href="/ListRoom"
-                                style={{
-                                  textDecoration: "none",
-                                  color: "black",
-                                }}
+                                exact="true"
+                                className="btn-ks-lable log-btn btn-type"
+                                // style={{ fontSize: "0.9rem" }}
                               >
                                 Deluxe Room
                               </a>
@@ -223,14 +216,12 @@ const Header = () => {
                     Restaurant
                     <div className="ks-position"></div>
                   </a>
-                </div>
-                <div className="home main home-navbar-right">
                   <a
                     className="main-element link-event link-event-delay home-header-gift color-main icon-main"
                     style={{ textDecoration: "none" }}
                     href="/contact"
                   >
-                    <svg
+                    {/* <svg
                       width="17"
                       height="17"
                       fill="none"
@@ -244,11 +235,13 @@ const Header = () => {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                       ></path>
-                    </svg>
+                    </svg> */}
                     Contact us
                   </a>
+                </div>
+                <div className="home main home-navbar-right">
                   <div className="btn-book-now">
-                    <a href="">
+                  <a href="/booking">
                       <FontAwesomeIcon icon="fa-solid fa-calendar-days" />
                       BOOK ONLINE
                     </a>
