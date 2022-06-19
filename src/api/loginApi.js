@@ -9,6 +9,7 @@ export const loginApi = async (data) => {
       localStorage.setItem("fullname", res?.data?.user?.fullname);
       localStorage.setItem("token", res?.data?.token);
       localStorage.setItem("statusLogin", true);
+      //note
 
       return true;
     }
